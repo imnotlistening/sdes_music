@@ -1,0 +1,12 @@
+				   M.U.S.I.C
+				   ---------
+
+		      Multi User Sound Immersion Controller
+
+Overview
+--------
+
+	MUSIC is system to allow multiple concurrent and independent streams of
+music to be playing in a single house across several rooms. The system voice
+controlled and seemlessly follows users across rooms by tracking a small IR
+emitter on each user.
