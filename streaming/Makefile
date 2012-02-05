@@ -19,7 +19,7 @@
 #
 
 OBJECTS	= stream_server.o
-PROGS	= 
+PROGS	= stream_server
 
 # Build a list of dependency files.
 DEPS    := $(shell find | grep \\.d$)
@@ -30,7 +30,7 @@ PROJ_LIB_FLAGS	= $(shell pkg-config --libs gstreamer-0.10)
 
 include $(BUILD)/config.mk
 
-all: $(OBJECTS)
+all: $(OBJECTS) $(PROGS)
 
 .PHONY: clean info
 
@@ -41,7 +41,8 @@ info:
 # Some special targets to make the build commands look pretty.
 $(PROGS): %: %.c 
 	$(MSG) " [CCLD] " $@
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ $@.c $(PROJ_LIB_FLAGS)
+	$(CC) $(CFLAGS) $(LOCAL_CFLAGS) $(CPPFLAGS) -o $@ $@.c \
+		$(PROJ_LIB_FLAGS)
 
 # Pull in dynamically generated dependencies. For some reason this has to
 # be *below* the $(PROGS) target.

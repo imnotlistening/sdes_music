@@ -20,14 +20,76 @@
  */
 
 #include <stdio.h>
+#include <pthread.h>
 
 #include <glib.h>
 #include <gst/gst.h>
 
+static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
+static void *play_thread(void *arg);
+
+GstElement *playbin;
+
+int main(int argc, char **argv){
+
+	int err;
+	GstBus *bus;
+	GMainLoop *loop;
+
+	pthread_t thread;
+
+	/* Init the GST library. */
+	gst_init(&argc, &argv);
+	loop = g_main_loop_new(NULL, FALSE);
+
+	/* Only 1 argument, a source to play. */
+	if ( argc != 2 ){
+		printf("Usage: %s <URI>\n", argv[0]);
+		return 1;
+	}
+
+	/* Initialize the playbin. Use the passed URI as a source. */
+	playbin = gst_element_factory_make("playbin", "play");
+	g_object_set(G_OBJECT(playbin), "uri", argv[1], NULL);
+
+	/* This gets a pointer to the bus through which the media flows. */
+	bus = gst_pipeline_get_bus(GST_PIPELINE(playbin));
+	gst_bus_add_watch(bus, bus_callb, loop);
+	g_object_unref(bus);
+
+	/* Start of in the 'play' state. */
+	gst_element_set_state(playbin, GST_STATE_PLAYING);
+	
+	err = pthread_create(&thread, NULL, play_thread, loop);
+	if ( err ){
+		printf("Failed to start play back thread.\n");
+		return 1;
+	} 
+	pthread_join(thread, NULL);
+
+	/* And some basic cleanup for when the media is over. */
+	gst_element_set_state(playbin, GST_STATE_NULL);
+	gst_object_unref(GST_OBJECT(playbin));
+
+	return 0;
+
+}
+
+static void *play_thread(void *arg){
+
+	GMainLoop *loop = arg;
+
+	/* And start the media player (lol) up. */
+	g_main_loop_run(loop);
+
+	return NULL;
+
+}
+
 /*
  * Handle changes in state on the bus.
  */
-static gboolean bus_call(GstBus *bus, GstMessage *msg, gpointer data){
+static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data){
 
 	gchar *debug;
 	GError *error;
@@ -63,4 +125,3 @@ static gboolean bus_call(GstBus *bus, GstMessage *msg, gpointer data){
 	return TRUE;
 
 }
-
