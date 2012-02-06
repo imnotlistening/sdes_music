@@ -20,6 +20,8 @@
  */
 
 #include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 #include <pthread.h>
 
 #include <glib.h>
@@ -30,9 +32,13 @@ static void *play_thread(void *arg);
 
 GstElement *playbin;
 
+/* non-zero = playing, 0 = paused. */
+int state = 1;
+
 int main(int argc, char **argv){
 
-	int err;
+	char buf[256];
+	int err, bytes;
 	GstBus *bus;
 	GMainLoop *loop;
 
@@ -59,12 +65,51 @@ int main(int argc, char **argv){
 
 	/* Start of in the 'play' state. */
 	gst_element_set_state(playbin, GST_STATE_PLAYING);
-	
+
 	err = pthread_create(&thread, NULL, play_thread, loop);
 	if ( err ){
 		printf("Failed to start play back thread.\n");
 		return 1;
-	} 
+	}
+	
+	/* Loop forver waiting for input from the terminal. */
+	printf("Playing %s\n", argv[1]);
+	memset(buf, 0, 256);
+	while ( 1 ){
+		
+		printf("> ");
+		fflush(stdout);
+		bytes = read(0, buf, 256);
+		if ( bytes == 0 )
+			break;
+
+		buf[strlen(buf) - 1] = 0;
+
+		switch ( buf[0] ){
+
+		case 'p':
+			if ( state ){
+				printf("Pausing.\n");
+				gst_element_set_state(playbin,
+						      GST_STATE_PAUSED);
+			} else {
+				printf("Starting.\n");
+				gst_element_set_state(playbin,
+						      GST_STATE_PLAYING);
+			}
+			state = !state;
+			break;
+
+		case 's':
+			printf("Stopping; goodbye.\n");
+			exit(0);
+			break;
+
+		}
+
+	}
+
+	printf("Waiting until the song is over.\n");
 	pthread_join(thread, NULL);
 
 	/* And some basic cleanup for when the media is over. */
@@ -81,6 +126,9 @@ static void *play_thread(void *arg){
 
 	/* And start the media player (lol) up. */
 	g_main_loop_run(loop);
+
+	/* Just exit; screw cleaning up data structures. */
+	exit(0);
 
 	return NULL;
 
