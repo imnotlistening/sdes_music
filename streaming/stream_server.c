@@ -28,19 +28,28 @@
 #include <gst/gst.h>
 
 static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
-static void *play_thread(void *arg);
+static void     new_pad_added(GstElement *elem, GstPad *pad, gpointer data);
+static void    *play_thread(void *arg);
 
-GstElement *playbin;
+/*
+ * Elements for building our input pipeline.
+ */
+GstElement *source;
+GstElement *decodebin;
+GstElement *volume;
+GstElement *autoaudiosink;
 
 /* non-zero = playing, 0 = paused. */
 int state = 1;
 
 int main(int argc, char **argv){
 
-	char buf[256];
-	int err, bytes;
+	char buf[256], cmd[256];
+	int err, bytes, convs, vol;
+	double vol_normed;
 	GstBus *bus;
 	GMainLoop *loop;
+	GstElement *pipeline;
 
 	pthread_t thread;
 
@@ -50,21 +59,41 @@ int main(int argc, char **argv){
 
 	/* Only 1 argument, a source to play. */
 	if ( argc != 2 ){
-		printf("Usage: %s <URI>\n", argv[0]);
+		printf("Usage: %s <file>\n", argv[0]);
 		return 1;
 	}
 
-	/* Initialize the playbin. Use the passed URI as a source. */
-	playbin = gst_element_factory_make("playbin", "play");
-	g_object_set(G_OBJECT(playbin), "uri", argv[1], NULL);
+	/* Initialize the pipeline. */
+	pipeline      = gst_pipeline_new("Stream server.");
+	source        = gst_element_factory_make("filesrc", "file source");
+	decodebin     = gst_element_factory_make("decodebin2", "decode");
+	volume        = gst_element_factory_make("volume",  "vol-cntl");
+	autoaudiosink = gst_element_factory_make("autoaudiosink", "play");
+
+	if ( ! pipeline || ! source || ! decodebin || ! autoaudiosink ){
+		printf("Error making one of the elements.\n");
+		return 1;
+	}
+
+	/* Set the song to play and a default volume. */
+	g_object_set(G_OBJECT(source), "location", argv[1], NULL);
+	g_object_set(G_OBJECT(volume), "volume", .1, NULL);
 
 	/* This gets a pointer to the bus through which the media flows. */
-	bus = gst_pipeline_get_bus(GST_PIPELINE(playbin));
+	bus = gst_pipeline_get_bus(GST_PIPELINE(pipeline));
 	gst_bus_add_watch(bus, bus_callb, loop);
 	g_object_unref(bus);
 
+	/* Add the elements to the pipeline. */
+	gst_bin_add_many(GST_BIN(pipeline),
+			 source, decodebin, volume, autoaudiosink, NULL);
+	gst_element_link(source, decodebin);
+	gst_element_link(volume, autoaudiosink);
+	g_signal_connect(decodebin, "pad-added", G_CALLBACK(new_pad_added),
+			 volume);
+
 	/* Start of in the 'play' state. */
-	gst_element_set_state(playbin, GST_STATE_PLAYING);
+	gst_element_set_state(pipeline, GST_STATE_PLAYING);
 
 	err = pthread_create(&thread, NULL, play_thread, loop);
 	if ( err ){
@@ -90,11 +119,11 @@ int main(int argc, char **argv){
 		case 'p':
 			if ( state ){
 				printf("Pausing.\n");
-				gst_element_set_state(playbin,
+				gst_element_set_state(pipeline,
 						      GST_STATE_PAUSED);
 			} else {
 				printf("Starting.\n");
-				gst_element_set_state(playbin,
+				gst_element_set_state(pipeline,
 						      GST_STATE_PLAYING);
 			}
 			state = !state;
@@ -105,6 +134,25 @@ int main(int argc, char **argv){
 			exit(0);
 			break;
 
+		case 'v':
+			convs = sscanf(buf, "%s %d", cmd, &vol);
+			if ( convs != 2 ){
+				printf("Failed to parse volume control.\n");
+				break;
+			}
+
+			printf("Setting volume: %d\n", vol);
+			if ( vol < 0 || vol > 100 ){
+				printf("Volume out of bounds, accepted values"
+				       " [0, 100]\n");
+				break;
+			}
+
+			vol_normed = (double)vol / 100.0;
+
+			g_object_set(G_OBJECT(volume), "volume",
+				     vol_normed, NULL);
+
 		}
 
 	}
@@ -113,8 +161,8 @@ int main(int argc, char **argv){
 	pthread_join(thread, NULL);
 
 	/* And some basic cleanup for when the media is over. */
-	gst_element_set_state(playbin, GST_STATE_NULL);
-	gst_object_unref(GST_OBJECT(playbin));
+	gst_element_set_state(pipeline, GST_STATE_NULL);
+	gst_object_unref(GST_OBJECT(pipeline));
 
 	return 0;
 
@@ -171,5 +219,19 @@ static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data){
 	 * Returning true keeps the call back installed.
 	 */
 	return TRUE;
+
+}
+
+static void new_pad_added(GstElement *elem, GstPad *pad, gpointer data){
+
+	GstPad *sinkpad;
+	GstElement *decoder = (GstElement *) data;
+
+	/*
+	 * Sink pad in the volume controller.
+	 */
+	sinkpad = gst_element_get_static_pad (decoder, "sink");
+	gst_pad_link (pad, sinkpad);
+	gst_object_unref (sinkpad);
 
 }
