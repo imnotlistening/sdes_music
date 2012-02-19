@@ -18,7 +18,7 @@
 # Build the server responsible for sending out RTP streams.
 #
 
-OBJECTS	= stream_server.o
+OBJECTS	= gst_rtp.o
 PROGS	= stream_server
 
 # Build a list of dependency files.
@@ -39,9 +39,9 @@ info:
 	$(MSG) "PROJ_LIB_FLAGS = $(PROJ_LIB_FLAGS)"
 
 # Some special targets to make the build commands look pretty.
-$(PROGS): %: %.c 
+$(PROGS): %: %.c $(OBJECTS)
 	$(MSG) " [CCLD] " $@
-	$(CC) $(CFLAGS) $(LOCAL_CFLAGS) $(CPPFLAGS) -o $@ $@.c \
+	$(CC) $(CFLAGS) $(LOCAL_CFLAGS) $(CPPFLAGS) $(OBJECTS) -o $@ $@.c \
 		$(PROJ_LIB_FLAGS)
 
 # Pull in dynamically generated dependencies. For some reason this has to
