@@ -19,7 +19,7 @@
 #
 
 OBJECTS	= gst_rtp.o
-PROGS	= stream_server
+PROGS	= stream_server stream_client
 
 # Build a list of dependency files.
 DEPS    := $(shell find | grep \\.d$)
