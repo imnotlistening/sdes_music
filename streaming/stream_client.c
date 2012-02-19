@@ -89,7 +89,8 @@ int main(int argc, char **argv){
 	convs = sscanf(port_str, "%d", &port);
 	ASSERT_OR_ERROR(convs == 1);
 	ASSERT_OR_ERROR(port > 0 && port < 65536);
-
+	printf("Receiving RTP from: %s:%d\n", host, port);
+	
 	/* The pipeline to hold everything */
 	pipeline = gst_pipeline_new(NULL);
 	g_assert(pipeline);
@@ -179,14 +180,14 @@ int main(int argc, char **argv){
 			 G_CALLBACK(on_ssrc_active_cb), audiodepay);
 
 	/* set the pipeline to playing */
-	g_print("starting receiver pipeline\n");
+	g_print("Starting receiver pipeline\n");
 	gst_element_set_state(pipeline, GST_STATE_PLAYING);
 
 	/* we need to run a GLib main loop to get the messages */
 	loop = g_main_loop_new(NULL, FALSE);
 	g_main_loop_run(loop);
 
-	g_print("stopping receiver pipeline\n");
+	g_print("Stopping receiver pipeline\n");
 	gst_element_set_state(pipeline, GST_STATE_NULL);
 
 	gst_object_unref(pipeline);

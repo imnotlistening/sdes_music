@@ -56,7 +56,7 @@ int main(int argc, char **argv){
 	}
 
 	err = music_rtp_make_pipeline(&pipeline, "test-rtp-pipe", 5000, 5001,
-				      "129.21.131.28");
+				      "129.21.131.109");
 	if ( err ){
 		fprintf(stderr, "Could not make pipeline. :(\n");
 		return 1;
