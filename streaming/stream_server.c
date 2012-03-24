@@ -55,20 +55,32 @@ int main(int argc, char **argv){
 		return 1;
 	}
 
+	/* Make a pipeline. Requires an IP address to send to :(. */
 	err = music_rtp_make_pipeline(&pipeline, "test-rtp-pipe", 5000, 5001,
 				      "129.21.131.109");
 	if ( err ){
 		fprintf(stderr, "Could not make pipeline. :(\n");
 		return 1;
 	}
+
+	/* And init the main loop for the pipeline. This does not start the
+	 * main loop, thats done later. */
 	music_make_mloop(&pipeline);
 
-	/* Load in the file source. */
-	g_object_set(G_OBJECT(pipeline.filesrc), "location", argv[1], NULL);
+	/* Load in the song. This will stop the pipeline if something is
+	 * playing. */
+	err = music_play_song(&pipeline, argv[1]);
+	if ( err ){
+		fprintf(stderr, "Failed to load song: %s\n", argv[1]);
+		return 1;
+	}
 
-	/* Start of in the 'play' state. */
-	gst_element_set_state(pipeline.pipeline, GST_STATE_PLAYING);
+	/* And now set the pipeline's state to playing. Still not gonna start
+	 * making music quite yet, only when we start the mainloop will that
+	 * happen. */
+	music_set_state(&pipeline, GST_STATE_PLAYING);
 
+	/* Run the main loop in a different thread. */
 	err = pthread_create(&thread, NULL, play_thread, pipeline.mloop);
 	if ( err ){
 		printf("Failed to start play back thread.\n");
@@ -135,7 +147,7 @@ int main(int argc, char **argv){
 	pthread_join(thread, NULL);
 
 	/* And some basic cleanup for when the media is over. */
-	gst_element_set_state(pipeline.pipeline, GST_STATE_NULL);
+	music_set_state(&pipeline, GST_STATE_NULL);
 	gst_object_unref(GST_OBJECT(pipeline.pipeline));
 
 	return 0;

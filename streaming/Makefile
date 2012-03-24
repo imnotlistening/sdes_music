@@ -18,7 +18,7 @@
 # Build the server responsible for sending out RTP streams.
 #
 
-OBJECTS	= gst_rtp.o
+OBJECTS	= gst_rtp.o stream_core.o
 PROGS	= stream_server stream_client
 
 # Build a list of dependency files.

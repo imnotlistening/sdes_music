@@ -18,6 +18,8 @@
  * Defines, functions, structs, etc for the MUSIC RTP server.
  */
 
+#include <inttypes.h>
+
 #ifndef _MUSIC_H_
 #define _MUSIC_H_
 
@@ -56,9 +58,14 @@ struct music_rtp_pipeline {
 /*
  * Some API functions.
  */
-int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
+int	music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 			    char *id, int rtp, int rtcp, char *dest_host);
-int music_make_mloop(struct music_rtp_pipeline *pipe);
+int	music_make_mloop(struct music_rtp_pipeline *pipe);
+int	music_play_song(struct music_rtp_pipeline *pipe, const char *song_path);
+int	music_set_state(struct music_rtp_pipeline *pipe, int state);
+int64_t	music_get_time(struct music_rtp_pipeline *pipe);
+int	music_set_volume(struct music_rtp_pipeline *pipe, int volume);
+int	music_get_volume(struct music_rtp_pipeline *pipe);
 
 /*
  * Macros.
