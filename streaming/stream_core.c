@@ -85,6 +85,24 @@ int music_set_state(struct music_rtp_pipeline *pipe, int state){
 
 }
 
+int music_get_state(struct music_rtp_pipeline *pipe){
+
+	GstState cur_state;
+	GstStateChangeReturn state_change;
+
+	do {
+
+		/* 10 ms timeout. */
+		state_change = gst_element_get_state(pipe->pipeline, &cur_state,
+						     NULL, 10000000);
+
+	} while ( state_change == GST_STATE_CHANGE_ASYNC );
+
+	/* Translate away from GST types. */
+	return (int) cur_state;
+
+}
+
 /*
  * Set the volume of the pipeline. No error or range checking is performed
  * here; it is assumed that this function is called by music_set_volume() and
@@ -126,14 +144,50 @@ int music_get_volume(struct music_rtp_pipeline *pipe){
 
 /*
  * Return the location in the stream. This is only relevant if the stream is
- * playing or paused.
+ * playing or paused. If the position of the track is a meaningless idea (i.e
+ * the stream is null or something) then just return a -1.
  */
-int64_t music_get_time(struct music_rtp_pipeline *pipe){
+int64_t music_get_time_pos(struct music_rtp_pipeline *pipe){
 
-	int64_t pos = 0;
+	gint64 pos = 0;
+	gboolean ok;
+	GstState cur_state = GST_STATE_NULL;
+	GstFormat fmt = GST_FORMAT_TIME;
 
-	
+	gst_element_get_state(pipe->pipeline, &cur_state, NULL, 10000000);
+	if ( cur_state != GST_STATE_PAUSED && cur_state != GST_STATE_PLAYING )
+		return -1;
 
-	return pos;
+	ok = gst_element_query_position(pipe->pipeline, &fmt, &pos);
+	if ( ! ok )
+		return -1;
+
+	/* Convert out of the gtype stuff. */
+	return (int64_t)pos;
+
+}
+
+/*
+ * Return the length of a stream. Like music_get_time_pos(), returns -1 on
+ * failure, or the length on success.
+ */
+int64_t music_get_time_len(struct music_rtp_pipeline *pipe){
+
+	gint64 len = 0;
+	gboolean ok;
+	GstState cur_state = GST_STATE_NULL;
+	GstFormat fmt = GST_FORMAT_TIME;
+
+	gst_element_get_state(pipe->pipeline, &cur_state, NULL, 10000000);
+	if ( cur_state != GST_STATE_PAUSED && cur_state != GST_STATE_PLAYING &&
+	     cur_state != GST_STATE_READY )
+		return -1;
+
+	ok = gst_element_query_duration(pipe->pipeline, &fmt, &len);
+	if ( ! ok )
+		return -1;
+
+	/* Convert out of the gtype stuff. */
+	return (int64_t)len;
 
 }

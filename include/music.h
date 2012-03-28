@@ -23,8 +23,18 @@
 #ifndef _MUSIC_H_
 #define _MUSIC_H_
 
+/* Translation from Gst types to our own types to avoid requiring the GST
+ * includes everywhere. I am not completely sure this is a good idea at the
+ * moment so if it needs changing, that can be done.
+ */
+#define MUSIC_STATE_VOID_PENDING	(0)
+#define MUSIC_STATE_NULL		(1)
+#define MUSIC_STATE_READY		(2)
+#define MUSIC_STATE_PAUSED		(3)
+#define MUSIC_STATE_PLAYING		(4)
+
 /*
- * A struct for holding some relevant pointers into a RTP pipeline.
+ * A struct for holding some relevant pointers which define an RTP pipeline.
  */
 struct music_rtp_pipeline {
 
@@ -53,6 +63,13 @@ struct music_rtp_pipeline {
 	 */
 	GMainLoop	*mloop;
 
+	/*
+	 * A function call back for when the end of stream has occured. You
+	 * can use this function and pipeline pointer to start playing a new
+	 * song.
+	 */
+	void 		(*end_of_stream)(struct music_rtp_pipeline *pipe);
+
 };
 
 /*
@@ -63,7 +80,9 @@ int	music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 int	music_make_mloop(struct music_rtp_pipeline *pipe);
 int	music_play_song(struct music_rtp_pipeline *pipe, const char *song_path);
 int	music_set_state(struct music_rtp_pipeline *pipe, int state);
-int64_t	music_get_time(struct music_rtp_pipeline *pipe);
+int	music_get_state(struct music_rtp_pipeline *pipe);
+int64_t	music_get_time_pos(struct music_rtp_pipeline *pipe);
+int64_t	music_get_time_len(struct music_rtp_pipeline *pipe);
 int	music_set_volume(struct music_rtp_pipeline *pipe, int volume);
 int	music_get_volume(struct music_rtp_pipeline *pipe);
 
@@ -78,5 +97,12 @@ int	music_get_volume(struct music_rtp_pipeline *pipe);
 			return -1;					\
 		}							\
 	} while ( 0 )
+
+#define MUSIC_IS_PLAYING(state)	(state == MUSIC_STATE_PLAYING)
+#define MUSIC_IS_PUASED(state)	(state == MUSIC_STATE_PAUSED)
+#define MUSIC_IS_READY(state)	(state == MUSIC_STATE_READY)
+#define MUSIC_IS_NOGO(state)						\
+	(state != MUSIC_STATE_READY && state != MUSIC_STATE_PAUSED &&	\
+	 state != MUSIC_STATE_PLAYING)
 
 #endif
