@@ -35,12 +35,15 @@
 static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
 static void     new_pad_added(GstElement *elem, GstPad *pad, gpointer data);
 
-/**
+GMainLoop	*music_mloop;
+
+/*
  * Build a GstRtpBin pipeline. This will attempt to stream on the passed ports.
  */
 int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 			    char *id, int rtp, int rtcp, char *dest_host){
 
+	GstBus *bus;
 	GstPad *rtp_src, *rtp_sink, *rtcp_src, *rtcp_sink, *tmp;
 	GstElement *pipeline;
 	GstElement *source;
@@ -126,24 +129,23 @@ int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 	pipe->volume = volume;
 	pipe->rtpbin = rtp_sender;
 
+	/* Add the bus handler here so that each pipeline created will have
+	 * a handler. */
+	bus = gst_pipeline_get_bus(GST_PIPELINE(pipe->pipeline));
+	gst_bus_add_watch(bus, bus_callb, pipe);
+	g_object_unref(bus);
+
 	return 0;
 
 }
 
-/**
- * Build a main loop to run the RTP server in.
+/*
+ * Build a main loop to run the RTP server in. Part of the initilazation
+ * process.
  */
-int music_make_mloop(struct music_rtp_pipeline *pipe){
+int music_make_mloop(){
 
-	GstBus *bus;
-
-	pipe->mloop = g_main_loop_new(NULL, FALSE);
-	
-	/* Hook up callbacks for the bus/loop. */
-	bus = gst_pipeline_get_bus(GST_PIPELINE(pipe->pipeline));
-	gst_bus_add_watch(bus, bus_callb, pipe->mloop);
-	g_object_unref(bus);
-
+	music_mloop = g_main_loop_new(NULL, FALSE);
 	return 0;
 
 }
@@ -155,7 +157,7 @@ static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data){
 
 	gchar *debug;
 	GError *error;
-	GMainLoop *loop = (GMainLoop *)data;
+	struct music_rtp_pipeline *pipe = data;
 
 	switch (GST_MESSAGE_TYPE(msg)){
 
@@ -164,7 +166,8 @@ static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data){
 	 */
 	case GST_MESSAGE_EOS:
 		g_print("End of stream detected\n");
-		g_main_loop_quit(loop);
+		if ( pipe->end_of_stream )
+			pipe->end_of_stream(pipe);
 		break;
 
 	/*

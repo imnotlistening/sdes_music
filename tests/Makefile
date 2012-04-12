@@ -15,11 +15,11 @@
 # You should have received a copy of the GNU General Public License
 # along with MUSIC.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Build the server responsible for sending out RTP streams.
+# Build tests for the music streaming library.
 #
 
-OBJECTS	= gst_rtp.o stream_core.o plist.o
-PROGS	=
+OBJECTS	=
+PROGS	= stream_server stream_client test_plist multi_stream_test
 
 # Build a list of dependency files.
 DEPS    := $(shell find | grep \\.d$)
@@ -30,14 +30,8 @@ PROJ_LIB_FLAGS	= $(shell pkg-config --libs gstreamer-0.10)
 
 include $(BUILD)/config.mk
 
-all: $(OBJECTS) $(PROGS) libmstream.so
-	@cp libmstream.so* $(BUILD)/bin
-
-libmstream.so: $(OBJECTS)
-	$(MSG) " [LD]   " $@
-	$(LD) -shared -Wl,-soname=$@ $(OBJECTS) -o $@.$(VERSION) $(LIBS) \
-		$(PROJ_LIB_FLAGS)
-	@ldconfig -n .
+all: $(OBJECTS) $(PROGS)
+	@cp $(PROGS) $(BUILD)/bin
 
 .PHONY: clean info
 
@@ -49,7 +43,7 @@ info:
 $(PROGS): %: %.c $(OBJECTS)
 	$(MSG) " [CCLD] " $@
 	$(CC) $(CFLAGS) $(LOCAL_CFLAGS) $(CPPFLAGS) $(OBJECTS) -o $@ $@.c \
-		$(PROJ_LIB_FLAGS)
+		$(PROJ_LIBS) $(PROJ_LIB_FLAGS)
 
 # Pull in dynamically generated dependencies. For some reason this has to
 # be *below* the $(PROGS) target.
@@ -61,7 +55,6 @@ $(PROGS): %: %.c $(OBJECTS)
 		 $(dir $(@)).$(notdir $(@:.o=.d))
 
 clean:
-	$(MSG) "Cleaning \`streaming'"
+	$(MSG) "Cleaning \`tests'"
 	@rm -f $(OBJECTS) $(PROGS)
 	@rm -f $(DEPS)
-	@rm -f libmstream.so*

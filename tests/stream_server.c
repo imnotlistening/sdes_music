@@ -28,6 +28,8 @@
 
 #include <music.h>
 
+extern GMainLoop *music_mloop;
+
 static void *play_thread(void *arg);
 
 /* non-zero = playing, 0 = paused. */
@@ -81,7 +83,7 @@ int main(int argc, char **argv){
 	music_set_state(&pipeline, GST_STATE_PLAYING);
 
 	/* Run the main loop in a different thread. */
-	err = pthread_create(&thread, NULL, play_thread, pipeline.mloop);
+	err = pthread_create(&thread, NULL, play_thread, music_mloop);
 	if ( err ){
 		printf("Failed to start play back thread.\n");
 		return 1;
@@ -143,7 +145,6 @@ int main(int argc, char **argv){
 
 	}
 
-	printf("Waiting until the song is over.\n");
 	pthread_join(thread, NULL);
 
 	/* And some basic cleanup for when the media is over. */
