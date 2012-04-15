@@ -198,7 +198,7 @@
 			# (default: on for mic or adinnet, off for file)
 #-lv 2000		# threshold of input level (0-32767)
 #-headmargin 300	# head margin of input segment (msec)
-#-tailmargin 400	# tail margin of input segment (msec)
+-tailmargin 1200	# tail margin of input segment (msec)
 #-zc 60			# threshold of number of zero-cross in a second
 
 ######################################################################

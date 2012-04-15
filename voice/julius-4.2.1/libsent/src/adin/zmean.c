@@ -59,7 +59,7 @@ static float max_val_avg;
 static int *max_vals;
 static int max_val_index = 0;
 
-#define NUM_MAX_VALS 25
+#define NUM_MAX_VALS 8
 
 /** 
  * Reset status.

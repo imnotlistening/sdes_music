@@ -5,7 +5,9 @@
 2	[STOP]	s t aa p
 2	[NEXT]	n eh k s t
 2	[PREVIOUS]	p r iy v iy ax s
+2	[LAST]	l ae s t
 3	[SOUND]	s aw n d
+3	[VOL]	v aa l
 3	[NOISE]	n oy z
 3	[TURN]	t er n
 4	[UP]	ah p
@@ -23,4197 +25,823 @@
 8	[EUGENE]	y uw jh iy n
 8	[HELEN]	hh eh l ax n
 8	[HAL]	hh ae l
-9	[A]	ax
-9	[ABALON]	ae b ax l ow n
 9	[ABANDONMENT]	ax b ae n d ax n m ax n t
-9	[ABC'S]	ae b iy s iy s
-9	[ABDOMINALS]	ae b d aa m ax n ax l z
-9	[ABERDEEN]	ae b er d iy n
-9	[ABILENE]	ae b ix l iy n
-9	[ABLE]	ey b ax l
-9	[ABNORMAL]	ae b n ao r m ax l
 9	[ABNORMALLY]	ae b n ao r m ax l iy
-9	[ABOLISH]	ax b aa l ix sh
 9	[ABOUNDING]	ax b aw n d ix ng
-9	[ABOUT]	ax b aw t
 9	[ABOVE]	ax b ah v
-9	[ABSTRACTIONS]	ae b s t r ae k sh ax n z
-9	[ABSURDITY]	ax b s er dx ax dx iy
-9	[ABU]	ae b uw
-9	[ABUNDANCE]	ax b ah n d ax n s
-9	[ACCELERATED]	ae k s eh l er ey dx ix d
-9	[ACCEPT]	ae k s eh p t
-9	[ACCEPTED]	ae k s eh p t ix d
 9	[ACCESSORIES]	ae k s eh s er iy z
-9	[ACCIDENTAL]	ae k s ax d eh n t ax l
-9	[ACCOMPANY]	ax k ah m p ax n iy
-9	[ACCORDANCE]	ax k ao r d ax n s
-9	[ACCORDING]	ax k ao r dx ix ng
 9	[ACCORDINGLY]	ax k ao r dx ix ng l iy
-9	[ACCOUNT]	ax k aw n t
 9	[ACCOUNTING]	ax k aw n t ix ng
-9	[ACHIEVE]	ax ch iy v
-9	[ACHIEVEMENTS]	ax ch iy v m ax n t s
-9	[ACKNOWLEDGED]	ae k n aa l ix jh d
-9	[ACQUAINTANCE]	ax k w ey n t ax n s
-9	[ACQUIESCENCE]	ae k w iy eh s ax n s
-9	[ACROSS]	ax k r ao s
-9	[ACT]	ae k t
 9	[ACTS]	ae k t s
 9	[ACTUAL]	ae k ch ax w ax l
-9	[ACTUALLY]	ae k ch ax w ax l iy
 9	[ACUPUNCTURE]	ae k y uw p ah ng k ch er
-9	[ADAM]	ae dx ax m
-9	[ADAPTABLE]	ax d ae p t ax b ax l
-9	[ADDED]	ae dx ax d
-9	[ADELAIDE]	ae dx ax l ey d
 9	[ADJECTIVES]	ae jh ix k t ix v z
-9	[ADMINISTERED]	ax d m ih n ax s t er d
-9	[ADMIRAL]	ae d m er ax l
-9	[ADRIFT]	ax d r ih f t
-9	[ADVANCE]	ax d v ae n s
-9	[ADVANTAGE]	ae d v ae n t ix jh
-9	[ADVANTAGES]	ae d v ae n t ix jh ix z
-9	[ADVENTURE]	ae d v eh n ch er
 9	[ADVERBS]	ae d v er b z
-9	[ADVICE]	ae d v ay s
-9	[ADVISEDLY]	ae d v ay z ax d l iy
-9	[AEROBIC]	eh r ow b ix k
-9	[AEROFLOT]	eh r ow f l aa t
-9	[AEROLINEAS]	eh r ow l ih n iy ax s
-9	[AEROMEXICO]	eh r ow m eh k s ix k ow
-9	[AFFAIR]	ax f eh r
-9	[AFFECTED]	ax f eh k t ax d
-9	[AFFLICTIONS]	ax f l ih k sh ax n z
-9	[AFGHAN]	ae f g ae n
-9	[AFRAID]	ax f r ey d
 9	[AFRICA]	ae f r ax k ax
-9	[AFRICAN]	ae f r ax k ax n
-9	[AFTER]	ae f t er
 9	[AFTER-ROOM]	ae f t er r uw m
-9	[AFTERNOON]	ae f t er n uw n
-9	[AGAIN]	ax g eh n
-9	[AGAINST]	ax g eh n s t
-9	[AGANA]	ah g ae n ah
-9	[AGATHA]	ae g ax th ax
 9	[AGE]	ey jh
-9	[AGED]	ey jh d
-9	[AGENCY]	ey jh ax n s iy
 9	[AGENT]	ey jh ax n t
-9	[AGENTS]	ey jh ax n t s
-9	[AGO]	ax g ow
 9	[AGONIZING]	ae g ax n ay z ix ng
-9	[AGONY]	ae g ax n iy
-9	[AGREE]	ax g r iy
-9	[AGREED]	ax g r iy d
-9	[AH]	aa
 9	[AHEAD]	ax hh eh d
-9	[AIR]	eh r
-9	[AIRES]	eh r iy z
-9	[AIRFARE]	eh r f eh r
-9	[AIRLINES]	eh r l ay n z
-9	[AIRPLANE]	eh r p l ey n
-9	[AIRPORT]	eh r p ao r t
-9	[AIRPORTS]	eh r p ao r t s
-9	[AIRTRAN]	eh r t r ae n
-9	[AIRWAYS]	eh r w ey z
-9	[AJAR]	ax jh aa r
-9	[AKRON]	ae k r ax n
-9	[AL]	ae l
 9	[ALABAMA]	ae l ax b ae m ax
-9	[ALACRITY]	ax l ae k r ax dx iy
-9	[ALAMO]	ae l ax m ow
 9	[ALASKA]	ax l ae s k ax
-9	[ALASKAN]	ax l ae s k ax n
-9	[ALBANY]	ao l b ax n iy
-9	[ALBERTA]	ae l b er dx ax
-9	[ALBUQUERQUE]	ae l b ax k er k iy
-9	[ALCOHOL]	ae l k ax hh aa l
-9	[ALCOHOL-DRENCHED]	ae l k ax hh aa l d r eh n ch t
-9	[ALEX]	ae l ax k s
-9	[ALEXANDRIA]	ae l ax g z ae n d r iy ax
-9	[ALF]	ae l f
-9	[ALGORITHM]	ae l g er ih dh ax m
-9	[ALICANTE]	ae l ax k aa n t eh
-9	[ALICE]	ae l ax s
-9	[ALISA]	ax l ih z ax
 9	[ALITALIA]	ae l ix t ey l iy ax
 9	[ALL]	ao l
-9	[ALLEN]	ae l ax n
-9	[ALLENTOWN]	ae l ax n t aw n
-9	[ALLOW]	ax l aw
-9	[ALLOWED]	ax l aw d
-9	[ALLOWS]	ax l aw z
 9	[ALLY]	ae l ay
 9	[ALMOST]	ao l m ow s t
-9	[ALOHA]	ax l ow hh aa
-9	[ALONE]	ax l ow n
-9	[ALONG]	ax l ao ng
-9	[ALOUD]	ax l aw d
 9	[ALREADY]	ao l r eh dx iy
 9	[ALRIGHT]	ao l r ay t
-9	[ALSO]	ao l s ow
-9	[ALTERED]	ao l t er d
-9	[ALTERNATIVE]	ao l t er n ax dx ix v
-9	[ALTERNATIVES]	ao l t er n ax dx ix v z
-9	[ALTHOUGH]	ao l dh ow
-9	[ALTOGETHER]	ao l t ax g eh dh er
 9	[ALTRUISM]	ae l t r uw ih z ax m
-9	[ALTRUISTIC]	ao l t r uw ih s t ix k
-9	[ALVIN]	ae l v ix n
-9	[ALWAYS]	ao l w ey z
-9	[ALYSSA]	ax l ih s ax
 9	[AM]	ae m
-9	[AMARILLO]	ae m er ih l ow
 9	[AMATEURISH]	ae m ax ch er ix sh
-9	[AMBIGUOUS]	ae m b ih g y uw ax s
-9	[AMBITION]	ae m b ih sh ax n
-9	[AMBUSH]	ae m b uh sh
 9	[AMENDED]	ax m eh n d ax d
 9	[AMERICA]	ax m eh r ax k ax
 9	[AMERICAN]	ax m eh r ax k ax n
-9	[AMERIHOST]	aa m er iy hh ow s t
-9	[AMERISUITES]	aa m er iy s w iy t s
 9	[AMNESIA]	ae m n iy zh ax
-9	[AMONG]	ax m ah ng
 9	[AMONGST]	ax m ah ng s t
-9	[AMPHIBIAN]	ae m f ih b iy ax n
-9	[AMPHIBIOUS]	ae m f ih b iy ax s
-9	[AMSTERDAM]	ae m s t er d ae m
-9	[AN]	ae n
-9	[ANA]	aa n ax
-9	[ANARCHY]	ae n er k iy
-9	[ANCHOR]	ae ng k er
-9	[ANCHORAGE]	ae ng k er ax jh
-9	[AND]	ae n d
-9	[ANDREW]	ae n d r uw
-9	[ANGELES]	ae n jh ax l ix s
-9	[ANGELO]	ae n jh ax l ow
-9	[ANGUISH]	ae ng g w ix sh
-9	[ANIMAL]	ae n ax m ax l
-9	[ANIMALS]	ae n ax m ax l z
-9	[ANKARA]	ae ng k er ax
-9	[ANNOUNCED]	ax n aw n s t
-9	[ANNOY]	ax n oy
-9	[ANNOYING]	ax n oy ix ng
-9	[ANOTHER]	ax n ah dh er
-9	[ANSETT]	ae n s eh t
-9	[ANSWER]	ae n s er
-9	[ANSWERED]	ae n s er d
-9	[ANSWERING]	ae n s er ix ng
-9	[ANTAGONIST]	ae n t ae g ax n ax s t
-9	[ANTALYA]	ae n t ax l y aa
-9	[ANTICIPATE]	ae n t ih s ax p ey t
-9	[ANTONIO]	ae n t ow n iy ow
-9	[ANXIETY]	ae ng z ay ax dx iy
-9	[ANY]	eh n iy
-9	[ANYTHING]	eh n iy th ih ng
-9	[ANYTIME]	eh n iy t ay m
-9	[ANYWAY]	eh n iy w ey
 9	[APART]	ax p aa r t
 9	[APOLOGIZE]	ax p aa l ax jh ay z
-9	[APOLOGIZED]	ax p aa l ax jh ay z d
-9	[APOSTROPHE]	ax p aa s t r ax f iy
-9	[APPARENTLY]	ax p eh r ax n t l iy
-9	[APPEALED]	ax p iy l d
-9	[APPEAR]	ax p ih r
 9	[APPEARANCE]	ax p ih r ax n s
-9	[APPLAUDED]	ax p l ao dx ax d
-9	[APPRECIATE]	ax p r iy sh iy ey t
 9	[APPRECIATED]	ax p r iy sh iy ey dx ix d
-9	[APPRECIATION]	ax p r iy sh iy ey sh ax n
 9	[APPREHENSION]	ae p r ix hh eh n sh ax n
-9	[APPROACHED]	ax p r ow ch t
-9	[APRIL]	ey p r ax l
-9	[APRON]	ey p r ax n
-9	[ARAB]	ae r ax b
 9	[ARCATA]	aa r k aa dx ax
-9	[ARCH]	aa r ch
 9	[ARCHIBALD]	aa r ch ax b ao l d
-9	[ARE]	aa r
-9	[AREA]	eh r iy ax
 9	[AREN'T]	aa r ax n t
 9	[ARGENTINAS]	aa r jh ax n t iy n ax z
-9	[ARGENTINE]	aa r jh ax n t iy n
-9	[ARGUE]	aa r g y uw
-9	[ARGUED]	aa r g y uw d
-9	[ARGUING]	aa r g y uw ix ng
 9	[ARGUMENT]	aa r g y ax m ax n t
 9	[ARGUMENTS]	aa r g y ax m ax n t s
-9	[ARISTOTLE]	eh r ax s t aa dx ax l
-9	[ARIZONA]	eh r ix z ow n ax
-9	[ARKANSAS]	aa r k ax n s aa
-9	[ARM]	aa r m
-9	[ARMS]	aa r m z
-9	[AROSE]	er ow z
-9	[AROUND]	er aw n d
 9	[AROUSED]	er aw z d
 9	[ARRANGE]	er ey n jh
 9	[ARRANGEMENT]	er ey n jh m ax n t
-9	[ARRANGEMENTS]	er ey n jh m ax n t s
-9	[ARRIVAL]	er ay v ax l
-9	[ARRIVE]	er ay v
-9	[ARRIVED]	er ay v d
-9	[ARRIVES]	er ay v z
-9	[ARRIVING]	er ay v ix ng
-9	[ARROW]	ae r ow
-9	[ARROWS]	ae r ow z
 9	[ARTHRITIS]	aa r th r ay dx ax s
-9	[ARTHUR]	aa r th er
 9	[ARTICULATE]	aa r t ih k y ax l ey t
-9	[ARTISTIC]	aa r t ih s t ix k
 9	[ARTISTS]	aa r dx ax s t s
-9	[ARUBA]	er uw b ax
-9	[AS]	ae z
-9	[ASHEVILLE]	ae sh v ih l
-9	[ASHORE]	ax sh ao r
-9	[ASIA]	ey zh ax
-9	[ASIANA]	ey zh ax n ax
-9	[ASIATIC]	ey zh iy ae dx ix k
-9	[ASIDE]	ax s ay d
-9	[ASK]	ae s k
-9	[ASKED]	ae s k t
-9	[ASKING]	ae s k ix ng
-9	[ASLEEP]	ax s l iy p
 9	[ASPECT]	ae s p eh k t
-9	[ASSEMBLE]	ax s eh m b ax l
 9	[ASSIGNED]	ax s ay n d
 9	[ASSISTANCE]	ax s ih s t ax n s
-9	[ASSOCIATED]	ax s ow s iy ey dx ax d
 9	[ASSUME]	ax s uw m
-9	[AT]	ae t
-9	[ATE]	ey t
-9	[ATHENS]	ae th ax n z
-9	[ATHLETE]	ae th l iy t
-9	[ATHLETIC]	ae th l eh dx ix k
-9	[ATLANTA]	ae t l ae n t ax
-9	[ATLANTIC]	ax t l ae n t ix k
-9	[ATMOSPHERE]	ae t m ax s f ih r
-9	[ATOLL]	ae dx aa l
-9	[ATTACK]	ax t ae k
-9	[ATTEMPT]	ax t eh m p t
-9	[ATTEMPTED]	ax t eh m p t ax d
 9	[ATTEMPTING]	ax t eh m p t ix ng
 9	[ATTITUDE]	ae dx ax t uw d
-9	[AUCKLAND]	aa k l ax n d
 9	[AUDACIOUS]	aa d ey sh ax s
-9	[AUDIO]	aa dx iy ow
-9	[AUGUST]	aa g ax s t
-9	[AUGUSTA]	ax g ah s t ax
 9	[AUNT]	ae n t
-9	[AURORA]	er ao r ax
-9	[AUSPICIOUS]	aa s p ih sh ax s
 9	[AUSTERE]	ao s t ih r
 9	[AUSTIN]	ao s t ax n
-9	[AUSTRALIA]	ao s t r ey l y ax
-9	[AUSTRIAN]	ao s t r iy ax n
-9	[AUTHOR]	ao th er
-9	[AUTOMATON]	ao t aa m ax t aa n
-9	[AVAILABILITY]	ax v ey l ax b ih l ax dx iy
-9	[AVAILABLE]	ax v ey l ax b ax l
-9	[AVERAGE]	ae v er ix jh
-9	[AVERSION]	ax v er zh ax n
-9	[AVIACION]	ey v iy ey sh ax n
-9	[AVIS]	ey v ix s
 9	[AVIV]	aa v iy v
-9	[AWAKEN]	ax w ey k ax n
-9	[AWAY]	ax w ey
-9	[AWE]	aa
-9	[AWKWARD]	aa k w er d
-9	[B]	b iy
-9	[BABBLING]	b ae b ax l ix ng
-9	[BABY]	b ey b iy
-9	[BACHELOR]	b ae ch ax l er
-9	[BACK]	b ae k
-9	[BACKS]	b ae k s
 9	[BAD]	b ae d
-9	[BAGS]	b ae g z
-9	[BAIRD]	b eh r d
-9	[BAKER]	b ey k er
-9	[BAKERSFIELD]	b ey k er z f iy l d
 9	[BALANCE]	b ae l ax n s
 9	[BALLS]	b ao l z
-9	[BALTIMORE]	b ao l t ax m ao r
-9	[BANCROFT]	b ae ng k r ao f t
-9	[BAND]	b ae n d
-9	[BANG]	b ae ng
-9	[BANGKOK]	b ae ng k aa k
-9	[BANGOR]	b ae ng g er
-9	[BANK]	b ae ng k
 9	[BANKRUPTCY]	b ae ng k r ax p s iy
 9	[BANKS]	b ae ng k s
 9	[BAPTIZED]	b ae p t ay z d
-9	[BARAJAS]	b aa r aa y aa z
-9	[BARBARA]	b aa r b er ax
-9	[BARBARIC]	b aa r b ae r ix k
-9	[BARCELONA]	b aa r s ix l ow n ax
 9	[BARED]	b eh r d
-9	[BARELY]	b eh r l iy
 9	[BARGAINS]	b aa r g ax n z
 9	[BARKED]	b aa r k t
-9	[BARN]	b aa r n
-9	[BASE]	b ey s
-9	[BASEL]	b aa z ax l
-9	[BASS]	b ae s
-9	[BASSETT]	b ae s ix t
-9	[BATH]	b ae th
-9	[BATHE]	b ey dh
-9	[BATTLE]	b ae dx ax l
-9	[BAY]	b ey
-9	[BE]	b iy
-9	[BEACH]	b iy ch
-9	[BEADY]	b iy dx iy
-9	[BEAMED]	b iy m d
-9	[BEAR]	b eh r
-9	[BEARD]	b ih r d
-9	[BEATING]	b iy dx ix ng
-9	[BEATLE]	b iy dx ax l
-9	[BEATRICE]	b iy ax t r ax s
-9	[BEATTY]	b iy dx iy
-9	[BEAU]	b ow
-9	[BEAUMONT]	b ow m ao n t
-9	[BEAUTIFUL]	b y uw dx ax f ax l
-9	[BEAUTY]	b y uw dx iy
-9	[BECAME]	b ix k ey m
 9	[BECAUSE]	b ix k ao z
 9	[BECOME]	b ix k ah m
-9	[BECOMING]	b ix k ah m ix ng
-9	[BED]	b eh d
-9	[BEEN]	b ih n
-9	[BEER]	b ih r
-9	[BEFORE]	b ix f ao r
-9	[BEG]	b eh g
-9	[BEGAN]	b ix g ae n
-9	[BEGIN]	b ix g ih n
-9	[BEGINNING]	b ix g ih n ix ng
-9	[BEGUN]	b ix g ah n
-9	[BEHALF]	b ix hh ae f
-9	[BEHIND]	b ix hh ay n d
-9	[BEHOLD]	b ix hh ow l d
-9	[BEIGE]	b ey zh
-9	[BEIJING]	b ey zh ih ng
-9	[BEING]	b iy ix ng
-9	[BELIEVE]	b ix l iy v
-9	[BELIEVES]	b ix l iy v z
-9	[BELIZE]	b eh l iy z
-9	[BELL]	b eh l
-9	[BELLINGHAM]	b eh l ix ng hh ae m
-9	[BELONGED]	b ix l ao ng d
-9	[BELOW]	b ix l ow
 9	[BELT]	b eh l t
 9	[BELTRAN]	b eh l t r ax n
-9	[BEN]	b eh n
 9	[BEND]	b eh n d
-9	[BENDER]	b eh n d er
-9	[BENEATH]	b ix n iy th
-9	[BENNETT]	b eh n ax t
-9	[BENT]	b eh n t
-9	[BERGERON]	b er g er ao n
 9	[BERGSTROM]	b er g s t r aa m
-9	[BERLIN]	b er l ih n
-9	[BERN]	b er n
 9	[BESETTING]	b ix s eh dx ix ng
-9	[BESIDE]	b ix s ay d
-9	[BESIDES]	b ix s ay d z
-9	[BEST]	b eh s t
-9	[BET]	b eh t
-9	[BETHEL]	b eh th ax l
 9	[BETRAYAL]	b ix t r ey ax l
-9	[BETTER]	b eh dx er
-9	[BETWEEN]	b ix t w iy n
-9	[BEYOND]	b ix aa n d
-9	[BIANCA]	b ix aa ng k ax
-9	[BIG]	b ih g
 9	[BIG-FACE]	b ih g
 9	[BIGEYED]	b ih g ay d
-9	[BILL]	b ih l
-9	[BILLINGER]	b ih l ix ng er
-9	[BILLY]	b ih l iy
 9	[BIOLOGISTS]	b ay aa l ax jh ax s t s
-9	[BIRD]	b er d
-9	[BIRDS]	b er d z
-9	[BIRMINGHAM]	b er m ix ng hh ae m
-9	[BISMARCK]	b ih z m aa r k
-9	[BIT]	b ih t
-9	[BITTEN]	b ih t ax n
-9	[BIZARRE]	b ax z aa r
 9	[BLACK]	b l ae k
-9	[BLADE]	b l ey d
-9	[BLAME]	b l ey m
-9	[BLATANT]	b l ey t ax n t
 9	[BLESS]	b l eh s
-9	[BLESSING]	b l eh s ix ng
-9	[BLEW]	b l uw
-9	[BLIND]	b l ay n d
-9	[BLOCK]	b l aa k
-9	[BLOOD]	b l ah d
-9	[BLOT]	b l aa t
-9	[BLUE]	b l uw
 9	[BOARD]	b ao r d
-9	[BOAT]	b ow t
-9	[BOB]	b aa b
 9	[BODY]	b aa dx iy
-9	[BOGOTA]	b ow g ax t aa
-9	[BOHEMIAN]	b ow hh iy m iy ax n
 9	[BOILED]	b oy l d
 9	[BOILING]	b oy l ix ng
-9	[BOISE]	b oy z iy
 9	[BOMBAY]	b aa m b ey
-9	[BONANZA]	b ax n ae n z ax
-9	[BONE]	b ow n
-9	[BOOK]	b uh k
-9	[BOOKENDS]	b uh k eh n d z
 9	[BOOKINGS]	b uh k ix ng z
-9	[BOOKKEEPER]	b uh k k iy p er
-9	[BOOKS]	b uh k s
 9	[BORE]	b ao r
-9	[BOREALIS]	b ao r iy ae l ax s
 9	[BORED]	b ao r d
-9	[BORN]	b ao r n
-9	[BORROWING]	b aa r ow ix ng
-9	[BOSOM]	b uh z ax m
-9	[BOSTON]	b aa s t ax n
-9	[BOTH]	b ow th
 9	[BOUGHT]	b aa t
 9	[BOUNDARIES]	b aw n d er iy z
-9	[BOURGEOIS]	b uh r zh w aa
-9	[BOW]	b aw
-9	[BOWED]	b aw d
-9	[BOWL]	b ow l
-9	[BOWS]	b aw z
-9	[BOX]	b aa k s
-9	[BOY]	b oy
-9	[BOYS]	b oy z
-9	[BOZEMAN]	b ow z m ax n
-9	[BRADLEY]	b r ae d l iy
-9	[BRAIN]	b r ey n
-9	[BRANCH]	b r ae n ch
 9	[BRAND]	b r ae n d
-9	[BREAK]	b r ey k
-9	[BREAST]	b r eh s t
-9	[BREATH]	b r eh th
-9	[BREATHE]	b r iy dh
 9	[BREED]	b r iy d
-9	[BRENTWOOD]	b r eh n t w uh d
-9	[BRIAN]	b r ay ax n
-9	[BRIBERY]	b r ay b er iy
-9	[BRIDGE]	b r ih jh
 9	[BRIDGEPORT]	b r ih jh p ao r t
-9	[BRIGHT]	b r ay t
-9	[BRIGHTEN]	b r ay t ax n
 9	[BRIGHTENING]	b r ay t ax n ix ng
-9	[BRIGHTNESS]	b r ay t n ax s
-9	[BRING]	b r ih ng
-9	[BRINGING]	b r ih ng ix ng
-9	[BRINKER]	b r ih ng k er
 9	[BRISTOL]	b r ih s t ax l
-9	[BRITAIN]	b r ih t ax n
-9	[BRITISH]	b r ih dx ix sh
-9	[BROACH]	b r ow ch
 9	[BRODIE'S]	b r ow dx iy z
-9	[BROKAW]	b r ow k ao
-9	[BROKE]	b r ow k
 9	[BROKEN]	b r ow k ax n
-9	[BROKEN-TOOTH]	b r ow k ax n t uw th
-9	[BROODED]	b r uw dx ix d
-9	[BROOKHAVEN]	b r uh k hh ey v ax n
-9	[BROUGHT]	b r ao t
-9	[BROUHAHA]	b r uw hh aa hh aa
-9	[BROWNSVILLE]	b r aw n z v ix l
-9	[BRUSSELS]	b r ah s ax l z
-9	[BRUTE]	b r uw t
-9	[BRYAN]	b r ay ax n
-9	[BUCOLIC]	b y uw k aa l ix k
-9	[BUDAPEST]	b uw dx ax p eh s t
-9	[BUDGET]	b ah jh ix t
-9	[BUENOS]	b w ey n ow s
-9	[BUFFALO]	b ah f ax l ow
 9	[BUGGY]	b ah g iy
-9	[BUILD]	b ih l d
-9	[BUILT]	b ih l t
-9	[BULKHEADS]	b ah l k hh eh d z
-9	[BULLHEADS]	b uh l hh eh d z
-9	[BURBANK]	b er b ae ng k
-9	[BURIED]	b eh r iy d
-9	[BURKE]	b er k
-9	[BURLINGTON]	b er l ix ng t ax n
-9	[BURN]	b er n
-9	[BURNED]	b er n d
-9	[BURNERS]	b er n er z
-9	[BURNING]	b er n ix ng
-9	[BURNT]	b er n t
 9	[BURST]	b er s t
-9	[BURSTING]	b er s t ix ng
-9	[BUSBOYS]	b ah s b oy z
-9	[BUSH]	b uh sh
-9	[BUSINESS]	b ih z n ax s
-9	[BUSTLE]	b ah s ax l
-9	[BUT]	b ah t
-9	[BUTCHER]	b uh ch er
-9	[BUTCHERS]	b uh ch er z
-9	[BUY]	b ay
 9	[BY]	b ay
-9	[BYE]	b ay
-9	[C]	s iy
-9	[C'S]	s iy z
-9	[CABIN]	k ae b ax n
-9	[CAIRO]	k ay r ow
-9	[CALCULATED]	k ae l k y ax l ey dx ax d
-9	[CALCUTTA]	k ae l k ah dx ax
-9	[CALF]	k ae f
-9	[CALGARY]	k ae l g er iy
-9	[CALIFORNIA]	k ae l ax f ao r n y ax
-9	[CALL]	k ao l
-9	[CALLAN]	k ae l ax n
-9	[CALLED]	k ao l d
-9	[CALLING]	k ao l ix ng
-9	[CALLS]	k ao l z
-9	[CALM]	k aa m
 9	[CALMLY]	k aa m l iy
 9	[CALVIN]	k ae l v ax n
-9	[CAME]	k ey m
 9	[CAMERON]	k ae m er ax n
-9	[CAMILLE]	k ax m iy l
 9	[CAMP]	k ae m p
 9	[CAMPAIGN]	k ae m p ey n
-9	[CAN]	k ae n
-9	[CAN'T]	k ae n t
 9	[CANADA]	k ae n ax dx ax
 9	[CANADIAN]	k ax n ey dx iy ax n
-9	[CANALS]	k ax n ae l z
-9	[CANARIA]	k ax n eh r iy ax
-9	[CANCELLED]	k ae n s ax l d
-9	[CANCUN]	k ae ng k ax n
-9	[CANDIDATE]	k ae n d ax dx ey t
 9	[CANDIDATES]	k ae n d ax dx ey t s
-9	[CANE]	k ey n
 9	[CANE-GRASS]	k ey n g r ae s
-9	[CANNIBAL]	k ae n ax b ax l
-9	[CANNOT]	k ae n aa t
 9	[CANOE]	k ax n uw
-9	[CANT]	k ae n t
-9	[CANVAS]	k ae n v ax s
 9	[CANYON]	k ae n y ax n
-9	[CANYONS]	k ae n y ax n z
-9	[CAPE]	k ey p
-9	[CAPITAL]	k ae p ax dx ax l
-9	[CAPTAIN]	k ae p t ax n
-9	[CAPTURED]	k ae p ch er d
-9	[CAR]	k aa r
-9	[CARACAS]	k er aa k ax s
-9	[CARCASS]	k aa r k ax s
-9	[CARE]	k eh r
-9	[CARED]	k eh r d
-9	[CAREFUL]	k eh r f ax l
-9	[CAREFULLY]	k eh r f ax l iy
-9	[CARGO]	k aa r g ow
 9	[CARLSBAD]	k aa r l s b ae d
-9	[CARLTON]	k aa r l t ax n
-9	[CARNEGIE]	k aa r n ax g iy
 9	[CAROLINA]	k eh r ax l ay n ax
-9	[CARRAN]	k aa r aa n
-9	[CARRIED]	k ae r iy d
-9	[CARRY]	k ae r iy
-9	[CARRYING]	k ae r iy ix ng
-9	[CARS]	k aa r z
-9	[CARTRIDGE]	k aa r t r ax jh
-9	[CASABLANCA]	k ae s ax b l ae ng k ax
-9	[CASCADES]	k ae s k ey d z
-9	[CASE]	k ey s
-9	[CASES]	k ey s ax z
-9	[CASH]	k ae sh
-9	[CASHIER]	k ae sh ih r
-9	[CASINO]	k ax s iy n ow
-9	[CASINOS]	k ax s iy n ow z
 9	[CASPER]	k ae s p er
-9	[CASTOR]	k ae s t er
-9	[CASUAL]	k ae zh ax w ax l
-9	[CASUALTY]	k ae zh ax w ax l t iy
 9	[CATCH]	k ae ch
 9	[CATHAY]	k ae th ey
-9	[CAUGHT]	k aa t
-9	[CAUSED]	k aa z d
-9	[CAUSES]	k aa z ax z
-9	[CAUTION]	k aa sh ax n
-9	[CAUTIOUSLY]	k ao sh ax s l iy
-9	[CAVES]	k ey v z
-9	[CENTER]	s eh n t er
 9	[CENTRALESDE]	s eh n t r aa l ey z d
 9	[CENTS]	s eh n t s
-9	[CENTURIES]	s eh n ch er iy z
-9	[CENTURY]	s eh n ch er iy
-9	[CERTAIN]	s er t ax n
-9	[CERTAINLY]	s er t ax n l iy
 9	[CERTITUDE]	s er dx ax t uw d
-9	[CHAIN]	ch ey n
-9	[CHAINS]	ch ey n z
-9	[CHAIR]	ch eh r
-9	[CHAIRS]	ch eh r z
-9	[CHALLENGE]	ch ae l ax n jh
-9	[CHALLENGED]	ch ae l ax jh d
-9	[CHAMPAGNE]	sh ae m p ey n
-9	[CHAMPION]	ch ae m p iy ax n
-9	[CHAMPLAIN]	sh ae m p l ey n
-9	[CHANCE]	ch ae n s
-9	[CHANCES]	ch ae n s ax z
-9	[CHANGE]	ch ey n jh
-9	[CHANGED]	ch ey n jh d
-9	[CHANGING]	ch ey n jh ix ng
-9	[CHAOTIC]	k ey aa dx ix k
-9	[CHAP]	ch ae p
-9	[CHAPEL]	ch ae p ax l
 9	[CHARCOAL]	ch aa r k ow l
-9	[CHARGE]	ch aa r jh
 9	[CHARGED]	ch aa r jh d
-9	[CHARLES]	ch aa r l z
 9	[CHARLESTON]	ch aa r l s t ax n
-9	[CHARLEY]	ch aa r l iy
-9	[CHARLOTTE]	sh aa r l ax t
-9	[CHARLOTTESVILLE]	sh aa r l ax t s v ih l
 9	[CHARMED]	ch aa r m d
-9	[CHASED]	ch ey s t
-9	[CHATTANOOGA]	ch ae t ax n uw g ax
-9	[CHATTERING]	ch ae dx er ix ng
-9	[CHAUFFEUR]	sh ow f er
-9	[CHAUNCEY]	ch ao n s iy
-9	[CHEAP]	ch iy p
 9	[CHEAPER]	ch iy p er
-9	[CHEAPEST]	ch iy p ax s t
-9	[CHECKED]	ch eh k t
-9	[CHEER]	ch ih r
-9	[CHEERFUL]	ch ih r f ax l
-9	[CHEMICAL]	k eh m ax k ax l
-9	[CHEROKEE]	ch eh r ax k iy
-9	[CHEW]	ch uw
 9	[CHEWING]	ch uw ix ng
-9	[CHICAGO]	sh ax k aa g ow
-9	[CHICO]	ch iy k ow
-9	[CHIEF]	ch iy f
-9	[CHIEFLY]	ch iy f l iy
-9	[CHIEFS]	ch iy f s
 9	[CHILD]	ch ay l d
-9	[CHILDREN]	ch ih l d r ax n
 9	[CHILL]	ch ih l
-9	[CHILLY]	ch ih l iy
-9	[CHIMPANZEE]	ch ix m p ae n z iy
 9	[CHINA]	ch ay n ax
-9	[CHINESE]	ch ay n iy z
 9	[CHINESE-ENGLISHMAN]	ch ay n iy z ih ng g l ix sh m ax n
-9	[CHINOOK]	sh ix n uh k
-9	[CHIPS]	ch ih p s
 9	[CHIRP]	ch er p
-9	[CHIVALRY]	sh ih v ax l r iy
-9	[CHOICE]	ch oy s
-9	[CHOKING]	ch ow k ix ng
-9	[CHOOSE]	ch uw z
 9	[CHOSE]	ch ow z
-9	[CHOSEN]	ch ow z ax n
 9	[CHRISTI]	k r ih s t iy
-9	[CHRISTMAS]	k r ih s m ax s
-9	[CHRISTY]	k r ih s t iy
-9	[CHUCKLED]	ch ah k ax l d
-9	[CHURCHES]	ch er ch ax z
-9	[CHURCHILL]	ch er ch ix l
-9	[CIGARETTE]	s ih g er eh t
-9	[CIGARS]	s ix g aa r z
-9	[CINCINNATI]	s ih n s ax n ae dx iy
-9	[CIRCUMFERENCE]	s er k ah m f r ax n s
 9	[CITIES]	s ih dx iy z
 9	[CITY]	s ih dx iy
-9	[CIVILIZATION]	s ih v ax l ix z ey sh ax n
-9	[CLAIM]	k l ey m
-9	[CLARION]	k l eh r iy ax n
-9	[CLARKSBURG]	k l aa r k s b er g
-9	[CLASS]	k l ae s
-9	[CLAUDIA]	k l ao dx iy ax
 9	[CLAUDINE]	k l ao d iy n
-9	[CLAW]	k l ao
-9	[CLEAN]	k l iy n
-9	[CLEARER]	k l ih r er
 9	[CLEARLY]	k l ih r l iy
 9	[CLEVELAND]	k l iy v l ax n d
 9	[CLICK]	k l ih k
-9	[CLIMBED]	k l ay m d
-9	[CLOSE]	k l ow s
-9	[CLOSED]	k l ow z d
-9	[CLOSELY]	k l ow s l iy
-9	[CLOSER]	k l ow s er
-9	[CLOSING]	k l ow z ix ng
-9	[CLOTH]	k l ao th
-9	[CLOTHES]	k l ow dh z
-9	[CLUB]	k l ah b
 9	[CLUBBED]	k l ah b d
-9	[CLUBS]	k l ah b z
-9	[CLUCKING]	k l ah k ix ng
 9	[CLUSTERED]	k l ah s t er d
-9	[CLUTCHED]	k l ah ch t
-9	[CLUTCHING]	k l ah ch ix ng
 9	[COACH]	k ow ch
-9	[COAL]	k ow l
-9	[COARSELY]	k ao r s l iy
-9	[COAST]	k ow s t
-9	[COAT]	k ow t
-9	[COBB]	k aa b
-9	[COCKY]	k aa k iy
 9	[COCOANUTS]	k ow k ow n ah t s
-9	[COD]	k aa d
-9	[CODE]	k ow d
-9	[COFFEE]	k aa f iy
 9	[COILS]	k oy l z
-9	[COIN]	k oy n
 9	[COINCIDENCE]	k ow ih n s ix d ax n s
 9	[COLD]	k ow l d
 9	[COLIN]	k ow l ix n
-9	[COLLECTION]	k ax l eh k sh ax n
-9	[COLLEGE]	k aa l ix jh
-9	[COLOMBIA]	k ax l ah m b iy ax
-9	[COLONY]	k aa l ax n iy
-9	[COLOR]	k ah l er
 9	[COLORADO]	k aa l er aa dx ow
-9	[COLORATION]	k ah l er ey sh ax n
-9	[COLORED]	k ah l er d
-9	[COLORS]	k ah l er z
-9	[COLT]	k ow l t
-9	[COLUMBIA]	k ax l ah m b iy ax
-9	[COLUMBUS]	k ax l ah m b ax s
-9	[COM]	k aa m
-9	[COMBINATION]	k aa m b ax n ey sh ax n
-9	[COME]	k ah m
-9	[COMES]	k ah m z
-9	[COMFORT]	k ah m f er t
-9	[COMFORTABLY]	k ah m f er dx ax b l iy
-9	[COMING]	k ah m ix ng
 9	[COMMA]	k aa m ax
 9	[COMMAND]	k ax m ae n d
-9	[COMMANDED]	k ax m ae n d ax d
-9	[COMMANDS]	k ax m ae n d z
-9	[COMMENT]	k aa m eh n t
-9	[COMMENTS]	k aa m eh n t s
-9	[COMMERCIAL]	k ax m er sh ax l
-9	[COMMISSIONER]	k ax m ih sh ax n er
-9	[COMMITTED]	k ax m ih dx ax d
-9	[COMMON]	k aa m ax n
 9	[COMMONWEALTH]	k aa m ax n w eh l th
-9	[COMMUNICATOR]	k ax m y uw n ax k ey dx er
-9	[COMPANIA]	k ax m p ey n iy ax
-9	[COMPANION]	k ax m p ae n y ax n
-9	[COMPANION'S]	k ax m p ae n y ax n z
-9	[COMPANY]	k ah m p ax n iy
-9	[COMPARATIVELY]	k ax m p eh r ax dx ix v l iy
-9	[COMPARED]	k ax m p eh r d
-9	[COMPASS]	k ah m p ax s
-9	[COMPETITION]	k aa m p ax t ih sh ax n
 9	[COMPLAIN]	k ax m p l ey n
-9	[COMPLETE]	k ax m p l iy t
-9	[COMPLETED]	k ax m p l iy dx ax d
-9	[COMPLETELY]	k ax m p l iy t l iy
-9	[COMPLICATED]	k aa m p l ax k ey dx ax d
-9	[COMPOSED]	k ax m p ow z d
-9	[COMPOUND]	k aa m p aw n d
-9	[CONCERNED]	k ax n s er n d
 9	[CONCLUDE]	k ax n k l uw d
-9	[CONCRETE]	k ax n k r iy t
-9	[CONDUCT]	k ax n d ah k t
-9	[CONFERENCE]	k aa n f er ax n s
 9	[CONFERRING]	k ax n f er ix ng
-9	[CONFESSED]	k ax n f eh s t
-9	[CONFIDE]	k ax n f ay d
-9	[CONFIDENCE]	k aa n f ax d ax n s
-9	[CONFIRMED]	k ax n f er m d
-9	[CONFUSED]	k ax n f y uw z d
-9	[CONJURED]	k aa n jh er d
-9	[CONKLIN]	k aa ng k l ix n
 9	[CONNECT]	k ax n eh k t
 9	[CONNECTICUT]	k ax n eh dx ax k ax t
-9	[CONNECTING]	k ax n eh k t ix ng
-9	[CONNECTS]	k ax n eh k t s
-9	[CONNELLY]	k aa n ax l iy
-9	[CONQUER]	k aa ng k er
-9	[CONRAD]	k aa n r ae d
 9	[CONSCIOUSNESS]	k aa n sh ax s n ax s
 9	[CONSEQUENT]	k aa n s ax k w ax n t
 9	[CONSIDERABLY]	k ax n s ih dx er ax b l iy
-9	[CONSIDERED]	k ax n s ih dx er d
-9	[CONSIDERING]	k ax n s ih dx er ix ng
 9	[CONSTANTINIDES]	k ax n s t ae n t ix n iy d iy z
 9	[CONSTITUTE]	k aa n s t ax t uw t
-9	[CONSTRUCTED]	k ax n s t r ah k t ax d
-9	[CONSUMED]	k ax n s uw m d
-9	[CONTACT]	k aa n t ae k t
-9	[CONTEMPLATED]	k aa n t ax m p l ey dx ix d
-9	[CONTEMPLATING]	k aa n t ax m p l ey dx ix ng
-9	[CONTENDED]	k ax n t eh n d ix d
 9	[CONTINENTAL]	k aa n t ax n eh n t ax l
-9	[CONTINUALLY]	k ax n t ih n y uw ax l iy
-9	[CONTINUE]	k ax n t ih n y uw
-9	[CONTINUED]	k ax n t ih n y uw d
 9	[CONTRACTED]	k aa n t r ae k t ax d
-9	[CONTRIBUTED]	k ax n t r ih b y uw dx ix d
-9	[CONTROL]	k ax n t r ow l
-9	[CONVERSATION]	k aa n v er s ey sh ax n
-9	[CONVINCED]	k ax n v ih n s t
-9	[CONVINCING]	k ax n v ih n s ix ng
-9	[COOK]	k uh k
-9	[COOKING]	k uh k ix ng
-9	[COOLER]	k uw l er
-9	[COOPERATIVE]	k ow aa p er ey dx ix v
-9	[COPENHAGEN]	k ow p ax n hh ey g ax n
-9	[COPIES]	k aa p iy z
-9	[COPPER]	k aa p er
 9	[COPPER-GREEN]	k aa p er g r iy n
-9	[COPYRIGHT]	k aa p iy r ay t
-9	[CORDS]	k ao r d z
-9	[CORNER]	k ao r n er
 9	[CORNING]	k ao r n ix ng
-9	[CORPUS]	k ao r p ax s
-9	[CORRECT]	k er eh k t
-9	[CORRECTED]	k er eh k t ax d
-9	[CORRECTION]	k er eh k sh ax n
-9	[CORRY]	k ao r iy
-9	[COST]	k aa s t
-9	[COSTUME]	k aa s t uw m
-9	[COTTONWOODS]	k aa t ax n w uh d z
-9	[COULD]	k uh d
-9	[COULDN'T]	k uh d ax n t
-9	[COUNT]	k aw n t
 9	[COUNTING]	k aw n t ix ng
-9	[COUNTLESS]	k aw n t l ax s
-9	[COUNTRIES]	k ah n t r iy z
-9	[COUNTRY]	k ah n t r iy
-9	[COUNTY]	k aw n t iy
-9	[COUPLE]	k ah p ax l
-9	[COURSE]	k ao r s
-9	[COURTYARD]	k ao r t y aa r d
-9	[COW]	k aw
-9	[CRACK]	k r ae k
-9	[CRADLE]	k r ey dx ax l
-9	[CRASH]	k r ae sh
-9	[CRASHED]	k r ae sh t
-9	[CRATER]	k r ey dx er
-9	[CRAWLED]	k r ao l d
-9	[CREATIVE]	k r iy ey dx ix v
 9	[CREEK]	k r iy k
 9	[CREEPING]	k r iy p ix ng
-9	[CREST]	k r eh s t
-9	[CRIB]	k r ih b
 9	[CRICKETS]	k r ih k ax t s
-9	[CRIED]	k r ay d
-9	[CRITERIA]	k r ay t ih r iy ax
-9	[CRITICIZED]	k r ih dx ax s ay z d
-9	[CROOKED-LEG]	k r uh k ax d l eh g
-9	[CROPS]	k r aa p s
-9	[CROSSE]	k r aa s
 9	[CROUCHED]	k r aw ch t
-9	[CRUMBLE]	k r ah m b ax l
-9	[CRUSE]	k r uw z
-9	[CRUSHED]	k r ah sh t
-9	[CRY]	k r ay
-9	[CRYPTIC]	k r ih p t ix k
-9	[CUBA]	k y uw b ax
 9	[CUBE]	k y uw b
-9	[CULTURE]	k ah l ch er
 9	[CUMULATIVE]	k y uw m y ax l ax dx ix v
-9	[CUNNING]	k ah n ix ng
-9	[CURE]	k y uh r
-9	[CURING]	k y uh r ix ng
-9	[CURIOSITY]	k y uh r iy aa s ax dx iy
-9	[CURIOUS]	k y uh r iy ax s
-9	[CURIOUSLY]	k y uh r iy ax s l iy
-9	[CURLING]	k er l ix ng
 9	[CURLY]	k er l iy
-9	[CURRENT]	k er ax n t
-9	[CURRENTLY]	k er ax n t l iy
-9	[CURRENTS]	k er ax n t s
-9	[CURRY]	k ah r iy
-9	[CURSED]	k er s t
-9	[CUT]	k ah t
-9	[CUTTERS]	k ah dx er z
-9	[CYCLING]	s ay k ax l ix ng
-9	[CYNTHIA]	s ih n th iy ax
 9	[D]	d iy
-9	[DA]	d aa
 9	[DADDY]	d ae dx iy
-9	[DAILY]	d ey l iy
-9	[DAKOTA]	d ax k ow dx ax
-9	[DALLAS]	d ae l ax s
 9	[DAN]	d ae n
 9	[DANFORTH]	d ae n f er th
 9	[DANGER]	d ey n jh er
-9	[DANTE]	d aa n t ey
-9	[DAPHNE]	d ae f n iy
-9	[DARK]	d aa r k
-9	[DARKER]	d aa r k er
-9	[DARKNESS]	d aa r k n ax s
-9	[DARNED]	d aa r n d
-9	[DARPA]	d aa r p ax
-9	[DARTED]	d aa r dx ix d
-9	[DASHBOARD]	d ae sh b ao r d
-9	[DASHED]	d ae sh t
-9	[DATABASE]	d ey dx ax b ey s
-9	[DATE]	d ey t
 9	[DATED]	d ey dx ix d
 9	[DATES]	d ey t s
 9	[DAUGHTRY]	d ao t r iy
-9	[DAUGHTRY'S]	d ao t r iy z
-9	[DAVE]	d ey v
-9	[DAWN]	d ao n
 9	[DAY]	d ey
-9	[DAYLIGHT]	d ey l ay t
 9	[DAYLIGHT'S]	d ey l ay t s
-9	[DAYS]	d ey z
-9	[DAYTON]	d ey t ax n
-9	[DAYTONA]	d ey t ow n ax
-9	[DE]	d iy
-9	[DEAD]	d eh d
-9	[DEAF]	d eh f
-9	[DEAR]	d ih r
-9	[DEAREST]	d ih r ax s t
-9	[DEATH]	d eh th
-9	[DEBUTANTE]	d eh b y ax t aa n t
 9	[DECEITFUL]	d ax s iy t f ax l
-9	[DECEMBER]	d ix s eh m b er
-9	[DECIDE]	d ix s ay d
-9	[DECLINE]	d ix k l ay n
 9	[DEED]	d iy d
-9	[DEEP]	d iy p
 9	[DEEPENED]	d iy p ax n d
-9	[DEEPER]	d iy p er
-9	[DEFECT]	d iy f eh k t
-9	[DEFY]	d ix f ay
-9	[DEGREE]	d ix g r iy
 9	[DEL]	d eh l
-9	[DELAWARE]	d eh l ax w eh r
-9	[DELHI]	d eh l iy
-9	[DELIBERATELY]	d ix l ih b er ax t l iy
-9	[DELICATE]	d eh l ax k ax t
-9	[DELIGHTED]	d ix l ay dx ax d
-9	[DELIVERED]	d ix l ih v er d
-9	[DELTA]	d eh l t ax
-9	[DELUGED]	d eh l y uw jh d
-9	[DENIAL]	d ix n ay ax l
-9	[DENNIN'S]	d eh n ix n z
-9	[DENVER]	d eh n v er
-9	[DEPART]	d ix p aa r t
 9	[DEPARTING]	d ix p aa r dx ix ng
-9	[DEPARTS]	d ix p aa r t s
-9	[DEPARTURE]	d ix p aa r ch er
 9	[DEPENDS]	d ix p eh n d z
-9	[DEPEW]	d ax p y uw
 9	[DEPORTATION]	d iy p ao r t ey sh ax n
-9	[DEPOT]	d iy p ow
-9	[DEPTH]	d eh p th
-9	[DERIVATIVE]	d er ih v ax dx ix v
-9	[DES]	d eh
-9	[DESERT]	d eh z er t
-9	[DESERTED]	d ix z er dx ix d
-9	[DESIRE]	d ix z ay er
-9	[DESTINATION]	d eh s t ax n ey sh ax n
-9	[DESTINATIONS]	d eh s t ax n ey sh ax n z
-9	[DESTINED]	d eh s t ix n d
-9	[DESTROY]	d ix s t r oy
-9	[DESTROYED]	d ix s t r oy d
-9	[DESTROYING]	d ix s t r oy ix ng
-9	[DETAIL]	d ix t ey l
-9	[DETAILS]	d ix t ey l z
-9	[DETERMINED]	d ix t er m ax n d
-9	[DETERRENT]	d ix t er r ax n t
-9	[DETROIT]	d ix t r oy t
-9	[DEVELOPED]	d ix v eh l ax p t
-9	[DEVELOPMENT]	d ix v eh l ax p m ax n t
-9	[DEVELOPMENTS]	d ix v eh l ax p m ax n t s
-9	[DEVIL]	d eh v ax l
-9	[DEVISED]	d ix v ay z d
-9	[DEVOTION]	d ix v ow sh ax n
 9	[DEXTER]	d eh k s t er
 9	[DHABI]	d aa b iy
-9	[DIAGNOSIS]	d ay ax g n ow s ax s
-9	[DIAL]	d ay ax l
-9	[DIALOG]	d ay ax l ao g
-9	[DIAMETER]	d ay ae m ax dx er
-9	[DICK]	d ih k
-9	[DID]	d ih d
 9	[DIDN'T]	d ih d ax n t
-9	[DIE]	d ay
-9	[DIED]	d ay d
-9	[DIEGO]	d ix ey g ow
 9	[DIFFERENCE]	d ih f er ax n s
-9	[DIFFERENT]	d ih f er ax n t
-9	[DIFFICULTY]	d ih f ax k ax l t iy
-9	[DIG]	d ih g
 9	[DIGEST]	d ay jh eh s t
 9	[DIGIT]	d ih jh ax t
-9	[DIGITAL]	d ih jh ax dx ax l
-9	[DILIGENT]	d ih l ix jh ax n t
-9	[DINA]	d iy n ax
-9	[DINE]	d ay n
-9	[DINNER]	d ih n er
-9	[DIRECT]	d er eh k t
-9	[DIRECTION]	d er eh k sh ax n
-9	[DIRK]	d er k
-9	[DIRT]	d er t
-9	[DISAFFECTION]	d ih s ax f eh k sh ax n
 9	[DISAPPOINTMENT]	d ih s ax p oy n t m ax n t
-9	[DISCONCERTING]	d ih s k ax n s er dx ix ng
-9	[DISCOURAGED]	d ix s k er ax jh d
-9	[DISCOVERY]	d ix s k ah v er iy
-9	[DISCUSS]	d ix s k ah s
-9	[DISCUSSING]	d ix s k ah s ix ng
-9	[DISCUSSION]	d ix s k ah sh ax n
-9	[DISEASE]	d ix z iy z
-9	[DISGUST]	d ix s g ah s t
-9	[DISGUSTED]	d ix s g ah s t ax d
 9	[DISHEVELED]	d ix sh eh v ax l d
-9	[DISILLUSIONMENT]	d ih s ix l uw zh ax n m ax n t
-9	[DISINCLINED]	d ih s ix n k l ay n d
-9	[DISLOCATED]	d ih s l ow k ey dx ix d
-9	[DISMAY]	d ix s m ey
-9	[DISMISSED]	d ix s m ih s t
-9	[DISNEY]	d ih z n iy
-9	[DISPUTE]	d ix s p y uw t
-9	[DISTANCE]	d ih s t ax n s
-9	[DISTINGUISHES]	d ix s t ih ng g w ix sh ix z
-9	[DISTRESSED]	d ix s t r eh s t
-9	[DISTRICT]	d ih s t r ix k t
-9	[DISTURB]	d ix s t er b
-9	[DIVERGENCE]	d ay v er jh ax n s
-9	[DIVERSION]	d ay v er zh ax n
-9	[DIVINE]	d ix v ay n
-9	[DIVISION]	d ix v ih zh ax n
-9	[DO]	d uw
-9	[DOANE'S]	d ow n z
-9	[DOCTOR]	d aa k t er
-9	[DOCTRINE]	d aa k t r ax n
-9	[DOCUMENT]	d aa k y ax m eh n t
-9	[DOE]	d ow
-9	[DOES]	d ah z
 9	[DOG]	d ao g
-9	[DOGGONE]	d ao g ao n
-9	[DOGS]	d aa g z
-9	[DOING]	d uw ix ng
-9	[DOLLAR]	d aa l er
-9	[DOLLARS]	d aa l er z
-9	[DOMESTIC]	d ax m eh s t ix k
-9	[DOMINATED]	d aa m ax n ey dx ax d
-9	[DON'T]	d ow n t
 9	[DONE]	d ah n
-9	[DONKEY]	d aa ng k iy
-9	[DONNA]	d aa n ax
 9	[DOOR]	d ao r
-9	[DORAN]	d ao r ae n
-9	[DORVAL]	d ao r v ax l
-9	[DOT]	d aa t
-9	[DOUBLE]	d ah b ax l
-9	[DOUBLETREE]	d ah b ax l t r iy
-9	[DOUBLING]	d ah b ax l ix ng
-9	[DOUBLY]	d ah b l iy
-9	[DOUBT]	d aw t
-9	[DOUBTLESS]	d aw t l ax s
 9	[DOUGLAS]	d ah g l ax s
-9	[DOWN]	d aw n
 9	[DOWNTOWN]	d aw n t aw n
-9	[DOZEN]	d ah z ax n
-9	[DR]	d r ay v
-9	[DRANK]	d r ae ng k
-9	[DRAW]	d r ao
-9	[DRAWBACK]	d r ao b ae k
-9	[DRAWLED]	d r ao l d
-9	[DRAWN]	d r ao n
-9	[DREADFULLY]	d r eh d f ax l iy
-9	[DREAMS]	d r iy m z
-9	[DRENCHED]	d r eh n ch t
 9	[DRESS]	d r eh s
-9	[DRESSED]	d r eh s t
 9	[DREW]	d r uw
 9	[DRIPPING]	d r ih p ix ng
-9	[DRIVER]	d r ay v er
 9	[DROPPED]	d r aa p t
-9	[DROPS]	d r aa p s
 9	[DROUGHT]	d r aw t
-9	[DROWNED]	d r aw n d
-9	[DROWNING]	d r aw n ix ng
 9	[DRUMMING]	d r ah m ix ng
-9	[DRUNK]	d r ah ng k
-9	[DRURY]	d r uw r iy
 9	[DRY]	d r ay
 9	[DUALITY]	d uw ae l ax dx iy
-9	[DUBAI]	d uw b ay
-9	[DUBLIN]	d ah b l ix n
-9	[DUCKS]	d ah k s
-9	[DUKE]	d uw k
 9	[DULLES]	d ah l ax s
-9	[DULUTH]	d ax l uw th
-9	[DUNBAR]	d ah n b aa r
-9	[DUNHAM]	d ah n ax m
-9	[DUPLICITY]	d uw p l ih s ix dx iy
 9	[DURBAN]	d er b ax n
 9	[DURHAM]	d er ax m
-9	[DURING]	d uh r ix ng
-9	[DUSSELDORF]	d uw s ax l d ao r f
-9	[DUTCH]	d ah ch
-9	[DUTY]	d uw dx iy
-9	[DWELLER]	d w eh l er
 9	[DYSINGER]	d ih s ix n jh er
-9	[E]	iy
 9	[EACH]	iy ch
-9	[EAGERLY]	iy g er l iy
-9	[EARLIER]	er l iy er
-9	[EARLIEST]	er l iy ax s t
-9	[EARLY]	er l iy
-9	[EARNED]	er n d
-9	[EARNINGS]	er n ix ng z
-9	[EARS]	ih r z
-9	[EARTH]	er th
-9	[EASILY]	iy z ax l iy
-9	[EAST]	iy s t
 9	[EASTERN]	iy s t er n
 9	[EASY]	iy z iy
-9	[EAT]	iy t
-9	[EATEN]	iy t ax n
-9	[EATERS]	iy dx er z
-9	[EATING]	iy dx ix ng
-9	[ECONO]	ix k aa n ow
-9	[ECONOLODGE]	ix k aa n ow l aa jh
-9	[ECONOLODGES]	ix k aa n ow l aa jh ax z
-9	[ECSTATICALLY]	eh k s t ae dx ix k l iy
-9	[EDGE]	eh jh
-9	[EDGED]	eh jh d
-9	[EDGES]	eh jh ax z
-9	[EDINBURGH]	eh d ax n b er ow
-9	[EDITORIAL]	eh dx ax t ao r iy ax l
-9	[EDMONTON]	eh d m ax n t ax n
 9	[EE]	iy
-9	[EFFECT]	ix f eh k t
-9	[EFFECTIVE]	ix f eh k t ix v
-9	[EFFICIENTLY]	ix f ih sh ax n t l iy
-9	[EFFORT]	eh f er t
-9	[EFFORTS]	eh f er t s
-9	[EGG]	eh g
-9	[EGGSHELL]	eh g sh eh l
-9	[EGO]	iy g ow
-9	[EGYPT]	iy jh ax p t
-9	[EIGHT]	ey t
-9	[EIGHTEEN]	ey t iy n
-9	[EIGHTEENTH]	ey t iy n th
-9	[EIGHTH]	ey t th
-9	[EIGHTY]	ey dx iy
 9	[EILEEN]	ay l iy n
 9	[EILEEN'S]	ay l iy n z
-9	[EITHER]	iy dh er
-9	[EL]	eh l
-9	[ELABORATED]	ix l ae b er ey dx ax d
 9	[ELAINE]	ix l ey n
-9	[ELAM]	eh l ax m
-9	[ELAPSED]	ix l ae p s t
-9	[ELDORADO]	eh l d er aa dx ow
-9	[ELECTRICITY]	ix l eh k t r ih s ax dx iy
-9	[ELEVEN]	ix l eh v ax n
 9	[ELEVENTH]	ix l eh v ax n th
-9	[ELI]	iy l ay
 9	[ELIJAH]	eh l ay jh ax
-9	[ELKO]	eh l k ow
 9	[ELM]	eh l m
-9	[ELMER]	eh l m er
-9	[ELMIRA]	eh l m ay r ax
-9	[ELONGATED]	ix l ao ng g ey dx ax d
-9	[ELSE]	eh l s
-9	[ELSEWHERE]	eh l s w eh r
 9	[EM]	ax m
-9	[EM]	eh m
-9	[EMAIL]	ix m ey l
-9	[EMBASSY]	eh m b ax s iy
-9	[EMERGING]	ix m er jh ix ng
-9	[EMIRATES]	eh m er ax t s
-9	[EMITTED]	ix m ih dx ax d
-9	[EMITTING]	ix m ih dx ix ng
 9	[EMMA]	eh m ax
-9	[EMOTION]	ix m ow sh ax n
-9	[EMPIRE]	eh m p ay er
-9	[EMPIRICIST]	ix m p ih r ax s ax s t
-9	[EMPLOYERS]	eh m p l oy er z
-9	[EMPLOYMENT]	eh m p l oy m ax n t
-9	[EMPTIED]	eh m p t iy d
-9	[EMPTY]	eh m p t iy
-9	[ENCOURAGE]	eh n k er ix jh
 9	[ENCOURAGED]	eh n k er ix jh d
-9	[END]	eh n d
-9	[ENDOWMENT]	eh n d aw m ax n t
-9	[ENDS]	eh n d z
-9	[ENDURE]	eh n d y uh r
-9	[ENDURED]	eh n d y uh r d
-9	[ENEMIES]	eh n ax m iy z
-9	[ENERGY]	eh n er jh iy
-9	[ENGAGE]	eh n g ey jh
-9	[ENGAGED]	eh n g ey jh d
-9	[ENGAGEMENTS]	eh n g ey jh m ax n t s
-9	[ENGINEER]	eh n jh ax n ih r
-9	[ENGLAND]	ih ng g l ax n d
-9	[ENGLISH]	ih ng g l ix sh
-9	[ENJOY]	eh n jh oy
-9	[ENOUGH]	ix n ah f
 9	[ENRAGED]	eh n r ey jh d
-9	[ENTER]	eh n t er
-9	[ENTERED]	eh n t er d
-9	[ENTERPRISE]	eh n t er p r ay z
-9	[ENTERS]	eh n t er z
-9	[ENTHUSIASM]	ix n th uw z iy ae z ax m
-9	[ENTHUSIAST]	eh n th uw z iy ae s t
-9	[EQUALLY]	iy k w ax l iy
-9	[ERASE]	ix r ey s
-9	[ERIC]	eh r ix k
 9	[ERIE]	ih r iy
-9	[ERNEST]	er n ax s t
-9	[ERNEST'S]	er n ax s t s
-9	[ERNESTS]	er n ax s t s
-9	[ERRATIC]	ix r ae dx ix k
 9	[ERROR]	eh r er
-9	[ERWIN]	er w ix n
-9	[ESCAPE]	ix s k ey p
 9	[ESKENAZI]	ey s k ey n aa z iy
-9	[ESPECIALLY]	ax s p eh sh l iy
-9	[ESSENTIALLY]	ix s eh n sh ax l iy
-9	[ESTABLISHED]	ix s t ae b l ix sh t
-9	[ESTABLISHMENT]	ix s t ae b l ix sh m ax n t
 9	[ETC]	eh t s eh dx er ax
-9	[ETHEL]	eh th ax l
-9	[ETHER]	iy th er
-9	[ETHICS]	eh th ix k s
-9	[EUGENE]	y uw jh iy n
-9	[EURASIAN]	y uh r ey zh ix n
-9	[EUROPA]	y uh r ow p ax
-9	[EUROPE]	y uh r ax p
-9	[EVALUATION]	ix v ae l y uw ey sh ax n
-9	[EVANSVILLE]	eh v ax n z v ih l
-9	[EVEN]	iy v ix n
 9	[EVENING]	iy v n ix ng
-9	[EVENTUALITY]	ax v eh n ch uw ae l ix dx iy
-9	[EVER]	eh v er
-9	[EVERY]	eh v er iy
-9	[EVERYTHING]	eh v r iy th ih ng
-9	[EVERYWHERE]	eh v r iy w eh r
-9	[EVIDENCES]	eh v ax d ax n s ax z
-9	[EXACTLY]	ix g z ae k t l iy
-9	[EXAMPLE]	ix g z ae m p ax l
-9	[EXCEPT]	ix k s eh p t
-9	[EXCEPTION]	ix k s eh p sh ax n
-9	[EXCHANGED]	ix k s ch ey n jh d
-9	[EXCITED]	ix k s ay dx ax d
-9	[EXCITING]	ix k s ay dx ix ng
-9	[EXCLAIMED]	ix k s k l ey m d
-9	[EXCLAMATIONS]	eh k s k l ax m ey sh ax n z
-9	[EXCUSE]	ix k s k y uw s
-9	[EXHAUSTED]	ix g z ao s t ax d
-9	[EXISTENCE]	eh g z ih s t ax n s
-9	[EXISTS]	ix g z ih s t s
-9	[EXIT]	eh g z ix t
-9	[EXPECT]	ix k s p eh k t
-9	[EXPECTANCY]	ix k s p eh k t ax n s iy
-9	[EXPECTED]	ix k s p eh k t ax d
-9	[EXPENSIVE]	ix k s p eh n s ix v
-9	[EXPERIENCE]	ix k s p ih r iy ax n s
-9	[EXPLAIN]	ix k s p l ey n
-9	[EXPLAINED]	ix k s p l ey n d
-9	[EXPLANATION]	eh k s p l ax n ey sh ax n
-9	[EXPLOSION]	ix k s p l ow zh ax n
-9	[EXPOTEL]	ix k s p ow t eh l
-9	[EXPRESS]	ix k s p r eh s
 9	[EXTENDED]	ix k s t eh n d ax d
-9	[EXTRA]	eh k s t r ax
 9	[EYE]	ay
-9	[EYE'S]	ay z
-9	[EYES]	ay z
 9	[F]	eh f
-9	[FACE]	f ey s
-9	[FACED]	f ey s t
-9	[FACES]	f ey s ax z
 9	[FACING]	f ey s ix ng
-9	[FACTOR'S]	f ae k t er z
-9	[FACTS]	f ae k t s
 9	[FAILED]	f ey l d
-9	[FAINTLY]	f ey n t l iy
 9	[FAIR]	f eh r
-9	[FAIRBANKS]	f eh r b ax ng k s
-9	[FAIRFIELD]	f eh r f iy l d
-9	[FAIRLY]	f eh r l iy
-9	[FAIRMONT]	f eh r m aa n t
 9	[FAITH]	f ey th
 9	[FALL]	f ao l
-9	[FALLEN]	f aa l ax n
-9	[FALLS]	f ao l z
-9	[FALTER]	f ao l t er
-9	[FALTERED]	f aa l t er d
-9	[FAMILY]	f ae m ax l iy
-9	[FAMINE]	f ae m ax n
-9	[FANG]	f ae ng
-9	[FANGS]	f ae ng z
-9	[FAR]	f aa r
 9	[FARGO]	f aa r g ow
-9	[FARMER]	f aa r m er
-9	[FARMING]	f aa r m ix ng
-9	[FARMINGTON]	f aa r m ix ng t ax n
 9	[FARO]	f eh r ow
-9	[FARTHER]	f aa r dh er
-9	[FASCINATE]	f ae s ax n ey t
-9	[FAST]	f ae s t
-9	[FASTIDIOUS]	f ae s t ih dx iy ax s
-9	[FAT]	f ae t
 9	[FATE]	f ey t
 9	[FATHER]	f aa dh er
 9	[FATHER'S]	f aa dh er z
-9	[FATHERS]	f aa dh er z
-9	[FATHOM]	f ae dh ax m
-9	[FAULT]	f ao l t
-9	[FAVOR]	f ey v er
-9	[FAYETTEVILLE]	f ey eh t v ih l
-9	[FE]	f ey
 9	[FEAR]	f ih r
-9	[FEARING]	f ih r ix ng
 9	[FEAST]	f iy s t
 9	[FEATHERED]	f eh dh er d
-9	[FEATURES]	f iy ch er z
-9	[FEBRUARY]	f eh b y ax w eh r iy
-9	[FEEBLY]	f iy b l iy
-9	[FEEL]	f iy l
-9	[FEELINGS]	f iy l ix ng z
-9	[FEELS]	f iy l z
-9	[FEET]	f iy t
-9	[FELL]	f eh l
-9	[FELLOW]	f eh l ow
-9	[FELT]	f eh l t
-9	[FEMALE]	f iy m ey l
-9	[FENCE]	f eh n s
-9	[FENDER]	f eh n d er
-9	[FER]	f er
 9	[FERGUSON]	f er g ax s ax n
-9	[FERNANDO]	f er n ae n d ow
-9	[FERRY]	f eh r iy
-9	[FEW]	f y uw
 9	[FIFTEEN]	f ix f t iy n
-9	[FIFTEENTH]	f ix f t iy n th
-9	[FIFTH]	f ih f th
-9	[FIFTY]	f ih f t iy
-9	[FIGHT]	f ay t
-9	[FIGHTER]	f ay dx er
-9	[FIGHTING]	f ay dx ix ng
-9	[FIGURING]	f ih g y er ix ng
-9	[FILL]	f ih l
 9	[FILLED]	f ih l d
-9	[FILLING]	f ih l ix ng
-9	[FINALITY]	f ay n ae l ax dx iy
-9	[FINALLY]	f ay n ax l iy
-9	[FIND]	f ay n d
 9	[FINDING]	f ay n d ix ng
-9	[FINDS]	f ay n d z
 9	[FINE]	f ay n
-9	[FINGER]	f ih ng g er
-9	[FINGERS]	f ih ng g er z
-9	[FINGERTIPS]	f ih ng g er t ih p s
-9	[FINISH]	f ih n ix sh
-9	[FINISHED]	f ih n ix sh t
-9	[FINN]	f ih n
-9	[FIRE]	f ay er
-9	[FIRED]	f ay er d
 9	[FIREMEN]	f ay r m ax n
-9	[FIRST]	f er s t
-9	[FISH]	f ih sh
-9	[FISHED]	f ih sh t
-9	[FISHER]	f ih sh er
-9	[FISTS]	f ih s t s
-9	[FIT]	f ih t
-9	[FITZHUGH]	f ix t s hh y uw
-9	[FIUMICINO]	f iy uw m ax ch iy n ow
-9	[FIVE]	f ay v
 9	[FIXED]	f ih k s t
-9	[FLAGS]	f l ae g z
-9	[FLAMED]	f l ey m d
-9	[FLAMING]	f l ey m ix ng
 9	[FLASH]	f l ae sh
-9	[FLASHES]	f l ae sh ix z
-9	[FLASHING]	f l ae sh ix ng
-9	[FLAT]	f l ae t
-9	[FLEECE]	f l iy s
-9	[FLESH]	f l eh sh
 9	[FLESH-POTS]	f l eh sh p aa t s
-9	[FLEW]	f l uw
 9	[FLIGHT]	f l ay t
-9	[FLIGHTS]	f l ay t s
-9	[FLINT]	f l ih n t
-9	[FLOODS]	f l ah d z
-9	[FLOOR]	f l ao r
-9	[FLORIDA]	f l ao r ax dx ax
 9	[FLOWER]	f l aw er
-9	[FLUFFS]	f l ah f s
-9	[FLUNG]	f l ah ng
 9	[FLUSH]	f l ah sh
 9	[FLUTTERED]	f l ah dx er d
-9	[FLY]	f l ay
-9	[FLYING]	f l ay ix ng
-9	[FOE]	f ow
 9	[FOGGY]	f aa g iy
 9	[FOILED]	f oy l d
-9	[FOLK]	f ow k
-9	[FOLLOW]	f aa l ow
-9	[FOLLOWED]	f aa l ow d
-9	[FOLLOWING]	f aa l ow ix ng
-9	[FOND]	f aa n d
-9	[FOOD]	f uw d
-9	[FOOL]	f uw l
-9	[FOOLERY]	f uw l er iy
 9	[FOOLISH]	f uw l ix sh
-9	[FOOLISHLY]	f uw l ix sh l iy
-9	[FOOLISHNESS]	f uw l ix sh n ax s
-9	[FOOT]	f uh t
-9	[FOOTPRINTS]	f uh t p r ih n t s
-9	[FOR]	f ao r
-9	[FORBIDDEN]	f ao r b ix d ax n
-9	[FORCE]	f ao r s
-9	[FORCES]	f ao r s ix z
-9	[FORD]	f ao r d
-9	[FOREBODING]	f ao r b ow dx ix ng
-9	[FORECASTING]	f ao r k ae s t ix ng
-9	[FOREFINGER]	f ao r f ih ng g er
-9	[FOREGO]	f ao r g ow
-9	[FOREHEAD]	f ao r hh eh d
-9	[FOREMAN]	f ao r m ax n
 9	[FOREMOST]	f ao r m ow s t
-9	[FORESAW]	f ao r s ao
 9	[FOREST]	f ao r ax s t
-9	[FORETELL]	f ao r t eh l
 9	[FOREVER]	f er eh v er
-9	[FORGET]	f er g eh t
 9	[FORGOT]	f er g aa t
-9	[FORGOTTEN]	f er g aa t ax n
-9	[FORM]	f ao r m
-9	[FORMAT]	f ao r m ae t
-9	[FORMED]	f ao r m d
-9	[FORSYTH]	f ao r s ay th
-9	[FORT]	f ao r t
-9	[FORTH]	f ao r th
-9	[FORTY]	f ao r dx iy
 9	[FORWARD]	f ao r w er d
-9	[FOUND]	f aw n d
-9	[FOUNDATION]	f aw n d ey sh ax n
-9	[FOUNDATIONS]	f aw n d ey sh ax n z
-9	[FOUR]	f ao r
 9	[FOURTEEN]	f ao r t iy n
-9	[FOURTEENTH]	f ao r t iy n th
 9	[FOURTH]	f ao r th
-9	[FRAGMENT]	f r ae g m ax n t
-9	[FRAGMENTS]	f r ae g m ax n t s
-9	[FRANCE]	f r ae n s
-9	[FRANCISCO]	f r ae n s ih s k ow
-9	[FRANCOIS]	f r aa n s w aa
 9	[FRANKFURT]	f r ae ng k f er t
 9	[FRANZ]	f r ae n z
-9	[FRASER]	f r ey z er
-9	[FRAUD]	f r ao d
 9	[FREDERKING]	f r eh dx er k ih ng
 9	[FREE]	f r iy
-9	[FREED]	f r iy d
-9	[FREELY]	f r iy l iy
-9	[FREIGHT]	f r ey t
-9	[FRESH]	f r eh sh
 9	[FRESHLY]	f r eh sh l iy
 9	[FRESNO]	f r eh z n ow
 9	[FRIDAY]	f r ay dx iy
-9	[FRIEND]	f r eh n d
-9	[FRIENDS]	f r eh n d z
 9	[FRIENDSHIP]	f r eh n d sh ix p
-9	[FRIGHT]	f r ay t
-9	[FROM]	f r ah m
-9	[FRONTIER]	f r ax n t ih r
-9	[FROST]	f r ao s t
-9	[FROWNED]	f r aw n d
-9	[FRUITS]	f r uw t s
-9	[FUERTEVENTURA]	f w eh r dx ey v eh n ch er ax
-9	[FULFILLED]	f uh l f ih l d
-9	[FULL]	f uh l
 9	[FUNDING]	f ah n d ix ng
-9	[FUNK]	f ah ng k
-9	[FUR]	f er
-9	[FURS]	f er z
 9	[FURTHER]	f er dh er
-9	[FUTILE]	f y uw dx ax l
-9	[FUTURE]	f y uw ch er
-9	[G]	jh iy
-9	[GABRIEL]	g ey b r iy ax l
-9	[GAD]	g ae d
-9	[GAINED]	g ey n d
-9	[GAINESVILLE]	g ey n z v ih l
 9	[GALLINA]	g aa l iy n ax
-9	[GAME]	g ey m
 9	[GANG]	g ae ng
-9	[GARB]	g aa r b
 9	[GARDEN]	g aa r d ax n
 9	[GARDENS]	g aa r d ax n z
-9	[GARY]	g eh r iy
-9	[GATEWAY]	g ey t w ey
-9	[GATORADE]	g ae dx er ey d
 9	[GATWICK]	g ae t w ih k
-9	[GAULLE]	g ao l
-9	[GAUNT]	g ao n t
 9	[GAVE]	g ey v
-9	[GAZE]	g ey z
 9	[GAZEBO]	g ey z iy b ow
-9	[GAZED]	g ey z d
-9	[GEESE]	g iy s
-9	[GENDARME]	zh aa n d aa r m
-9	[GENERAL]	jh eh n er ax l
-9	[GENERATION]	jh eh n er ey sh ax n
-9	[GENIUS]	jh iy n y ax s
 9	[GENTLEMEN]	jh eh n t ax l m ix n
-9	[GENTLY]	jh eh n t l iy
-9	[GENUINE]	jh eh n y ax w ax n
-9	[GEORGE]	jh ao r jh
 9	[GEORGIA]	jh ao r jh ax
-9	[GERMANY]	jh er m ax n iy
-9	[GET]	g eh t
 9	[GETS]	g eh t s
-9	[GHOST]	g ow s t
-9	[GIANT]	jh ay ax n t
-9	[GIGANTIC]	jh ay g ae n t ix k
-9	[GIRL]	g er l
-9	[GIRL'S]	g er l z
-9	[GIRLS]	g er l z
-9	[GIVE]	g ih v
-9	[GIVEN]	g ih v ax n
-9	[GIVETH]	g ih v eh th
-9	[GIVING]	g ih v ix ng
 9	[GIVING-FEAST]	g ih v ix ng f iy s t
-9	[GLAD]	g l ae d
-9	[GLANCED]	g l ae n s t
-9	[GLASGOW]	g l ae s k ow
-9	[GLEAMED]	g l iy m d
-9	[GLIMMER]	g l ih m er
-9	[GLIMPSED]	g l ih m p s t
-9	[GLOBAL]	g l ow b ax l
-9	[GLOOM]	g l uw m
-9	[GLORIOUS]	g l ao r iy ax s
 9	[GLOW]	g l ow
-9	[GO]	g ow
-9	[GOAT]	g ow t
-9	[GOD]	g aa d
-9	[GODS]	g aa d z
-9	[GODSEND]	g aa d s eh n d
-9	[GOING]	g ow ix ng
 9	[GOLD]	g ow l d
-9	[GOLD-GREEN]	g ow l d g r iy n
-9	[GOLLY]	g aa l iy
-9	[GONE]	g ao n
-9	[GOOD]	g uh d
-9	[GOODBY]	g uh d b ay
-9	[GOODBYE]	g uh d b ay
-9	[GOODS]	g uh d z
-9	[GOOSE]	g uw s
-9	[GOOSE'S]	g uw s ax z
-9	[GOOSES]	g uw s ax z
 9	[GOPI]	g ow b iy
-9	[GOSH]	g aa sh
-9	[GOT]	g aa t
-9	[GOTHENBURG]	g ow t ax n b er g
-9	[GOUGED]	g aw jh d
-9	[GOV]	g ah v
-9	[GRAB]	g r ae b
-9	[GRACE]	g r ey s
-9	[GRADUATED]	g r ae jh uw ey dx ix d
-9	[GRAIN]	g r ey n
-9	[GRAN]	g r ae n
-9	[GRAND]	g r ae n d
-9	[GRASS]	g r ae s
-9	[GRAVEL]	g r ae v ax l
-9	[GRAY]	g r ey
 9	[GREAT]	g r ey t
-9	[GREATER]	g r ey dx er
-9	[GREATLY]	g r ey t l iy
 9	[GREECE]	g r iy s
-9	[GREEK]	g r iy k
-9	[GREEKS]	g r iy k s
-9	[GREEN]	g r iy n
-9	[GREENSBORO]	g r iy n z b er r ow
-9	[GREENVILLE]	g r iy n v ix l
-9	[GREENWOOD]	g r iy n w uh d
-9	[GREETING]	g r iy dx ix ng
-9	[GREETINGS]	g r iy dx ix ng z
-9	[GREG]	g r eh g
-9	[GREGSON]	g r eh g s ax n
-9	[GREW]	g r uw
-9	[GRIMLY]	g r ih m l iy
-9	[GRIPPED]	g r ih p t
-9	[GROOMED]	g r uw m d
 9	[GROTON]	g r aa t ax n
 9	[GROUND]	g r aw n d
-9	[GROUP]	g r uw p
-9	[GROW]	g r ow
 9	[GROWING]	g r ow ix ng
-9	[GROWLED]	g r aw l d
-9	[GROWN]	g r ow n
-9	[GROWTH]	g r ow th
-9	[GRUB]	g r ah b
 9	[GRUB-THIEF]	g r ah b th iy f
-9	[GRUB-THIEVES]	g r ah b th iy v z
-9	[GRUDGES]	g r ah jh ix z
 9	[GRUMBLING]	g r ah m b ax l ix ng
-9	[GUADALAJARA]	g w aa d ah l ax hh aa r ax
 9	[GUAM]	g w aa m
-9	[GUARDIA]	g w aa r dx iy ax
-9	[GUARDS]	g aa r d z
-9	[GUESS]	g eh s
-9	[GUESSED]	g eh s t
 9	[GUEST]	g eh s t
-9	[GUIDED]	g ay dx ax d
-9	[GUILT]	g ih l t
-9	[GULFPORT]	g ah l f p ao r t
-9	[GUOJUN]	g y ax jh aa n
 9	[GURGLING]	g er g ax l ix ng
-9	[GYMNASTICS]	jh ix m n ae s t ix k s
-9	[H]	ey ch
-9	[HAD]	hh ae d
-9	[HAHNFELD]	hh aa n f iy l d
-9	[HAIR]	hh eh r
 9	[HALF]	hh ae f
-9	[HALF-COCK]	hh ae f k aa k
-9	[HALFWAY]	hh ae f w ey
-9	[HALIFAX]	hh ae l ix f ae k s
-9	[HALL]	hh ao l
 9	[HALLUCINATION]	hh ax l uw s ax n ey sh ax n
 9	[HAMBURG]	hh ae m b er g
-9	[HAMPSHIRE]	hh ae m p sh er
-9	[HAMPTON]	hh ae m p t ax n
-9	[HAND]	hh ae n d
 9	[HANDED]	hh ae n d ax d
-9	[HANDKERCHIEF]	hh ae ng k er ch ix f
-9	[HANDLE]	hh ae n d ax l
-9	[HANDLED]	hh ae n d ax l d
-9	[HANDS]	hh ae n d z
-9	[HANEDA]	hh ax n ey dx ax
-9	[HANG]	hh ae ng
-9	[HANGERS]	hh ae ng er z
-9	[HANNA]	hh ae n ax
-9	[HANRAHAN'S]	hh ae n r ax hh ae n z
-9	[HANS]	hh aa n s
-9	[HANSMA]	hh ae n s m ax
-9	[HAPPENED]	hh ae p ax n d
 9	[HAPPY]	hh ae p iy
-9	[HARBOR]	hh aa r b er
-9	[HARDING]	hh aa r dx ix ng
 9	[HARDLY]	hh aa r d l iy
-9	[HARLEY]	hh aa r l iy
-9	[HARLINGEN]	hh aa r l ix ng ax n
-9	[HARNISH]	hh aa r n ix sh
-9	[HARP]	hh aa r p
-9	[HARPOON]	hh aa r p uw n
-9	[HARRIS]	hh eh r ix s
-9	[HARRISBURG]	hh ae r ix s b er g
-9	[HARRISON]	hh eh r ix s ax n
 9	[HARRY]	hh eh r iy
-9	[HARSH]	hh aa r sh
-9	[HARTFORD]	hh aa r t f er d
-9	[HARTSFIELD]	hh aa r t s f iy l d
-9	[HAS]	hh ae z
-9	[HASTE]	hh ey s t
-9	[HASTENED]	hh ey s ax n d
 9	[HAT]	hh ae t
-9	[HATCHER]	hh ae ch er
-9	[HATCHET]	hh ae ch ax t
 9	[HATE]	hh ey t
-9	[HATRED]	hh ey t r ax d
-9	[HAUPTMANN]	hh aw p t m ax n
-9	[HAVE]	hh ae v
-9	[HAVEN]	hh ey v ax n
 9	[HAVING]	hh ae v ix ng
-9	[HAWAII]	hh ax w ay iy
 9	[HAWAIIAN]	hh ax w ay ax n
-9	[HAWK]	hh ao k
 9	[HE]	hh iy
-9	[HE'LL]	hh iy l
 9	[HE'S]	hh iy z
-9	[HEAD]	hh eh d
-9	[HEADED]	hh eh dx ax d
-9	[HEADS]	hh eh d z
-9	[HEALTHFUL]	hh eh l th f ax l
 9	[HEAR]	hh ih r
 9	[HEARD]	hh er d
-9	[HEARING]	hh ih r ix ng
-9	[HEART]	hh aa r t
-9	[HEARTS]	hh aa r t s
-9	[HEARTY]	hh aa r dx iy
-9	[HEAT]	hh iy t
-9	[HEATHROW]	hh iy th r ow
-9	[HEAVENS]	hh eh v ax n z
-9	[HEAVY]	hh eh v iy
-9	[HEBREWS]	hh iy b r uw z
-9	[HEEL]	hh iy l
-9	[HELD]	hh eh l d
-9	[HELEN]	hh eh l ax n
 9	[HELL]	hh eh l
-9	[HELLO]	hh ax l ow
-9	[HELMET]	hh eh l m ax t
-9	[HELMSLEY]	hh eh l m z l iy
-9	[HELP]	hh eh l p
-9	[HELPFUL]	hh eh l p f ax l
 9	[HELPLESS]	hh eh l p l ax s
-9	[HELPLESSLY]	hh eh l p l ax s l iy
 9	[HELSINKI]	hh eh l s ix ng k iy
-9	[HELTER-SKELTER]	hh eh l t er s k eh l t er
-9	[HENRY]	hh eh n r iy
 9	[HER]	hh er
 9	[HERE]	hh ih r
-9	[HERE'S]	hh ih r z
-9	[HERITAGE]	hh eh r ax dx ax jh
-9	[HERS]	hh er z
-9	[HERSELF]	hh er s eh l f
-9	[HERTZ]	hh eh r t s
-9	[HESITATED]	hh eh z ix t ey dx ix d
-9	[HICKORY]	hh ih k er iy
-9	[HID]	hh ih d
-9	[HIDE]	hh ay d
-9	[HIDING]	hh ay dx ix ng
-9	[HIGH]	hh ay
-9	[HILL]	hh ih l
-9	[HILO]	hh iy l ow
-9	[HILTON]	hh ih l t ax n
 9	[HIM]	hh ih m
-9	[HIMSELF]	hh ix m s eh l f
-9	[HIP]	hh ih p
-9	[HIRSCHMAN]	hh er sh m ax n
-9	[HIS]	hh ih z
-9	[HISTORY]	hh ih s t er iy
-9	[HITCH]	hh ih ch
-9	[HITTING]	hh ih dx ix ng
 9	[HMMM]	hh m
-9	[HOIST]	hh oy s t
-9	[HOLD]	hh ow l d
-9	[HOLE]	hh ow l
-9	[HOLIDAY]	hh aa l ax d ey
-9	[HOLIDAYS]	hh aa l ax d ey z
-9	[HOLLYWOOD]	hh aa l iy w uh d
-9	[HOLMES]	hh ow m z
-9	[HOME]	hh ow m
-9	[HOMESICK]	hh ow m s ih k
-9	[HOMESTEAD]	hh ow m s t eh d
-9	[HONG]	hh ao ng
-9	[HONOLULU]	hh aa n ax l uw l uw
 9	[HONOROF]	aa n er ao f
-9	[HOOD]	hh uh d
-9	[HOOFS]	hh uh f s
-9	[HOPE]	hh ow p
-9	[HOPKINS]	hh aa p k ix n z
-9	[HORIZON]	hh er ay z ax n
-9	[HORRIFIED]	hh ao r ax f ay d
 9	[HORROR]	hh ao r er
-9	[HORSE]	hh ao r s
-9	[HORSES]	hh ao r s ax z
-9	[HOSTILITIES]	hh aa s t ih l ax dx iy z
-9	[HOT]	hh aa t
-9	[HOTEL]	hh ow t eh l
-9	[HOTELS]	hh ow t eh l z
 9	[HOTLINE]	hh aa t l ay n
-9	[HOTLY]	hh aa t l iy
-9	[HOTMAIL]	hh aa t m ey l
-9	[HOUGHTON]	hh ao t ax n
-9	[HOUR]	aw er
-9	[HOURS]	aw er z
-9	[HOUSE]	hh aw s
-9	[HOUSES]	hh aw s ax z
-9	[HOUSTON]	hh y uw s t ax n
-9	[HOW]	hh aw
-9	[HOWARD]	hh aw er d
-9	[HOWEVER]	hh aw eh v er
-9	[HOWISON]	hh aw ix s ax n
-9	[HUBBELL]	hh ah b ax l
-9	[HUDSON]	hh ah d s ax n
-9	[HUGE]	hh y uw jh
-9	[HUGHIE]	hh y uw iy
-9	[HUM]	hh ah m
-9	[HUMAN]	hh y uw m ax n
-9	[HUMANITY]	hh y uw m ae n ix dx iy
-9	[HUMP]	hh ah m p
-9	[HUNDRED]	hh ah n d r ax d
-9	[HUNDREDS]	hh ah n d r ax d z
-9	[HUNDREDTH]	hh ah n d r ax d th
-9	[HUNGARIAN]	hh ax ng g eh r iy ax n
-9	[HUNGRY]	hh ah ng g r iy
-9	[HUNT]	hh ah n t
-9	[HUNTED]	hh ah n t ax d
-9	[HUNTERS]	hh ah n t er z
-9	[HURLED]	hh er l d
-9	[HURRAH]	hh uh r aa
-9	[HURRIED]	hh er iy d
-9	[HURRY]	hh er iy
-9	[HURT]	hh er t
 9	[HUSH]	hh ah sh
-9	[HUTCHINSON]	hh ah ch ix n s ax n
 9	[HYANNIS]	hh ay ae n ix s
 9	[HYATT]	hh ay ax t
-9	[HYENA]	hh ay iy n ax
-9	[HYPOCRITE]	hh ih p ax k r ih t
-9	[HYPOTHESIS]	hh ay p aa th ax s ax s
-9	[HYSTERIA]	hh ix s t eh r iy ax
-9	[I]	ay
 9	[I'D]	ay d
-9	[I'LL]	ay l
-9	[I'M]	ay m
 9	[I'VE]	ay v
-9	[IBERIA]	ay b ih r iy ax
-9	[IBIZA]	ay b iy z ax
-9	[ICE]	ay s
-9	[ID]	ih d
-9	[IDAHO]	ay dx ax hh ow
 9	[IDEA]	ay d iy ax
-9	[IDEAL]	ay d iy l
-9	[IDEALISM]	ay d iy l ix z ax m
-9	[IDEALS]	ay d iy l z
-9	[IDEAS]	ay d iy ax z
-9	[IDENTIFIED]	ay d eh n t ax f ay d
-9	[IF]	ih f
-9	[IGNORING]	ix g n ao r ix ng
-9	[ILENE]	ih l iy n
-9	[ILL]	ih l
-9	[ILLINOIS]	ih l ax n oy
-9	[ILLUMINATING]	ix l uw m ax n ey dx ix ng
-9	[ILLUSION]	ix l uw zh ax n
-9	[IM]	ih m
-9	[IMAGINE]	ix m ae jh ax n
 9	[IMAGINING]	ix m ae jh ax n ix ng
-9	[IMMACULATE]	ix m ae k y uw l ix t s
-9	[IMMEDIATELY]	ix m iy dx iy ax t l iy
-9	[IMMERSION]	ix m er zh ax n
-9	[IMMORTAL]	ix m ao r dx ax l
-9	[IMPERIAL]	ix m p ih r iy ax l
-9	[IMPLIED]	ix m p l ay d
-9	[IMPORT]	ix m p ao r t
-9	[IMPOSITION]	ih m p ax z ih sh ax n
-9	[IMPOSSIBLE]	ix m p aa s ax b ax l
 9	[IMPRESSION]	ix m p r eh sh ax n
-9	[IMPROVE]	ix m p r uw v
-9	[IMPROVEMENT]	ix m p r uw v m ax n t
-9	[IMPULSE]	ih m p ax l s
-9	[IN]	ix n
-9	[INADEQUACY]	ix n ae dx ix k w ax s iy
-9	[INCH]	ih n ch
-9	[INCIDENT]	ih n s ax d ax n t
-9	[INCIDENTAL]	ih n s ix d eh n t ax l
-9	[INCLUDE]	ix n k l uw d
-9	[INCLUDED]	ix n k l uw dx ax d
-9	[INCOME]	ih n k ah m
 9	[INCONVENIENCE]	ih n k ax n v iy n y ax n s
 9	[INCORPORATED]	ix n k ao r p er ey dx ax d
-9	[INCORRECT]	ix n k er eh k t
 9	[INCREASES]	ix n k r iy s ax z
 9	[INCREASING]	ix n k r iy s ix ng
-9	[INCUBATION]	ih ng k y uw b ey sh ax n
-9	[INDEED]	ix n d iy d
-9	[INDIA]	ih n d iy ax
-9	[INDIAN]	ih n d iy ax n
-9	[INDIANA]	ih n d iy ae n ax
 9	[INDIANAPOLIS]	ih n d iy ax n ae p ax l ix s
-9	[INDIANS]	ih n d iy ax n z
-9	[INDIGESTION]	ih n d ay jh eh s ch ax n
-9	[INDIVIDUALISM]	ih n d ix v ix d uw ax l ih z ax m
-9	[INDIVIDUALLY]	ih n d ix v ih jh uw ax l iy
-9	[INDUCED]	ix n d uw s t
-9	[INFERNAL]	ix n f er n ax l
-9	[INFLUENCE]	ih n f l uw ax n s
-9	[INFO]	ih n f ow
 9	[INFORMATION]	ih n f er m ey sh ax n
 9	[INK]	ih ng k
-9	[INN]	ih n
-9	[INSIDIOUS]	ix n s ih dx iy ax s
-9	[INSINUATE]	ix n s ih n y uw ey t
-9	[INSTANT]	ih n s t ax n t
-9	[INSTEAD]	ix n s t eh d
-9	[INSTINCT]	ih n s t ix ng k t
-9	[INSTITUTED]	ih n s t ax t uw dx ax d
-9	[INSTRUCTIONS]	ix n s t r ah k sh ax n z
-9	[INSULT]	ix n s ah l t
-9	[INTELLECTUAL]	ih n t ax l eh k ch uw ax l
-9	[INTELLIGENT]	ix n t eh l ax jh ax n t
-9	[INTENTION]	ix n t eh n ch ax n
-9	[INTERACTION]	ih n t er ae k sh ax n
 9	[INTERCONTINENTAL]	ih n t er k aa n t ax n eh n t ax l
-9	[INTERESTED]	ih n t r ax s t ax d
-9	[INTERESTING]	ih n t r ax s t ix ng
 9	[INTERMITTENT]	ih n t er m ih t ax n t
-9	[INTERNATIONAL]	ih n t er n ae sh ax n ax l
-9	[INTERRUPT]	ih n t er ah p t
 9	[INTERRUPTED]	ih n t er ah p t ix d
-9	[INTERURBAN]	ih n t er er b ax n
-9	[INTERVALS]	ih n t er v ax l z
 9	[INTO]	ix n t uw
-9	[INTOXICATED]	ix n t aa k s ax k ey dx ax d
-9	[INTRODUCED]	ih n t r ax d uw s t
-9	[INVADERS]	ix n v ey dx er z
-9	[INVESTING]	ix n v eh s t ix ng
-9	[INWARDLY]	ih n w er d l iy
-9	[INYOKERN]	ih n y ow k er n
-9	[IOTA]	ay ow dx ax
-9	[IOWA]	ay ax w ax
-9	[IRATE]	ay r ey t
-9	[IRON]	ay er n
-9	[IRRELEVANT]	ix r eh l ax v ax n t
-9	[IRRITATING]	ih r ax t ey dx ix ng
-9	[IRRITATION]	ih r ix t ey sh ax n
-9	[IRVINE]	er v ay n
-9	[IS]	ih z
-9	[ISAAC]	ay z ax k
-9	[ISLAND]	ay l ax n d
 9	[ISLANDS]	ay l ax n d z
 9	[ISLE]	ay l
-9	[ISSUE]	ih sh uw
 9	[ISSUED]	ih sh uw d
-9	[ISTANBUL]	ih s t aa n b uw l
-9	[IT]	ih t
-9	[IT'S]	ih t s
-9	[ITALIAN]	ix t ae l y ax n
-9	[ITCHY]	ih ch iy
-9	[ITHACA]	ih th ax k ax
-9	[ITINERARIES]	ay t ih n er eh r iy z
-9	[ITINERARY]	ay t ih n er eh r iy
-9	[ITS]	ih t s
-9	[ITSELF]	ix t s eh l f
 9	[IVORY]	ay v er iy
-9	[IZMIR]	ih z m ih r
-9	[J]	jh ey
-9	[JACK]	jh ae k
 9	[JACKET]	jh ae k ax t
-9	[JACKSON]	jh ae k s ax n
-9	[JACKSONVILLE]	jh ae k s ax n v ih l
-9	[JACOB]	jh ey k ax b
-9	[JACQUES]	zh aa k
-9	[JAGGED]	jh ae g d
-9	[JAIME]	hh ay m iy
-9	[JAMES]	jh ey m z
 9	[JAMESON]	jh ey m s ax n
-9	[JANA]	jh ae n ax
-9	[JANEIRO]	jh ax n eh r ow
-9	[JANUARY]	jh ae n y uw eh r iy
-9	[JAPAN]	jh ax p ae n
-9	[JAPANESE]	jh ae p ax n iy z
-9	[JARGON]	jh aa r g ax n
-9	[JAWS]	jh ao z
-9	[JAYS]	jh ey z
 9	[JEALOUSY]	jh eh l ax s iy
-9	[JEAN]	jh iy n
-9	[JEANNE]	jh iy n
 9	[JEANNE'S]	jh iy n z
-9	[JEFF]	jh eh f
-9	[JENNIFER]	jh eh n ax f er
-9	[JERK]	jh er k
-9	[JERRY]	jh eh r iy
 9	[JERSEY]	jh er z iy
-9	[JERUSALEM]	jh er uw s ax l ax m
-9	[JESSE]	jh eh s iy
-9	[JET]	jh eh t
-9	[JEWS]	jh uw z
-9	[JILL]	jh ih l
-9	[JIM]	jh ih m
-9	[JOAN]	jh ow n
-9	[JOB]	jh aa b
-9	[JOCK]	jh aa k
-9	[JOE]	jh ow
 9	[JOHANNES]	jh ow hh ae n ax s
 9	[JOHANNESBURG]	jh ow hh ae n ix s b er g
-9	[JOHN]	jh aa n
-9	[JOHNNY]	jh aa n iy
-9	[JOHNSON]	jh aa n s ax n
-9	[JOHNSONS]	jh aa n s ax n z
-9	[JOIN]	jh oy n
-9	[JOINED]	jh oy n d
 9	[JOISTS]	jh oy s t s
-9	[JOKING]	jh ow k ix ng
-9	[JONES]	jh ow n z
-9	[JOPLIN]	jh aa p l ix n
-9	[JOSE]	hh ow z ey
-9	[JOSEF]	jh ow s ax f
 9	[JOSHUA]	jh aa sh uw ax
-9	[JOURNEY]	jh er n iy
 9	[JOY]	jh oy
-9	[JOY-THRILL]	jh oy th r ih l
-9	[JOYOUS]	jh oy ax s
-9	[JOYRIDE]	jh oy r ay d
 9	[JOYS]	jh oy z
-9	[JUAN]	w aa n
-9	[JUDGE]	jh ah jh
-9	[JUDGMENT]	jh ah jh m ax n t
-9	[JULIEN]	jh uw l iy ax n
-9	[JULY]	jh uw l ay
-9	[JUNE]	jh uw n
-9	[JUNEAU]	jh uw n ow
-9	[JUNK]	jh ah ng k
-9	[JUNTA]	hh uh n t ax
-9	[JURISDICTION]	jh uh r ax s d ih k sh ax n
-9	[JURY]	jh uh r iy
-9	[JUST]	jh ah s t
-9	[JUVENILE]	jh uw v ax n ax l
-9	[K]	k ey
-9	[KAHULUI]	k ax hh uw l uw iy
-9	[KALAMAZOO]	k ae l ax m ax z uw
-9	[KANSAI]	k ae n s ay
 9	[KANSAS]	k ae n z ax s
-9	[KAREN]	k eh r ax n
-9	[KAUFFMAN]	k ao f m ax n
-9	[KAUNAKAKAI]	k ow n ax k ax k ay
 9	[KAYUR]	k aa y er
 9	[KEENLY]	k iy n l iy
-9	[KEEP]	k iy p
-9	[KELLO]	k eh l ow
-9	[KEN]	k eh n
-9	[KENNEDY]	k eh n ax dx iy
-9	[KENNEL]	k eh n ax l
-9	[KENNETH]	k eh n ix th
-9	[KENTUCKY]	k ax n t ah k iy
-9	[KENYA]	k eh n y ax
-9	[KEPT]	k eh p t
-9	[KERFOOT'S]	k er f uh t s
-9	[KERRY]	k eh r iy
-9	[KEVIN]	k eh v ix n
-9	[KEY]	k iy
-9	[KEYWORDS]	k iy w er d z
-9	[KIDDIES]	k ih dx iy z
-9	[KILL]	k ih l
-9	[KILLED]	k ih l d
-9	[KILLEEN]	k ix l iy n
-9	[KILLS]	k ih l z
-9	[KINDLY]	k ay n d l iy
-9	[KING]	k ih ng
-9	[KINGDOM]	k ih ng d ax m
 9	[KINSTON]	k ih n s t ax n
 9	[KIT]	k ih t
 9	[KNEE]	n iy
-9	[KNEW]	n uw
-9	[KNIFE]	n ay f
 9	[KNOCK]	n aa k
-9	[KNOCKED]	n aa k t
-9	[KNOW]	n ow
-9	[KNOWING]	n ow ix ng
-9	[KNOWLEDGE]	n aa l ax jh
-9	[KNOWN]	n ow n
-9	[KNOWS]	n ow z
-9	[KNOXVILLE]	n aa k s v ix l
-9	[KOLLMORGEN]	k ow l m ao r g ax n
-9	[KONA]	k ow n ax
-9	[KONG]	k ao ng
-9	[KOREA]	k ao r iy ax
-9	[KOREAN]	k ao r iy ax n
-9	[L]	eh l
-9	[LA]	l aa
-9	[LABOR]	l ey b er
-9	[LABOUR]	l ey b aw r
-9	[LACE]	l ey s
-9	[LAFAYETTE]	l aa f iy eh t
-9	[LAGER]	l aa g er
-9	[LAID]	l ey d
-9	[LAKE]	l ey k
-9	[LAKES]	l ey k s
-9	[LAMP]	l ae m p
-9	[LAMPS]	l ae m p s
-9	[LANAI]	l ae n ax iy
-9	[LANCASTER]	l ae n k ae s t er
-9	[LAND]	l ae n d
-9	[LANZAROTE]	l ae n z ax r ow t eh
-9	[LAREDO]	l er ey dx ow
-9	[LARGE]	l aa r jh
 9	[LARGER]	l aa r jh er
-9	[LARSEN]	l aa r s ax n
-9	[LAS]	l aa s
 9	[LAST]	l ae s t
 9	[LASTED]	l ae s t ax d
-9	[LATE]	l ey t
-9	[LATER]	l ey dx er
-9	[LATEST]	l ey dx ax s t
-9	[LAUDERDALE]	l ao dx er d ey l
-9	[LAUGHED]	l ae f t
-9	[LAUGHTER]	l ae f t er
 9	[LAUNCHED]	l ao n ch t
-9	[LAW]	l ao
-9	[LAWS]	l ao z
-9	[LAWTON]	l ao t ax n
-9	[LAWYER]	l ao y er
 9	[LAY]	l ey
-9	[LAYOVER]	l ey ow v er
 9	[LE]	l ax
-9	[LEADER]	l iy dx er
-9	[LEANING]	l iy n ix ng
-9	[LEAPED]	l eh p t
-9	[LEAPT]	l eh p t
-9	[LEARNED]	l er n d
-9	[LEAST]	l iy s t
-9	[LEAVE]	l iy v
-9	[LEAVES]	l iy v z
 9	[LEAVING]	l iy v ix ng
 9	[LEBANON]	l eh b ax n ax n
-9	[LED]	l eh d
 9	[LEDONNE]	l eh d ax n
-9	[LEFT]	l eh f t
 9	[LEG]	l eh g
-9	[LEGAL]	l iy g ax l
 9	[LEGEND]	l eh jh ax n d
 9	[LEGGED]	l eh g ax d
-9	[LEGHORNS]	l eh g hh ao r n z
 9	[LEISURE]	l eh zh er
-9	[LENGTH]	l eh ng k th
 9	[LENTZ]	l eh n t s
-9	[LENZO]	l eh n z ow
 9	[LEONARDO]	l iy ax n aa r dx ow
-9	[LESS]	l eh s
 9	[LESSER]	l eh s er
-9	[LET]	l eh t
-9	[LET'S]	l eh t s
-9	[LETS]	l eh t s
 9	[LETTER]	l eh dx er
 9	[LEVIN]	l eh v ix n
-9	[LEXINGTON]	l eh k s ix ng t ax n
-9	[LIBRARIAN]	l ay b r eh r iy ax n
-9	[LIE]	l ay
-9	[LIED]	l ay d
-9	[LIES]	l ay z
-9	[LIEUTENANT]	l uw t eh n ax n t
-9	[LIFE]	l ay f
-9	[LIFE'S]	l ay f s
-9	[LIFE-CONSERVING]	l ay f k ax n s er v ix ng
-9	[LIFE-GIVING]	l ay f g ih v ix ng
-9	[LIFTED]	l ih f t ax d
-9	[LIGHT]	l ay t
-9	[LIGHTED]	l ay dx ax d
-9	[LIGHTLY]	l ay t l iy
-9	[LIHUE]	l iy hh y uw eh
 9	[LIKE]	l ay k
-9	[LIKELY]	l ay k l iy
 9	[LIKEWISE]	l ay k w ay z
-9	[LIKING]	l ay k ix ng
-9	[LIMITS]	l ih m ax t s
-9	[LINCOLN]	l ih ng k ax n
 9	[LINDERMAN]	l ay n d er m ax n
 9	[LINE]	l ay n
-9	[LINES]	l ay n z
-9	[LINGERED]	l ih ng g er d
-9	[LINGO]	l ih ng g ow
-9	[LION]	l ay ax n
-9	[LIPS]	l ih p s
-9	[LIST]	l ih s t
-9	[LISTENED]	l ih s ax n d
-9	[LITTLE]	l ih dx ax l
-9	[LIVE]	l ay v
-9	[LIVED]	l ay v d
-9	[LIVER]	l ih v er
-9	[LIVING]	l ih v ix ng
-9	[LOADED]	l ow dx ax d
-9	[LOCATED]	l ow k ey dx ax d
-9	[LOCATION]	l ow k ey sh ax n
-9	[LOCKED]	l aa k t
-9	[LODGE]	l aa jh
-9	[LOEHR]	l ao r
 9	[LOEWS]	l ow z
-9	[LOFT]	l ao f t
-9	[LOG]	l ao g
-9	[LOGAN]	l ow g ax n
-9	[LOIN]	l oy n
-9	[LOINCLOTH]	l oy n k l ao th
-9	[LONDON]	l ah n d ax n
 9	[LONG]	l ao ng
-9	[LONGER]	l ao ng g er
-9	[LONGFELLOW]	l ao ng f eh l ow
-9	[LONGVIEW]	l ao ng v y uw
-9	[LOOK]	l uh k
-9	[LOOKED]	l uh k t
-9	[LOOKING]	l uh k ix ng
-9	[LOOKS]	l uh k s
-9	[LOOMED]	l uw m d
-9	[LOOSE]	l uw s
-9	[LOP-EAR]	l aa p ih r
 9	[LORD]	l ao r d
 9	[LOS]	l ow s
 9	[LOSING]	l uw z ix ng
 9	[LOST]	l ao s t
-9	[LOT]	l aa t
-9	[LOTS]	l aa t s
-9	[LOTTERY]	l aa dx er iy
-9	[LOUIS]	l uw ix s
-9	[LOUISA]	l uw iy z ax
-9	[LOUISIANA]	l uw iy z iy ae n ax
-9	[LOUISVILLE]	l uw iy v ih l
 9	[LOVE]	l ah v
-9	[LOVED]	l ah v d
-9	[LOVER]	l ah v er
-9	[LOW]	l ow
 9	[LOWER]	l ow er
-9	[LU]	l uw
-9	[LUANN]	l uw ax n
 9	[LUBBOCK]	l ah b ax k
 9	[LUFTHANSA]	l ax f t ae n z ax
-9	[LUGO]	l uw g ow
-9	[LUIS]	l uw iy s
-9	[LUNATIC]	l uw n ax t ih k
-9	[LUSH]	l ah sh
-9	[LUST]	l ah s t
 9	[LUXOR]	l ah k s er
 9	[LUXURIANT]	l ax g zh er iy ax n t
-9	[LUXURY]	l ah g zh er iy
 9	[LYING]	l ay ix ng
-9	[LYON]	l ay ax n
-9	[M]	ax m
-9	[M]	eh m
-9	[MAB]	m ae b
-9	[MABEL]	m ey b ax l
-9	[MACDOUGALL]	m ax k d uw g ax l
-9	[MACON]	m ey k ax n
 9	[MADDENING]	m ae d ax n ix ng
-9	[MADE]	m ey d
-9	[MADISON]	m ae dx ax s ax n
-9	[MADLY]	m ae d l iy
-9	[MADNESS]	m ae d n ax s
-9	[MADRAS]	m ae d r ax s
-9	[MADRID]	m ax d r ih d
-9	[MAELSTROM]	m ey l s t r ax m
-9	[MAGAZINE]	m ae g ax z iy n
-9	[MAGNIFICENT]	m ae g n ih f ax s ax n t
-9	[MAIL]	m ey l
-9	[MAINE]	m ey n
-9	[MAINLY]	m ey n l iy
-9	[MAINTAIN]	m ey n t ey n
-9	[MAINTAINED]	m ey n t ey n d
 9	[MAJOR]	m ey jh er
 9	[MAKE]	m ey k
-9	[MAKES]	m ey k s
-9	[MAKING]	m ey k ix ng
-9	[MALAGA]	m ae l ax g ax
-9	[MALEV]	m ax l eh v
-9	[MALLORCA]	m ey ow ao r k ax
 9	[MALNUTRITION]	m ae l n uw t r ih sh ax n
-9	[MALTREATED]	m ae l t r iy dx ix d
-9	[MAN]	m ae n
 9	[MAN'S]	m ae n z
-9	[MANAGE]	m ae n ax jh
-9	[MANAGED]	m ae n ax jh d
-9	[MANAGING]	m ae n ax jh ix ng
 9	[MANCHESTER]	m ae n ch eh s t er
-9	[MANHATTAN]	m ae n hh ae t ax n
-9	[MANIFESTATION]	m ae n ax f eh s t ey sh ax n
 9	[MANIFESTED]	m ae n ax f eh s t ax d
-9	[MANIFESTLY]	m ae n ax f eh s t l iy
-9	[MANUEL]	m aa n w eh l
-9	[MANUSCRIPT]	m ae n y ax s k r ih p t
-9	[MANY]	m eh n iy
-9	[MAP]	m ae p
-9	[MAR]	m aa r
-9	[MARCH]	m aa r ch
 9	[MARIA]	m er iy ax
-9	[MARKED]	m aa r k t
-9	[MARKET]	m aa r k ax t
-9	[MAROC]	m aa r ao k
-9	[MARRIED]	m eh r iy d
-9	[MARRIOTT]	m eh r iy ax t
 9	[MARSEILLE]	m aa r s ay l
-9	[MARTHA]	m aa r th ax
-9	[MARTIN]	m aa r t ax n
 9	[MARY]	m eh r iy
-9	[MARYLAND]	m eh r ax l ax n d
 9	[MASS]	m ae s
 9	[MASSACHUSETTS]	m ae s ax ch uw s ax t s
-9	[MASSAGE]	m ax s aa zh
-9	[MASTERED]	m ae s t er d
-9	[MATCH]	m ae ch
-9	[MATCHING]	m ae ch ix ng
-9	[MATE]	m ey t
-9	[MATT]	m ae t
 9	[MATTER]	m ae dx er
-9	[MATTHEWSON]	m ae th y uw s ax n
-9	[MATURE]	m ax ch uh r
-9	[MAUI]	m aw iy
-9	[MAULED]	m ao l d
 9	[MAXINE]	m ae k s iy n
 9	[MAY]	m ey
-9	[MAYAGUEZ]	m ay ax g eh z
-9	[MC]	m ix k
-9	[MCCORMICK]	m ax k ao r m ix k
-9	[MCCOY]	m ax k oy
-9	[MCCRAW]	m ax k r ao
-9	[MCCULLOUGH]	m ax k ah l ax
-9	[MCFEE'S]	m ax k f iy z
-9	[MCVEIGH]	m ax k v ey
-9	[ME]	m iy
-9	[MEAL]	m iy l
-9	[MEAN]	m iy n
 9	[MEANING]	m iy n ix ng
-9	[MEANWHILE]	m iy n w ay l
-9	[MEASURE]	m eh zh er
-9	[MEASURED]	m eh zh er d
-9	[MEAT]	m iy t
-9	[MEDFORD]	m eh d f er d
-9	[MEDICAL]	m eh dx ax k ax l
-9	[MEDICINE]	m eh dx ax s ax n
-9	[MEET]	m iy t
-9	[MEETING]	m iy dx ix ng
-9	[MELBOURNE]	m eh l b er n
-9	[MELLON]	m eh l ax n
-9	[MEMORIES]	m eh m er iy z
 9	[MEMPHIS]	m eh m f ax s
-9	[MEN]	m eh n
-9	[MENACE]	m eh n ax s
-9	[MENTAL]	m eh n t ax l
-9	[MENTION]	m eh n sh ax n
-9	[MENTIONED]	m eh n sh ax n d
-9	[MERCEDES]	m er s ey dx iy z
-9	[MERCY]	m er s iy
-9	[MERE]	m ih r
-9	[MERELY]	m ih r l iy
-9	[MERIDIAN]	m er ih dx iy ax n
-9	[MERRY]	m eh r iy
-9	[MESS]	m eh s
-9	[MESSAGE]	m eh s ax jh
 9	[MET]	m eh t
-9	[METAL]	m eh dx ax l
-9	[METCALF]	m eh t k ae f
-9	[METHOD]	m eh th ax d
-9	[METROPOLITAN]	m eh t r ax p aa l ax t ax n
-9	[MEXICANA]	m eh k s ix k ae n ax
 9	[MEXICO]	m eh k s ax k ow
-9	[MIAMI]	m ay ae m iy
-9	[MICHAEL]	m ay k ax l
 9	[MICHIGAN]	m ih sh ix g ax n
 9	[MICROTEL]	m ay k r ow t eh l
 9	[MID]	m ih d
-9	[MIDDLE]	m ih dx ax l
-9	[MIDLAND]	m ih d l ae n d
-9	[MIDMORNING]	m ih d m ao r n ix ng
-9	[MIDNIGHT]	m ih d n ay t
-9	[MIDSIZE]	m ih d s ay z
-9	[MIDSTREAM]	m ih d s t r iy m
-9	[MIDWAY]	m ih d w ey
 9	[MIDWEST]	m ih d w eh s t
-9	[MIGHT]	m ay t
-9	[MIGRATION]	m ay g r ey sh ax n
-9	[MIL]	m ih l
-9	[MILAN]	m ax l aa n
-9	[MILE]	m ay l
-9	[MILES]	m ay l z
-9	[MILLER]	m ih l er
-9	[MILLIONAIRE]	m ih l y ax n eh r
-9	[MILWAUKEE]	m ix l w ao k iy
 9	[MIND]	m ay n d
-9	[MINDS]	m ay n d z
-9	[MINNEAPOLIS]	m ih n iy ae p ax l ix s
-9	[MINNESOTA]	m ih n ix s ow dx ax
-9	[MINOR]	m ay n er
-9	[MINOT]	m ih n ax t
-9	[MINUTE]	m ih n ax t
-9	[MINUTES]	m ih n ax t s
-9	[MIRABEL]	m ix r aa b eh l
-9	[MIRACLE]	m ih r ax k ax l
-9	[MIRAGE]	m er aa zh
-9	[MIRROR]	m ih r er
-9	[MIRTH]	m er th
-9	[MISDEMEANOR]	m ih s d ax m iy n er
-9	[MISHEARD]	m ih s hh er d
-9	[MISS]	m ih s
-9	[MISSING]	m ih s ix ng
-9	[MISSIONS]	m ih sh ax n z
-9	[MISSISSIPPI]	m ih s ix s ih p iy
-9	[MISSOURI]	m ax z uh r iy
-9	[MISTAKE]	m ix s t ey k
-9	[MITCHELL]	m ih ch ax l
 9	[MIXED]	m ih k s t
 9	[MOB]	m aa b
 9	[MOCKERY]	m aa k er iy
-9	[MODERATE]	m aa dx er ax t
 9	[MODERATELY]	m aa dx er ax t l iy
 9	[MODESTO]	m ow d eh s t ow
-9	[MOHAMED]	m ow hh aa m eh d
 9	[MOINES]	m oy n z
-9	[MOIST]	m oy s t
 9	[MOISTENED]	m oy s ax n d
-9	[MOLOKAI]	m aa l ax k ay
-9	[MOMENT]	m ow m ax n t
-9	[MOMENTS]	m ow m ax n t s
-9	[MOMENTUM]	m ow m eh n t ax m
-9	[MONARCH]	m aa n aa r k
-9	[MONDAY]	m ah n d iy
 9	[MONEY]	m ah n iy
-9	[MONTEGO]	m ao n t iy g ow
-9	[MONTEREY]	m aa n t er ey
-9	[MONTH]	m ah n th
-9	[MONTREAL]	m ah n t r iy ao l
-9	[MOON]	m uw n
-9	[MOORE]	m uh r
-9	[MOOSE]	m uw s
-9	[MOOSE-BIRDS]	m uw s b er d z
-9	[MOPS]	m aa p s
-9	[MORE]	m ao r
-9	[MORGAN]	m ao r g ax n
-9	[MORNING]	m ao r n ix ng
-9	[MORTIMER]	m ao r dx ix m er
-9	[MOSCOW]	m aa s k ow
-9	[MOSS]	m ao s
-9	[MOST]	m ow s t
-9	[MOSTLY]	m ow s t l iy
-9	[MOSUR]	m ow s uh r
-9	[MOTEL]	m ow t eh l
-9	[MOTHER]	m ah dh er
-9	[MOTIVE]	m ow dx ix v
-9	[MOUNT]	m aw n t
-9	[MOUNTAINEER]	m aw n t ix n ih r
-9	[MOUTH]	m aw th
-9	[MOVED]	m uw v d
-9	[MOVEMENTS]	m uw v m ax n t s
 9	[MOVING]	m uw v ix ng
-9	[MR]	m ih s t er
-9	[MRS]	m ih s ix z
-9	[MS]	m ih z
 9	[MUCH]	m ah ch
 9	[MUG]	m ah g
-9	[MUNICH]	m y uw n ix k
-9	[MUNICIPAL]	m y uw n ih s ax p ax l
-9	[MURDER]	m er dx er
-9	[MURMURED]	m er m er d
 9	[MURMURING]	m er m er ix ng
-9	[MUSIC]	m y uw z ix k
-9	[MUST]	m ah s t
-9	[MUTTER]	m ah dx er
-9	[MUZZLE]	m ah z ax l
-9	[MY]	m ay
 9	[MYERS]	m ay er z
-9	[MYSELF]	m ay s eh l f
-9	[MYSTERIOUS]	m ix s t ih r iy ax s
-9	[MYTHS]	m ih th s
-9	[N]	ax n
-9	[N]	eh n
 9	[NADINE]	n ax d iy n
-9	[NAIROBI]	n ay r ow b iy
-9	[NAKATA]	n aa k aa dx ax
-9	[NAKATA'S]	n aa k aa dx ax z
-9	[NAME]	n ey m
-9	[NAME'S]	n ey m z
-9	[NAMED]	n ey m d
-9	[NANTUCKET]	n ae n t ah k ix t
-9	[NAOMI]	n ey ow m iy
-9	[NARITA]	n eh r iy dx ax
 9	[NARROWED]	n eh r ow d
-9	[NASHVILLE]	n ae sh v ix l
-9	[NATE]	n ey t
-9	[NATHAN]	n ey th ax n
-9	[NATIONAL]	n ae sh ax n ax l
-9	[NATIVE]	n ey dx ix v
-9	[NATIVES]	n ey dx ix v z
-9	[NATURAL]	n ae ch er ax l
 9	[NATURALLY]	n ae ch er ax l iy
-9	[NAUSEATING]	n ao zh iy ey dx ix ng
-9	[NEAR]	n ih r
-9	[NEARBY]	n ih r b ay
-9	[NEARER]	n ih r er
-9	[NEAREST]	n ih r ax s t
-9	[NEARLY]	n ih r l iy
-9	[NEBRASKA]	n ax b r ae s k ax
-9	[NECESSARY]	n eh s ax s eh r iy
-9	[NECK]	n eh k
-9	[NEED]	n iy d
-9	[NEEDED]	n iy dx ax d
-9	[NEEDING]	n iy dx ix ng
-9	[NEEDLE]	n iy dx ax l
-9	[NEEDS]	n iy d z
-9	[NEITHER]	n iy dh er
-9	[NELLY]	n eh l iy
 9	[NERVOUS]	n er v ax s
-9	[NETWORK]	n eh t w er k
-9	[NEVADA]	n ax v aa dx ax
-9	[NEVER]	n eh v er
-9	[NEVERTHELESS]	n eh v er dh ax l eh s
-9	[NEW]	n uw
-9	[NEWARK]	n uw er k
-9	[NEWBORN]	n uw b ao r n
-9	[NEWPORT]	n uw p ao r t
-9	[NEWS]	n uw z
-9	[NEWSPAPERS]	n uw z p ey p er z
-9	[NEXT]	n eh k s t
-9	[NICE]	n ay s
-9	[NICER]	n ay s er
-9	[NICHOLAS]	n ih k ax l ax s
 9	[NIGHT]	n ay t
 9	[NIGHTGLOW]	n ay t g l ow
-9	[NIIHAU]	n iy hh aw
-9	[NIKKO]	n iy k ow
-9	[NIMROD]	n ih m r aa d
-9	[NINE]	n ay n
-9	[NINETEEN]	n ay n t iy n
 9	[NINETEENTH]	n ay n t iy n th
-9	[NINETY]	n ay n t iy
-9	[NINTH]	n ay n th
-9	[NIPPON]	n ih p aa n
 9	[NIST]	n ih s t
-9	[NO]	n ow
 9	[NO-SIR-EE]	n ow s er iy
 9	[NOBODY]	n ow b aa d iy
-9	[NOD]	n aa d
-9	[NODDED]	n aa dx ax d
-9	[NOISE]	n oy z
-9	[NOME]	n ow m
-9	[NONE]	n ah n
-9	[NONSTOP]	n aa n s t aa p
-9	[NOOK]	n uh k
-9	[NOON]	n uw n
-9	[NOPE]	n ow p
-9	[NOR]	n ao r
-9	[NORFOLK]	n ao r f ax k
-9	[NORMALLY]	n ao r m ax l iy
-9	[NORSEMEN]	n ao r s m ix n
-9	[NORTH]	n ao r th
-9	[NORTHERN]	n ao r dh er n
 9	[NORTHWEST]	n ao r th w eh s t
 9	[NOT]	n aa t
-9	[NOTE]	n ow t
-9	[NOTED]	n ow dx ax d
-9	[NOTHING]	n ah th ix ng
-9	[NOTICED]	n ow dx ax s t
-9	[NOTIFICATION]	n ow dx ax f ax k ey sh ax n
-9	[NOVEL]	n aa v ax l
-9	[NOVEMBER]	n ow v eh m b er
 9	[NOW]	n aw
 9	[NOWHERE]	n ow w eh r
-9	[NUMBER]	n ah m b er
-9	[NURSE]	n er s
 9	[NURSERY]	n er s er iy
-9	[NYBERG]	n ay b er g
-9	[O]	ow
-9	[O'BRIEN]	ow b r ay ix n
-9	[O'CLOCK]	ax k l aa k
 9	[O'HARE]	ow hh eh r
-9	[OAHU]	ow aa hh uw
-9	[OAKLAND]	ow k l ax n d
-9	[OATHS]	ow dh z
-9	[OBEDIENCE]	ow b iy dx iy ax n s
-9	[OBEDIENT]	ow b iy dx iy ax n t
-9	[OBEDIENTLY]	ow b iy dx iy ax n t l iy
-9	[OBEY]	ow b ey
-9	[OBEYED]	ow b ey d
-9	[OBEYS]	ow b ey z
-9	[OBISPO]	ow b ih s p ow
-9	[OBJECT]	aa b jh eh k t
-9	[OBRIEN]	ow b r ay ax n
-9	[OBSERVE]	ax b z er v
-9	[OBSERVED]	ax b z er v d
-9	[OBTAIN]	ax b t ey n
-9	[OBVIOUS]	aa b v iy ax s
-9	[OBVIOUSLY]	aa b v iy ax s l iy
-9	[OCCASION]	ax k ey zh ax n
-9	[OCCUPANTS]	aa k y ax p ax n t s
-9	[OCCURRED]	ax k er d
-9	[OCCURRING]	ax k er ix ng
-9	[OCEAN]	ow sh ax n
-9	[OCTOBER]	aa k t ow b er
-9	[ODD]	aa d
-9	[OF]	ah v
-9	[OFF]	ao f
-9	[OFFICE]	ao f ax s
-9	[OFFICIAL]	ax f ih sh ax l
-9	[OFFSET]	ao f s eh t
-9	[OFTEN]	ao f ax n
-9	[OH]	ow
-9	[OHIO]	ow hh ay ow
-9	[OIL]	oy l
-9	[OILERS]	oy l er z
-9	[OK]	ow k ey
-9	[OKAY]	ow k ey
-9	[OKINAWA]	ow k ih n aa w ax
-9	[OKLAHOMA]	ow k l ax hh ow m ax
 9	[OLD]	ow l d
-9	[OLIGARCHY]	aa l ax g aa r k iy
-9	[OLYMPIC]	ow l ih m p ix k
-9	[OMAHA]	ow m ax hh aa
-9	[OMINOUS]	aa m ax n ax s
-9	[OMISSIONS]	ow m ih sh ax n z
-9	[OMNI]	aa m n iy
 9	[ON]	aa n
 9	[ONCE]	w ah n s
-9	[ONE]	w ah n
-9	[ONE-LEGGED]	w ah n l eh g ax d
-9	[ONLY]	ow n l iy
-9	[ONTARIO]	aa n t eh r iy ow
-9	[ONTO]	aa n t uw
-9	[OOLONG]	uw l ao ng
-9	[OONA]	uw n ax
-9	[OOZE]	uw z
-9	[OOZING]	uw z ix ng
-9	[OPEN]	ow p ax n
-9	[OPENED]	ow p ax n d
-9	[OPERATION]	aa p er ey sh ax n
-9	[OPERATIONS]	aa p er ey sh ax n z
-9	[OPINION]	ax p ih n y ax n
-9	[OPPONENTS]	ax p ow n ax n t s
-9	[OPPOSITE]	aa p ax z ax t
-9	[OPPOSITION]	aa p ax z ih sh ax n
-9	[OPPRESSION]	ax p r eh sh ax n
-9	[OPPRESSIVE]	ax p r eh s ix v
-9	[OR]	ao r
 9	[ORANGE]	ao r ax n jh
-9	[ORANGE-GREEN]	ao r ax n jh g r iy n
-9	[ORDAINED]	ao r d ey n d
-9	[ORDER]	ao r dx er
 9	[ORDERED]	ao r dx er d
-9	[ORDERS]	ao r dx er z
-9	[OREGON]	ao r ax g ax n
-9	[ORGANIC]	ao r g ae n ix k
 9	[ORGANIZATIONS]	ao r g ax n ax z ey sh ax n z
-9	[ORGANIZED]	ao r g ax n ay z d
-9	[ORIGIN]	ao r ax jh ax n
 9	[ORIGINATE]	er ih jh ax n ey t
-9	[ORLANDO]	ao r l ae n d ow
 9	[ORLEANS]	ao r l iy ax n z
-9	[ORTHODOX]	ao r th ax d aa k s
-9	[OSAKA]	ow s aa k ax
-9	[OSLO]	aa z l ow
-9	[OTHER]	ah dh er
-9	[OTHER'S]	ah dh er z
-9	[OTHERS]	ah dh er z
-9	[OTHERWISE]	ah dh er w ay z
 9	[OTTAWA]	aa dx ax w aa
 9	[OUGHT]	ao t
-9	[OUR]	aw er
 9	[OURSELVES]	aw er s eh l v z
-9	[OUT]	aw t
 9	[OUTBURSTS]	aw t b er s t s
-9	[OUTER]	aw dx er
-9	[OUTRAGEOUS]	aw t r ey jh ax s
-9	[OUTRUN]	aw t r ah n
-9	[OUTSIDE]	aw t s ay d
-9	[OUTSIDERS]	aw t s ay dx er z
-9	[OUTSTRETCHED]	aw t s t r eh ch t
-9	[OUTWARDLY]	aw t w er d l iy
-9	[OVER]	ow v er
 9	[OVERESTIMATED]	ow v er eh s t ax m ey dx ix d
-9	[OVERFLOWING]	ow v er f l ow ix ng
-9	[OVERHEAD]	ow v er hh eh d
-9	[OVERNIGHT]	ow v er n ay t
-9	[OVERS]	ow v er z
-9	[OVERSEER]	ow v er s iy er
-9	[OVERT]	ow v er t
-9	[OVERTURES]	ow v er ch uh r z
-9	[OVERWHELMED]	ow v er w eh l m d
 9	[OW]	ow
 9	[OWE]	ow
-9	[OWL]	aw l
-9	[OWLS]	aw l z
-9	[OWN]	ow n
-9	[OWNER]	ow n er
-9	[OXNARD]	aa k s n er d
-9	[OYSTER]	oy s t er
-9	[OYSTERS]	oy s t er z
-9	[OZNIX]	aa z n ix k s
-9	[P]	p iy
-9	[PACIFIC]	p ax s ih f ix k
 9	[PACKARD'S]	p ae k er d z
-9	[PADDLING]	p ae dx ax l ix ng
-9	[PADUCAH]	p ax d uw k ax
-9	[PAGE]	p ey jh
 9	[PAID]	p ey d
-9	[PAIN]	p ey n
-9	[PAINS]	p ey n z
-9	[PAIR]	p eh r
 9	[PAKISTAN]	p ae k ix s t ae n
-9	[PALACE]	p ae l ax s
-9	[PALM]	p aa m
-9	[PALMA]	p aa l m ax
 9	[PALS]	p ae l z
 9	[PAN]	p ae n
-9	[PANAMA]	p ae n ax m aa
-9	[PAPER]	p ey p er
-9	[PARDON]	p aa r d ax n
-9	[PARIAH]	p er ay ax
-9	[PARIS]	p eh r ix s
 9	[PARK]	p aa r k
-9	[PARSING]	p aa r s ix ng
-9	[PART]	p aa r t
-9	[PARTICULAR]	p er t ih k y ax l er
 9	[PARTICULARS]	p er t ih k y ax l er z
 9	[PARTING]	p aa r dx ix ng
-9	[PARTLY]	p aa r t l iy
 9	[PARTNERS]	p aa r t n er z
 9	[PARTNERSHIP]	p aa r t n er sh ih p
-9	[PASCAL]	p ae s k ae l
 9	[PASCAL'S]	p ae s k ae l z
-9	[PASO]	p ae s ow
-9	[PASQUINI]	p aa s k w iy n iy
-9	[PASS]	p ae s
-9	[PASSAGE]	p ae s ax jh
-9	[PASSED]	p ae s t
-9	[PASSENGER]	p ae s ax n jh er
-9	[PASSIONATELY]	p ae sh ax n ax t l iy
-9	[PAT]	p ae t
 9	[PATEL]	p ax t eh l
 9	[PATH]	p ae th
-9	[PATHETIC]	p ax th eh dx ix k
 9	[PATIENTLY]	p ey sh ax n t l iy
 9	[PATINO]	p aa t iy n ow
 9	[PATROL]	p ax t r ow l
 9	[PAUL]	p ao l
-9	[PAULO]	p ao l ow
-9	[PAUSED]	p ao z d
 9	[PAW]	p ao
-9	[PAY]	p ey
-9	[PAYING]	p ey ix ng
-9	[PEACE]	p iy s
-9	[PEARCE'S]	p ih r s z
-9	[PEARSON]	p ih r s ax n
 9	[PEASANT]	p eh z ax n t
-9	[PEBBLES]	p eh b ax l z
-9	[PEELED]	p iy l d
-9	[PENCIL]	p eh n s ax l
-9	[PENICILLIN]	p eh n ax s ih l ax n
-9	[PENNSYLVANIA]	p eh n s ax l v ey n y ax
-9	[PENSACOLA]	p eh n s ax k ow l ax
-9	[PENT]	p eh n t
-9	[PEOPLE]	p iy p ax l
-9	[PEORIA]	p iy ao r iy ax
-9	[PER]	p er
-9	[PERFORMED]	p er f ao r m d
-9	[PERFUME]	p er f y uw m
-9	[PERHAPS]	p er hh ae p s
-9	[PERIOD]	p ih r iy ax d
-9	[PERMISSION]	p er m ih sh ax n
-9	[PERPETUAL]	p er p eh ch uw ax l
-9	[PERRAULT]	p eh r ao l t
 9	[PERRY]	p eh r iy
-9	[PERSIAN]	p er zh ax n
 9	[PERSISTENT]	p er s ih s t ax n t
-9	[PERSONIFICATION]	p er s aa n ax f ax k ey sh ax n
-9	[PERTH]	p er th
-9	[PERVERSITY]	p er v er s ax dx iy
 9	[PETERBOROUGH]	p iy dx er b er ow
-9	[PETERSBURG]	p iy dx er z b er g
-9	[PETITIONED]	p ax t ih sh ax n d
-9	[PHENOMENON]	f ax n aa m ax n aa n
-9	[PHIL]	f ih l
-9	[PHILADELPHIA]	f ih l ax d eh l f iy ax
-9	[PHILIP]	f ih l ax p
-9	[PHILIP'S]	f ih l ax p s
-9	[PHILIPS]	f ih l ax p s
 9	[PHILOSOPHIC]	f ih l ax s aa f ix k
 9	[PHOENIX]	f iy n ix k s
-9	[PHONE]	f ow n
-9	[PHRASE]	f r ey z
-9	[PHYSICAL]	f ih z ix k ax l
 9	[PHYSICALLY]	f ih z ix k ax l iy
-9	[PHYSICISTS]	f ih z ix s ix s t s
-9	[PHYSIQUE]	f ax z iy k
-9	[PIANO]	p iy ae n ow
-9	[PICK]	p ih k
-9	[PICKED]	p ih k t
-9	[PICTURE]	p ih k ch er
-9	[PIERRE]	p iy eh r
-9	[PIERRE'S]	p iy eh r z
-9	[PIKE]	p ay k
-9	[PINE]	p ay n
-9	[PINES]	p ay n z
 9	[PIPE]	p ay p
-9	[PIPES]	p ay p s
-9	[PIRATES]	p ay r ax t s
 9	[PITCHED]	p ih ch t
 9	[PITS]	p ih t s
-9	[PITTSBURGH]	p ih t s b er g
-9	[PLACE]	p l ey s
-9	[PLACED]	p l ey s t
-9	[PLAIN]	p l ey n
-9	[PLAINS]	p l ey n z
 9	[PLAN]	p l ae n
-9	[PLANNING]	p l ae n ix ng
-9	[PLANS]	p l ae n z
-9	[PLANTATION]	p l ae n t ey sh ax n
-9	[PLANTERS]	p l ae n t er z
-9	[PLAUSIBLE]	p l ao z ax b ax l
-9	[PLAY]	p l ey
-9	[PLAYER]	p l ey er
-9	[PLAYING]	p l ey ix ng
-9	[PLAZA]	p l aa z ax
-9	[PLEASE]	p l iy z
-9	[PLEASURE]	p l eh zh er
-9	[PLENTIFUL]	p l eh n t ax f ax l
-9	[PLENTY]	p l eh n t iy
-9	[PLODDED]	p l aa dx ax d
-9	[PLUGGED]	p l ah g d
 9	[PLUMB]	p l ah m
-9	[PLUS]	p l ah s
-9	[PM]	p iy eh m
-9	[PNEUMONIA]	n uw m ow n y ax
-9	[POEM]	p ow ax m
-9	[POET]	p ow ax t
 9	[POETRY]	p ow ax t r iy
-9	[POINT]	p oy n t
-9	[POINTING]	p oy n t ix ng
 9	[POINTS]	p oy n t s
-9	[POISE]	p oy z
-9	[POISONOUS]	p oy z ax n ax s
-9	[POKED]	p ow k t
-9	[POLYNESIAN]	p aa l ix n iy zh ax n
-9	[POMERANTZ]	p aa m er ae n t s
-9	[PONCE]	p ow n s ey
-9	[POODLE]	p uw dx ax l
-9	[POOL]	p uw l
-9	[POOR]	p uh r
-9	[POPULAR]	p aa p y ax l er
-9	[PORRIDGE]	p ao r ax jh
 9	[PORT]	p ao r t
-9	[PORTLAND]	p ao r t l ax n d
-9	[PORTUGUESE]	p ao r ch ax g iy z
-9	[POSITION]	p ax z ih sh ax n
-9	[POSITIVELY]	p aa z ax dx ix v l iy
 9	[POSSESS]	p ax z eh s
-9	[POSSESSED]	p ax z eh s t
 9	[POSSESSION]	p ax z eh sh ax n
-9	[POSSIBLE]	p aa s ax b ax l
 9	[POSTPONE]	p ow s t p ow n
-9	[POT]	p aa t
-9	[POTS]	p aa t s
-9	[POUND]	p aw n d
-9	[POUNDED]	p aw n d ix d
 9	[POUNDS]	p aw n d z
 9	[POWER]	p aw er
-9	[POWERFUL]	p aw er f ax l
-9	[PRACTICE]	p r ae k t ax s
-9	[PRAGUE]	p r aa g
-9	[PRATTLE]	p r ae dx ax l
-9	[PRAYERS]	p r eh r z
 9	[PREACHER]	p r iy ch er
 9	[PREACHERS]	p r iy ch er z
-9	[PRECEDING]	p r iy s iy dx ix ng
 9	[PREDISPOSITION]	p r iy dx ix s p ax z ih sh ax n
-9	[PREFER]	p r ax f er
-9	[PREFERED]	p r ix f er d
-9	[PREFERENCE]	p r eh f er ax n s
-9	[PREFERENCES]	p r eh f er ax n s ix z
-9	[PREFERRED]	p r ax f er d
-9	[PREFERRING]	p r ix f er ix ng
-9	[PREPARED]	p r iy p eh r d
-9	[PREPOSTEROUS]	p r ix p aa s t er ax s
-9	[PRESAGE]	p r eh s ix jh
 9	[PRESENCE]	p r eh z ax n s
 9	[PRESENT]	p r eh z ax n t
-9	[PRESIDENT]	p r eh z ax d eh n t
 9	[PRESQUE]	p r eh s k
 9	[PRESSING]	p r eh s ix ng
-9	[PRESSURE]	p r eh sh er
-9	[PRESTIGE]	p r eh s t iy zh
 9	[PRETTY]	p r ih dx iy
-9	[PREVAILED]	p r ix v ey l d
-9	[PREVIOUS]	p r iy v iy ax s
 9	[PRICE]	p r ay s
 9	[PRICED]	p r ay s t
-9	[PRICES]	p r ay s ax z
 9	[PRICING]	p r ay s ix ng
 9	[PRIDE]	p r ay d
-9	[PRIMA]	p r iy m ax
-9	[PRIMARILY]	p r ay m eh r ax l iy
-9	[PRIMARY]	p r ay m eh r iy
 9	[PRIMEVAL]	p r ay m iy v ax l
-9	[PRINCESS]	p r ih n s eh s
-9	[PRINCIPALLY]	p r ih n s ix p l iy
-9	[PRINT]	p r ih n t
-9	[PRINTED]	p r ih n t ax d
 9	[PRISM]	p r ih z ax m
-9	[PRITCHARD]	p r ih ch er d
-9	[PRIVATE]	p r ay v ax t
-9	[PRIVILEGES]	p r ih v l ax jh ax z
 9	[PROBLEM]	p r aa b l ax m
 9	[PROCEEDED]	p r ax s iy dx ax d
-9	[PROCESSES]	p r aa s eh s ax z
-9	[PRODUCE]	p r ax d uw s
-9	[PRODUCED]	p r ax d uw s t
-9	[PRODUCES]	p r ax d uw s ax z
 9	[PRODUCING]	p r ax d uw s ix ng
-9	[PRODUCTION]	p r ax d ah k sh ax n
-9	[PRODUCTIONS]	p r ax d ah k sh ax n z
 9	[PROFESSIONAL]	p r ax f eh sh ax n ax l
-9	[PROFESSOR]	p r ax f eh s er
 9	[PROFILE]	p r ow f ay l
-9	[PROFIT]	p r aa f ax t
-9	[PROFOUNDLY]	p r ow f aw n d l iy
-9	[PROGRESS]	p r aa g r eh s
-9	[PROGRESSED]	p r ax g r eh s t
 9	[PROLIFIC]	p r ow l ih f ix k
-9	[PROLONGED]	p r ax l ao ng d
-9	[PROMINENCE]	p r aa m ax n ax n s
-9	[PROMISE]	p r aa m ax s
-9	[PROMISED]	p r aa m ax s t
-9	[PROMOTER'S]	p r ax m ow dx er z
 9	[PROMOTERS]	p r ax m ow dx er z
 9	[PROMPTED]	p r aa m p t ax d
-9	[PROMPTS]	p r aa m p t s
-9	[PROPER]	p r aa p er
-9	[PROPERLY]	p r aa p er l iy
 9	[PROPERTY]	p r aa p er dx iy
-9	[PROPHET]	p r aa f ax t
-9	[PROPOSED]	p r ax p ow z d
-9	[PROPOSITION]	p r aa p ax z ih sh ax n
-9	[PROSPERED]	p r aa s p er d
-9	[PROSTRATE]	p r aa s t r ey t
-9	[PROSTRATION]	p r aa s t r ey sh ax n
-9	[PROTECTION]	p r ax t eh k sh ax n
-9	[PROTEGE]	p r ow dx ax zh ey
-9	[PROVED]	p r uw v d
 9	[PROVIDED]	p r ax v ay dx ax d
-9	[PROVIDENCE]	p r aa v ax d ax n s
-9	[PROVOCATEURS]	p r aa v ax k ey t uw r z
 9	[PROVOCATIVE]	p r ow v aa k ax dx ix v
 9	[PSYCHOLOGY]	s ay k aa l ax jh iy
 9	[PUBLIC]	p ah b l ix k
 9	[PUERTO]	p w eh r t ow
-9	[PUFFY]	p ah f iy
 9	[PULLED]	p uh l d
-9	[PUMP]	p ah m p
-9	[PUNISHED]	p ah n ix sh t
 9	[PURPOSE]	p er p ax s
 9	[PURPOSES]	p er p ax s ax z
 9	[PURSUE]	p er s uw
-9	[PUT]	p uh t
-9	[PUZZLED]	p ah z ax l d
 9	[Q]	k y uw
-9	[QANTAS]	k ae n t ax s
 9	[QUADRUPLING]	k w aa d r uw p ax l ix ng
-9	[QUALITY]	k w aa l ax dx iy
-9	[QUARREL]	k w ao r ax l
-9	[QUART]	k w ao r t
-9	[QUARTER]	k w ao r dx er
 9	[QUEBEC]	k w ax b eh k
 9	[QUESTION]	k w eh s ch ax n
-9	[QUESTIONS]	k w eh s ch ax n z
-9	[QUICK]	k w ih k
 9	[QUICKLY]	k w ih k l iy
-9	[QUIET]	k w ay ax t
-9	[QUIETLY]	k w ay ax t l iy
 9	[QUIT]	k w ih t
-9	[QUITA]	k iy t ax
-9	[QUITE]	k w ay t
-9	[QUIVERING]	k w ih v er ix ng
-9	[QUOTATIONS]	k w ow t ey sh ax n z
 9	[QUOTING]	k w ow dx ix ng
 9	[R]	aa r
-9	[RABBIT]	r ae b ax t
-9	[RACE]	r ey s
 9	[RADISSON]	r ae dx ax s ax n
-9	[RAFTERS]	r ae f t er z
-9	[RAGE]	r ey jh
 9	[RAIDED]	r ey dx ix d
-9	[RAIL]	r ey l
 9	[RAILROAD]	r ey l r ow d
-9	[RAILWAY]	r ey l w ey
-9	[RAIN]	r ey n
-9	[RAINBOW]	r ey n b ow
-9	[RAINBOWS]	r ey n b ow z
-9	[RAINDROPS]	r ey n d r aa p s
 9	[RAINY]	r ey n iy
-9	[RAISED]	r ey z d
-9	[RAJ]	r aa zh
-9	[RALEIGH]	r ao l iy
-9	[RAMADA]	r ax m aa dx ax
-9	[RAN]	r ae n
-9	[RANCH]	r ae n ch
-9	[RANCHO]	r ae n ch ow
-9	[RANDE]	r ae n d
-9	[RANG]	r ae ng
-9	[RANGE]	r ey n jh
-9	[RANGED]	r ey n jh d
-9	[RAOUL]	r aa uw l
 9	[RAPID]	r ae p ax d
-9	[RAPIDLY]	r ae p ax d l iy
-9	[RAPIDS]	r ae p ax d z
-9	[RARE]	r eh r
-9	[RAT]	r ae t
-9	[RATE]	r ey t
-9	[RATES]	r ey t s
-9	[RATHER]	r ae dh er
 9	[RATS]	r ae t s
-9	[RATTLED]	r ae dx ax l d
 9	[RAVI]	r aa v iy
-9	[RAW]	r aa
-9	[RAYS]	r ey z
 9	[REACH]	r iy ch
-9	[READ]	r eh d
 9	[READING]	r eh dx ix ng
-9	[READY]	r eh dx iy
-9	[REAGAN]	r ey g ax n
 9	[REALLY]	r ih l iy
-9	[REASON]	r iy z ax n
-9	[REBELLED]	r ix b eh l d
-9	[REBELLIOUS]	r ix b eh l y ax s
 9	[RECEIVE]	r ax s iy v
-9	[RECLINING]	r ix k l ay n ix ng
-9	[RECOGNITION]	r eh k ax g n ih sh ax n
-9	[RECOGNIZING]	r eh k ax g n ay z ix ng
-9	[RECOLLECTION]	r eh k ax l eh k sh ax n
-9	[RECONCILED]	r eh k ax n s ay l d
-9	[RECORDED]	r ax k ao r dx ax d
-9	[RECORDING]	r ax k ao r dx ix ng
-9	[RECOVER]	r ix k ah v er
 9	[RED]	r eh d
-9	[RED-EYE]	r eh d ay
-9	[RED-EYE'S]	r eh d ay z
 9	[REDDING]	r eh dx ix ng
 9	[REDDY]	r eh dx iy
-9	[REDMOND]	r eh d m ax n d
-9	[REENTERED]	r iy ih n t er d
-9	[REFLECTION]	r ax f l eh k sh ax n
-9	[REFRACTION]	r ax f r ae k sh ax n
 9	[REFUGE]	r eh f y uw jh
 9	[REFUGEE]	r eh f y uw jh iy
 9	[REFUSED]	r ax f y uw z d
-9	[REFUSING]	r ax f y uw z ix ng
 9	[REGENCY]	r iy jh ax n s iy
-9	[REGENT]	r iy jh ax n t
-9	[REGISTER]	r eh jh ix s t er
-9	[REGISTERED]	r eh jh ix s t er d
-9	[REGRET]	r ax g r eh t
-9	[REGULAR]	r eh g y ax l er
-9	[RELAXED]	r ix l ae k s t
 9	[RELAXING]	r ix l ae k s ix ng
 9	[RELEASED]	r iy l iy s t
-9	[RELIEF]	r ix l iy f
-9	[REMAIN]	r ix m ey n
-9	[REMAINED]	r ix m ey n d
-9	[REMEMBER]	r ix m eh m b er
-9	[REMEMBERED]	r ix m eh m b er d
-9	[RENAISSANCE]	r eh n ax s aa n s
-9	[RENDEZVOUS]	r aa n d ix v uw
-9	[RENO]	r iy n ow
-9	[RENT]	r eh n t
 9	[RENTAL]	r eh n t ax l
-9	[RENTZ]	r eh n t s
-9	[REORGANIZATION]	r iy ao r g ax n ax z ey sh ax n
-9	[REPEAT]	r ix p iy t
-9	[REPLIED]	r ix p l ay d
-9	[REPLY]	r ix p l ay
-9	[REPORTS]	r ix p ao r t s
-9	[REPOSE]	r iy p ow z
-9	[REPRESENTATIVE]	r eh p r ax z eh n t ax dx ix v
-9	[REPRODUCED]	r iy p r ax d uw s t
-9	[REQUEST]	r ix k w eh s t
 9	[REQUESTED]	r ix k w eh s t ix d
-9	[REQUESTS]	r ix k w eh s t s
-9	[REQUIRE]	r iy k w ay er
-9	[REQUIRED]	r iy k w ay er d
-9	[RESEARCHERS]	r iy s er ch er z
-9	[RESEMBLANCE]	r ix z eh m b l ax n s
-9	[RESEMBLED]	r ix z eh m b ax l d
-9	[RESEMBLES]	r ix z eh m b ax l z
-9	[RESERVATION]	r eh z er v ey sh ax n
-9	[RESERVATIONS]	r eh z er v ey sh ax n z
-9	[RESERVED]	r ix z er v d
-9	[RESET]	r iy s eh t
-9	[RESIDENCE]	r eh z ix d ax n s
-9	[RESIDENT]	r eh z ix d ax n t
-9	[RESISTANT]	r ix z ih s t ax n t
-9	[RESISTED]	r ix z ih s t ix d
-9	[RESORT]	r ix z ao r t
-9	[RESORTS]	r ix z ao r t s
 9	[RESOURCES]	r iy s ao r s ix z
-9	[RESPECTFUL]	r ix s p eh k t f ax l
-9	[RESPONDING]	r ix s p aa n d ix ng
-9	[RESPONSE]	r ix s p aa n s
-9	[REST]	r eh s t
-9	[RESTATE]	r iy s t ey t
-9	[RESTAURANTS]	r eh s t er aa n t s
-9	[RESTED]	r eh s t ax d
-9	[RESTIVO]	r eh s t iy v ow
 9	[RESTLESS]	r eh s t l ax s
-9	[RESTON]	r eh s t ax n
-9	[RESTRICTION]	r iy s t r ih k sh ax n
-9	[RESULT]	r ix z ah l t
-9	[RESUMED]	r ix z uw m d
 9	[RETORTED]	r iy t ao r dx ix d
-9	[RETRIEVAL]	r ix t r iy v ax l
-9	[RETRIEVE]	r ix t r iy v
-9	[RETRIEVED]	r iy t r iy v d
-9	[RETRIEVING]	r iy t r iy v ix ng
-9	[RETURN]	r ix t er n
-9	[RETURNED]	r ix t er n d
 9	[RETURNING]	r ix t er n ix ng
 9	[RETURNS]	r ix t er n z
 9	[REVEALED]	r ix v iy l d
-9	[REVELATION]	r eh v ax l ey sh ax n
-9	[REVENGE]	r iy v eh n jh
-9	[REVIEW]	r iy v y uw
-9	[REVOLT]	r ix v ow l t
 9	[REVOLUTION]	r eh v ax l uw sh ax n
 9	[REVOLUTIONISTS]	r eh v ax l uw sh ax n ix s t s
 9	[REVOLVERS]	r ix v aa l v er z
-9	[REWARD]	r ix w ao r d
-9	[RHYTHM]	r ih dh ax m
 9	[RHYTHMS]	r ih dh ax m z
 9	[RICH]	r ih ch
-9	[RICHMOND]	r ih ch m ax n d
 9	[RICKY]	r ih k iy
 9	[RICO]	r iy k ow
-9	[RIDER]	r ay dx er
-9	[RIDGE]	r ih jh
 9	[RIDING]	r ay dx ix ng
 9	[RIFLE]	r ay f ax l
 9	[RIFLE-SHOT]	r ay f ax l sh aa t
-9	[RIFLES]	r ay f ax l z
-9	[RIGHT]	r ay t
 9	[RIGHTS]	r ay t s
-9	[RING]	r ih ng
-9	[RINGING]	r ih ng ix ng
-9	[RIO]	r iy ow
 9	[RIP]	r ih p
-9	[RIPPING]	r ih p ix ng
-9	[RIPPLING]	r ih p ax l ix ng
-9	[RISING]	r ay z ix ng
-9	[RITA]	r iy dx ax
-9	[RITZ]	r ih t s
 9	[RIVER]	r ih v er
-9	[RIVERS]	r ih v er z
-9	[ROAD]	r ow d
-9	[ROADMATE]	r ow d m ey t
 9	[ROADS]	r ow d z
-9	[ROADSIDE]	r ow d s ay d
-9	[ROANOKE]	r ow ax n ow k
-9	[ROAR]	r ao r
-9	[ROARING]	r ao r ix ng
-9	[ROBBED]	r aa b d
 9	[ROBBERY]	r aa b er iy
-9	[ROBERT]	r aa b er t
-9	[ROBERTS]	r aa b er t s
 9	[ROBES]	r ow b z
-9	[ROBIN]	r aa b ax n
-9	[ROCHESTER]	r aa ch eh s t er
 9	[ROCK]	r aa k
-9	[ROCKS]	r aa k s
-9	[ROCKY]	r aa k iy
-9	[RODE]	r ow d
 9	[RODEWAY]	r ow d w ey
 9	[ROGERS]	r aa jh er z
-9	[ROLL]	r ow l
-9	[ROLLED]	r ow l d
-9	[ROLLING]	r ow l ix ng
-9	[ROME]	r ow m
-9	[RONALD]	r aa n ax l d
-9	[RONG]	r ao ng
-9	[RONI]	r ow n iy
 9	[ROOF]	r uw f
-9	[ROOM]	r uw m
 9	[ROOMS]	r uw m z
-9	[ROSA]	r ow z ax
-9	[ROSCOE]	r aa s k ow
-9	[ROSE]	r ow z
 9	[ROSENFELD]	r ow z ax n f eh l d
-9	[ROSWELL]	r aa s w eh l
 9	[ROT]	r aa t
 9	[ROTTEN]	r aa t ax n
 9	[ROUND]	r aw n d
-9	[ROWE]	r ow
-9	[ROYAL]	r oy ax l
-9	[RUBOUT]	r ah b aw t
-9	[RUDNICKY]	r ax d n ih k iy
-9	[RUIN]	r uw ax n
 9	[RUMORS]	r uw m er z
-9	[RUN]	r ah n
-9	[RUPTURED]	r ah p ch er d
 9	[RUSH]	r ah sh
 9	[RUSHED]	r ah sh t
-9	[RUSSIA]	r ah sh ax
-9	[RUSSIAN]	r ah sh ax n
 9	[RUST]	r ah s t
 9	[RUTH]	r uw th
-9	[RYAN]	r ay ax n
-9	[S]	eh s
-9	[SACRAMENTO]	s ae k r ax m eh n t ow
 9	[SAD]	s ae d
-9	[SADDLE]	s ae dx ax l
-9	[SAHARA]	s ax hh eh r ax
-9	[SAID]	s eh d
 9	[SAIL]	s ey l
-9	[SAILED]	s ey l d
-9	[SAILOR]	s ey l er
 9	[SAILORS]	s ey l er z
 9	[SAKE]	s ey k
-9	[SALE]	s ey l
-9	[SALEM]	s ey l ax m
-9	[SALT]	s ao l t
-9	[SALVATION]	s ae l v ey sh ax n
-9	[SAM]	s ae m
-9	[SAME]	s ey m
 9	[SAMURAI]	s ae m uh r ay
-9	[SAN]	s ae n
 9	[SANCTIFICATION]	s ae ng k t ax f ax k ey sh ax n
-9	[SANDEL]	s ae n d eh l
-9	[SANDERS]	s ae n d er z
 9	[SANDLING]	s ae d l ix ng
-9	[SANK]	s ae ng k
-9	[SANTA]	s ae n t ax
-9	[SANTIAGO]	s ae n t iy aa g ow
 9	[SAO]	s aw
-9	[SARAH]	s eh r ax
-9	[SARASOTA]	s eh r ax s ow dx ax
-9	[SARCASTIC]	s aa r k ae s t ix k
-9	[SARCASTICALLY]	s aa r k ae s t ix k l iy
 9	[SAT]	s ae t
 9	[SATISFACTION]	s ae dx ax s f ae k sh ax n
-9	[SATISFIED]	s ae dx ax s f ay d
-9	[SATURDAY]	s ae dx er dx iy
-9	[SAVAGELY]	s ae v ix jh l iy
-9	[SAVANNAH]	s ax v ae n ax
-9	[SAVE]	s ey v
-9	[SAVING]	s ey v ix ng
 9	[SAW]	s ao
 9	[SAXON]	s ae k s ax n
-9	[SAXON'S]	s ae k s ax n z
-9	[SAY]	s ey
-9	[SAYING]	s ey ix ng
 9	[SAYS]	s eh z
-9	[SCANDINAVIAN]	s k ae n d ix n ey v iy ax n
 9	[SCARCELY]	s k eh r s l iy
-9	[SCARED]	s k eh r d
-9	[SCARLET]	s k aa r l ax t
 9	[SCENTS]	s eh n t s
-9	[SCHEDULE]	s k eh jh uh l
-9	[SCHEMES]	s k iy m z
 9	[SCHIPHOL]	sh ih p ax l
-9	[SCHOOL]	s k uw l
-9	[SCHOOLBOY]	s k uw l b oy
-9	[SCHOONER]	s k uw n er
-9	[SCOTT]	s k aa t
-9	[SCOTTISH]	s k aa dx ix sh
-9	[SCOUTS]	s k aw t s
-9	[SCRAP]	s k r ae p
 9	[SCRATCHED]	s k r ae ch t
-9	[SCREAMED]	s k r iy m d
-9	[SCRUBBING]	s k r ah b ix ng
-9	[SEA]	s iy
-9	[SEAFARING]	s iy f eh r ix ng
 9	[SEAL]	s iy l
-9	[SEARCH]	s er ch
-9	[SEARCHING]	s er ch ix ng
-9	[SEARS]	s ih r z
-9	[SEASONS]	s iy z ax n z
 9	[SEAT]	s iy t
 9	[SEATED]	s iy dx ax d
-9	[SEATTLE]	s iy ae dx ax l
-9	[SEAWATER]	s iy w aa dx er
-9	[SECOND]	s eh k ax n d
-9	[SECTION]	s eh k sh ax n
-9	[SECURE]	s ix k y uh r
-9	[SEE]	s iy
 9	[SEEING]	s iy ix ng
-9	[SEEM]	s iy m
-9	[SEEMED]	s iy m d
-9	[SEEMS]	s iy m z
 9	[SEEN]	s iy n
-9	[SEER]	s iy r
-9	[SEGMENTS]	s eh g m ax n t s
-9	[SEINFELD]	s ay n f eh l d
 9	[SEIZED]	s iy z d
-9	[SELDEN'S]	s eh l d ax n z
-9	[SELECTED]	s ax l eh k t ax d
-9	[SELL]	s eh l
 9	[SEMI-HUMAN]	s eh m iy hh y uw m ax n
-9	[SENATOR]	s eh n ax dx er
-9	[SEND]	s eh n d
-9	[SENEFF]	s eh n ax f
-9	[SENIORE]	s iy n y ao r
-9	[SENSATION]	s eh n s ey sh ax n
-9	[SENSITIVE]	s eh n s ax dx ix v
-9	[SENSITIVENESS]	s eh n s ax dx ix v n ax s
-9	[SENT]	s eh n t
-9	[SENT-END]	sil
-9	[SENT-START]	sil
-9	[SENTENCE]	s eh n t ax n s
-9	[SENTIMENT]	s eh n t ax m ax n t
-9	[SENTIMENTAL]	s eh n t ax m eh n t ax l
-9	[SEOUL]	s ow l
 9	[SEPARATED]	s eh p er ey dx ax d
-9	[SEPTEMBER]	s eh p t eh m b er
-9	[SERF]	s er f
-9	[SERRIDGE]	s eh r ix jh
-9	[SERVANTS]	s er v ax n t s
-9	[SERVED]	s er v d
-9	[SERVER]	s er v er
-9	[SERVICE]	s er v ax s
-9	[SESSION]	s eh sh ax n
-9	[SET]	s eh t
-9	[SEVEN]	s eh v ax n
 9	[SEVENTEEN]	s eh v ax n t iy n
-9	[SEVENTEENTH]	s eh v ax n t iy n th
-9	[SEVENTH]	s eh v ax n th
-9	[SEVENTY]	s eh v ax n t iy
-9	[SEVERAL]	s eh v r ax l
-9	[SEVILLA]	s eh v ih l ax
 9	[SHADOW]	sh ae d ow
-9	[SHADOWS]	sh ae d ow z
-9	[SHAKE]	sh ey k
-9	[SHAKEN]	sh ey k ax n
-9	[SHAKING]	sh ey k ix ng
-9	[SHALL]	sh ae l
 9	[SHANGHAI]	sh ae ng hh ay
-9	[SHAPE]	sh ey p
-9	[SHAPED]	sh ey p t
-9	[SHARE]	sh eh r
-9	[SHARED]	sh eh r d
-9	[SHARING]	sh eh r ix ng
-9	[SHARKS]	sh aa r k s
 9	[SHARP]	sh aa r p
-9	[SHARPENING]	sh aa r p ax n ix ng
 9	[SHARPLY]	sh aa r p l iy
-9	[SHAVE]	sh ey v
-9	[SHAVEN]	sh ey v ax n
-9	[SHE]	sh iy
 9	[SHE'D]	sh iy d
 9	[SHEATH]	sh iy th
 9	[SHEATH-KNIFE]	sh iy th n ay f
-9	[SHEER]	sh ih r
-9	[SHELDON]	sh eh l d ax n
 9	[SHELL]	sh eh l
 9	[SHELTERED]	sh eh l t er d
-9	[SHENZHEN]	sh eh n zh eh n
-9	[SHERATON]	sh eh r ax t ax n
 9	[SHIED]	sh ay d
-9	[SHIELD]	sh iy l d
 9	[SHINING]	sh ay n ix ng
-9	[SHIP]	sh ih p
-9	[SHIPS]	sh ih p s
-9	[SHIRK]	sh er k
-9	[SHIRT]	sh er t
-9	[SHOEMAKER]	sh uw m ey k er
-9	[SHOOK]	sh uh k
-9	[SHOOT]	sh uw t
-9	[SHOOTING]	sh uw dx ix ng
-9	[SHOP]	sh aa p
 9	[SHORE]	sh ao r
-9	[SHORES]	sh ao r z
 9	[SHOREWARD]	sh ao r w er d
-9	[SHORT]	sh ao r t
-9	[SHORTER]	sh ao r dx er
-9	[SHORTY]	sh ao r dx iy
-9	[SHOT]	sh aa t
-9	[SHOULD]	sh uh d
-9	[SHOULDER]	sh ow l d er
 9	[SHOULDERS]	sh ow l d er z
-9	[SHOULDN'T]	sh uh d ax n t
-9	[SHOUTED]	sh aw dx ax d
 9	[SHOVED]	sh ah v d
-9	[SHOW]	sh ow
-9	[SHOWED]	sh ow d
-9	[SHOWING]	sh ow ix ng
-9	[SHOWN]	sh ow n
 9	[SHREVEPORT]	sh r iy v p ao r t
-9	[SHREWDLY]	sh r uw d l iy
-9	[SHRIEK]	sh r iy k
-9	[SHRINKING]	sh r ih ng k ix ng
 9	[SHUDDER]	sh ah dx er
-9	[SHUDDERED]	sh ah dx er d
-9	[SHUFFLED]	sh ah f ax l d
-9	[SHUNK]	sh ah ng k
-9	[SHUT]	sh ah t
-9	[SIBERIA]	s ay b ih r iy ax
-9	[SICK]	s ih k
-9	[SIDE]	s ay d
-9	[SIERRA]	s iy eh r ax
-9	[SIGH]	s ay
-9	[SIGN]	s ay n
-9	[SIGNATURE]	s ih g n ax ch er
-9	[SILENCE]	s ay l ax n s
-9	[SILHOUETTE]	s ih l ax w eh t
 9	[SILVER]	s ih l v er
-9	[SIMILAR]	s ih m ax l er
-9	[SIMONS]	s ay m ax n z
-9	[SIMPLE]	s ih m p ax l
-9	[SIMPLY]	s ih m p l iy
-9	[SIN]	s ih n
-9	[SINCE]	s ih n s
 9	[SINEWY]	s ih n y uw iy
-9	[SINGAPORE]	s ih ng ax p ao r
-9	[SINGER]	s ih ng er
-9	[SINGH]	s ih ng
-9	[SINGING]	s ih ng ix ng
 9	[SINGLE]	s ih ng g ax l
-9	[SINISTER]	s ih n ix s t er
-9	[SIOUX]	s uw
 9	[SIR]	s er
 9	[SITKA]	s ih t k ax
 9	[SITTING]	s ih dx ix ng
-9	[SITUATION]	s ih ch uw ey sh ax n
-9	[SIX]	s ih k s
-9	[SIXTEEN]	s ix k s t iy n
-9	[SIXTEENTH]	s ix k s t iy n th
-9	[SIXTH]	s ih k s th
-9	[SIXTY]	s ih k s t iy
-9	[SIZE]	s ay z
-9	[SKETCH]	s k eh ch
-9	[SKETCHY]	s k eh ch iy
 9	[SKINS]	s k ih n z
 9	[SKIP]	s k ih p
-9	[SKIPPER]	s k ih p er
 9	[SKIPPER'S]	s k ih p er z
 9	[SKY]	s k ay
-9	[SLAMMED]	s l ae m d
-9	[SLAVE]	s l ey v
 9	[SLEEP]	s l iy p
-9	[SLEEPING]	s l iy p ix ng
-9	[SLID]	s l ih d
 9	[SLIGHT]	s l ay t
-9	[SLIGHTEST]	s l ay dx ax s t
-9	[SLIGHTLY]	s l ay t l iy
-9	[SLIM]	s l ih m
-9	[SLOW]	s l ow
-9	[SLOWLY]	s l ow l iy
 9	[SMALL]	s m ao l
-9	[SMALLER]	s m ao l er
 9	[SMASH]	s m ae sh
-9	[SMILE]	s m ay l
-9	[SMILED]	s m ay l d
-9	[SMILING]	s m ay l ix ng
 9	[SMOKING]	s m ow k ix ng
 9	[SMOOTH]	s m uw dh
-9	[SMOOTH-SHAVEN]	s m uw dh sh ey v ax n
-9	[SMOOTHLY]	s m uw dh l iy
-9	[SNAP]	s n ae p
 9	[SNARL]	s n aa r l
-9	[SNATCHED]	s n ae ch t
-9	[SNORTING]	s n ao r dx ix ng
-9	[SNOWY]	s n ow iy
-9	[SNUG]	s n ah g
 9	[SO]	s ow
-9	[SOAKED]	s ow k t
-9	[SOB]	s aa b
-9	[SOCIETY]	s ax s ay ax dx iy
-9	[SOCIOLOGISTS]	s ow s iy aa l ax jh ix s t s
 9	[SOFT]	s aa f t
-9	[SOFTLY]	s ao f t l iy
-9	[SOIL]	s oy l
-9	[SOLD]	s ow l d
-9	[SOLDIER]	s ow l jh er
-9	[SOLE]	s ow l
-9	[SOLICITORS]	s ax l ih s ax dx er z
-9	[SOLICITUDE]	s ax l ih s ix t uw d
-9	[SOLOMON]	s aa l ax m ax n
-9	[SOLUTIONS]	s ax l uw sh ax n z
 9	[SOME]	s ah m
-9	[SOMERVILLE]	s ah m er v ih l
-9	[SOMETHING]	s ah m th ix ng
-9	[SOMETIME]	s ah m t ay m
-9	[SOMETIMES]	s ax m t ay m z
-9	[SOMEWHERE]	s ah m w eh r
-9	[SON]	s ah n
-9	[SOON]	s uw n
-9	[SOONER]	s uw n er
-9	[SOPHOMORIC]	s aa f ow m aa r ix k
-9	[SORE]	s ao r
-9	[SORES]	s ao r z
-9	[SORRY]	s aa r iy
-9	[SORT]	s ao r t
-9	[SOUL]	s ow l
-9	[SOULLESS]	s ow l l ax s
-9	[SOUND]	s aw n d
-9	[SOUR]	s aw er
-9	[SOURCE]	s ao r s
-9	[SOURCES]	s ao r s ax z
-9	[SOUTH]	s aw th
-9	[SOUTHERN]	s ah dh er n
-9	[SOUTHWEST]	s aw th w eh s t
-9	[SPAIN]	s p ey n
-9	[SPAN]	s p ae n
-9	[SPARE]	s p eh r
-9	[SPAT]	s p ae t
-9	[SPEAK]	s p iy k
 9	[SPEAKING]	s p iy k ix ng
 9	[SPEARS]	s p ih r z
 9	[SPECIAL]	s p eh sh ax l
-9	[SPECIALLY]	s p eh sh ax l iy
-9	[SPECIES]	s p iy sh iy z
-9	[SPECIFIC]	s p ax s ih f ix k
-9	[SPECIFIED]	s p eh s ax f ay d
-9	[SPECIFY]	s p eh s ax f ay
-9	[SPECTACULAR]	s p eh k t ae k y ax l er
-9	[SPECTATORS]	s p eh k t ey dx er z
-9	[SPECULATE]	s p eh k y ax l ey t
 9	[SPEECH]	s p iy ch
-9	[SPEECHES]	s p iy ch ax z
-9	[SPELL]	s p eh l
-9	[SPEND]	s p eh n d
-9	[SPENT]	s p eh n t
-9	[SPINK]	s p ih ng k
 9	[SPITE]	s p ay t
-9	[SPITTING]	s p ih dx ix ng
-9	[SPLENDID]	s p l eh n d ax d
-9	[SPOKANE]	s p ow k ae n
-9	[SPOKESMAN]	s p ow k s m ax n
-9	[SPONGE]	s p ah n jh
-9	[SPORTS]	s p ao r t s
 9	[SPOT]	s p aa t
 9	[SPOUTING]	s p aw dx ix ng
-9	[SPRINGFIELD]	s p r ih ng f iy l d
 9	[SPRINGS]	s p r ih ng z
-9	[SPRINGY]	s p r ih ng iy
-9	[SPRUCE]	s p r uw s
-9	[SPUR]	s p er
 9	[SQUARE]	s k w eh r
-9	[SQUARELY]	s k w eh r l iy
-9	[SQUEAMISH]	s k w iy m ix sh
-9	[ST]	s t r iy t
-9	[STABLE]	s t ey b ax l
-9	[STAMFORD]	s t ae m f er d
-9	[STAMP]	s t ae m p
-9	[STAND]	s t ae n d
-9	[STANDARD]	s t ae n d er d
-9	[STARED]	s t eh r d
-9	[STARING]	s t eh r ix ng
-9	[STARLIGHT]	s t aa r l ay t
-9	[START]	s t aa r t
-9	[STARTED]	s t aa r dx ax d
 9	[STARTING]	s t aa r dx ix ng
-9	[STARTLED]	s t aa r dx ax l d
-9	[STARTLING]	s t aa r t l ix ng
-9	[STARVATION]	s t aa r v ey sh ax n
-9	[STARVED]	s t aa r v d
-9	[STATE]	s t ey t
 9	[STATEMENT]	s t ey t m ax n t
-9	[STATES]	s t ey t s
-9	[STATION]	s t ey sh ax n
 9	[STAY]	s t ey
 9	[STAYING]	s t ey ix ng
-9	[STEADILY]	s t eh dx ax l iy
-9	[STEADY]	s t eh dx iy
-9	[STEAMBOATS]	s t iy m b ow t s
-9	[STEAMER]	s t iy m er
 9	[STEEL]	s t iy l
 9	[STEELS]	s t iy l z
 9	[STEP]	s t eh p
-9	[STEPPED]	s t eh p t
-9	[STERLING]	s t er l ix ng
-9	[STERN]	s t er n
-9	[STEVE]	s t iy v
-9	[STEWARD]	s t uw er d
-9	[STEWARD'S]	s t uw er d z
-9	[STEWART]	s t uw er t
 9	[STICK]	s t ih k
-9	[STICKS]	s t ih k s
-9	[STIFLING]	s t ay f l ix ng
-9	[STILL]	s t ih l
-9	[STING]	s t ih ng
-9	[STIR]	s t er
-9	[STOCKHOLM]	s t aa k hh ow l m
-9	[STONE]	s t ow n
 9	[STONES]	s t ow n z
 9	[STOOD]	s t uh d
-9	[STOOPED]	s t uw p t
-9	[STOP]	s t aa p
-9	[STOPPED]	s t aa p t
-9	[STORM]	s t ao r m
-9	[STORY]	s t ao r iy
-9	[STOUT]	s t aw t
 9	[STOVE]	s t ow v
-9	[STOVER]	s t ow v er
-9	[STRAIGHT]	s t r ey t
-9	[STRAIGHTFORWARD]	s t r ey t f ao r w er d
-9	[STRAINED]	s t r ey n d
 9	[STRANGE]	s t r ey n jh
-9	[STRANGENESS]	s t r ey n jh n ax s
-9	[STRANGER]	s t r ey n jh er
-9	[STRAP]	s t r ae p
 9	[STRAUSS]	s t r aw s
-9	[STREAKS]	s t r iy k s
-9	[STREAMING]	s t r iy m ix ng
-9	[STREET]	s t r iy t
-9	[STRENGTH]	s t r eh ng k th
 9	[STRESSED]	s t r eh s t
-9	[STRIKES]	s t r ay k s
-9	[STRIKING]	s t r ay k ix ng
 9	[STRING]	s t r ih ng
-9	[STRINGY]	s t r ih ng iy
-9	[STRIVING]	s t r ay v ix ng
 9	[STROKING]	s t r ow k ix ng
-9	[STRONG]	s t r ao ng
-9	[STRUCK]	s t r ah k
-9	[STRUT]	s t r ah t
 9	[STUBBY]	s t ah b iy
-9	[STUDIO]	s t uw dx iy ow
-9	[STYLE]	s t ay l
 9	[SUB]	s ah b
-9	[SUB-FOREMAN]	s ah b f ao r m ax n
-9	[SUBJECT]	s ax b jh eh k t
-9	[SUBMERGED]	s ax b m er jh d
 9	[SUBMIT]	s ax b m ih t
-9	[SUBURBS]	s ah b er b z
-9	[SUCCESSFULLY]	s ax k s eh s f ax l iy
-9	[SUCH]	s ah ch
-9	[SUDDEN]	s ah d ax n
 9	[SUDDENLY]	s ah d ax n l iy
-9	[SUDDENNESS]	s ah d ax n n ax s
-9	[SUFFERING]	s ah f er ix ng
-9	[SUFFICIENT]	s ax f ih sh ax n t
-9	[SUFFOCATING]	s ah f ax k ey dx ix ng
-9	[SUGAR]	sh uh g er
 9	[SUGGEST]	s ax g jh eh s t
-9	[SUGGESTED]	s ax g jh eh s t ax d
 9	[SUICIDE]	s uw ax s ay d
-9	[SUITES]	s w iy t s
-9	[SUMMARIZE]	s ah m er ay z
-9	[SUMMARY]	s ah m er iy
-9	[SUMMER]	s ah m er
-9	[SUMMIT]	s ah m ax t
 9	[SUN]	s ah n
-9	[SUNDAY]	s ah n d ey
-9	[SUNLIGHT]	s ah n l ay t
-9	[SUNS]	s ah n z
 9	[SUNSETS]	s ah n s eh t s
-9	[SUNSHINE]	s ah n sh ay n
 9	[SUPER]	s uw p er
-9	[SUPERB]	s uh p er b
-9	[SUPERFLUOUS]	s uw p er f l w ah s
-9	[SUPERIOR]	s uw p ih r iy er
-9	[SUPERIORS]	s uw p ih r iy er z
 9	[SUPERLATIVE]	s uh p er l ax dx ix v
-9	[SUPPER]	s ah p er
-9	[SUPPLY]	s ax p l ay
-9	[SUPPOSE]	s ax p ow z
-9	[SUPPRESSED]	s ax p r eh s t
-9	[SURE]	sh uh r
-9	[SURELY]	sh uh r l iy
 9	[SURPLUSES]	s er p l ax s ix z
 9	[SURPRISE]	s er p r ay z
-9	[SURPRISING]	s er p r ay z ix ng
-9	[SURRENDER]	s er eh n d er
-9	[SURVEYED]	s er v ey d
-9	[SUSPICIOUSLY]	s ax s p ih sh ax s l iy
-9	[SWAM]	s w ae m
 9	[SWAMP]	s w aa m p
 9	[SWEAR]	s w eh r
 9	[SWEDEN]	s w iy d ax n
-9	[SWEEPING]	s w iy p ix ng
-9	[SWEET]	s w iy t
-9	[SWEETLY]	s w iy t l iy
-9	[SWELLING]	s w eh l ix ng
-9	[SWEPT]	s w eh p t
-9	[SWIFTER]	s w ih f t er
-9	[SWIFTLY]	s w ih f t l iy
-9	[SWIM]	s w ih m
 9	[SWISS]	s w ih s
-9	[SWUNG]	s w ah ng
-9	[SYDNEY]	s ih d n iy
-9	[SYMPATHY]	s ih m p ax th iy
-9	[SYMPTOMS]	s ih m p t ax m z
-9	[SYNTHESIS]	s ih n th ax s ax s
-9	[SYRACUSE]	s ih r ax k y uw z
 9	[SYSTEM]	s ih s t ax m
 9	[T]	t iy
-9	[TABLE]	t ey b ax l
-9	[TABOO]	t ae b uw
 9	[TABOOS]	t ae b uw z
-9	[TACIT]	t ae s ix t
-9	[TACOMA]	t ax k ow m ax
-9	[TAIPEI]	t ay p ey
-9	[TAIWAN]	t ay w aa n
-9	[TAKE]	t ey k
 9	[TAKING]	t ey k ix ng
-9	[TALE]	t ey l
-9	[TALK]	t ao k
 9	[TALKED]	t ao k t
-9	[TALLAHASSEE]	t ae l ax hh ae s iy
-9	[TAMBO]	t ae m b ow
-9	[TAMPA]	t ae m p ax
-9	[TAP]	t ae p
-9	[TAPPED]	t ae p t
-9	[TASK]	t ae s k
-9	[TAUGHT]	t ao t
-9	[TAUT]	t ao t
-9	[TEA]	t iy
-9	[TEACH]	t iy ch
-9	[TEACHING]	t iy ch ix ng
-9	[TEAR]	t eh r
-9	[TEARING]	t eh r ix ng
 9	[TEE]	t iy
-9	[TEETH]	t iy th
-9	[TEL]	t eh l
-9	[TELL]	t eh l
-9	[TEMPER]	t eh m p er
-9	[TEMPERATURE]	t eh m p r ax ch er
-9	[TEMPTATION]	t eh m t ey sh ax n
-9	[TEN]	t eh n
 9	[TENABLE]	t eh n ax b ax l
-9	[TENDERED]	t eh n d er d
-9	[TENERIFE]	t eh n er r iy f
 9	[TENETS]	t eh n ax t s
-9	[TENNESSEE]	t eh n ax s iy
-9	[TENSION]	t eh n sh ax n
-9	[TENT]	t eh n t
-9	[TENTH]	t eh n th
-9	[TERMS]	t er m z
-9	[TERRIBLE]	t eh r ax b ax l
 9	[TERRIBLY]	t eh r ax b l iy
-9	[TERRITORY]	t eh r ix t ao r iy
-9	[TERROR]	t eh r er
-9	[TERSELY]	t er s l iy
 9	[TEST]	t eh s t
-9	[TESTER]	t eh s t er
-9	[TEXAS]	t eh k s ax s
-9	[TH]	t iy ey ch
 9	[THAI]	t ay
-9	[THAILAND]	t ay l ae n d
 9	[THAN]	dh ae n
 9	[THANK]	th ae ng k
-9	[THAT]	dh ae t
-9	[THAT'LL]	dh ae dx ax l
-9	[THAT'S]	dh ae t s
-9	[THAW]	th ao
-9	[THAYER]	th ey er
-9	[THE]	dh ax
-9	[THEE]	dh iy
-9	[THEIR]	dh eh r
-9	[THEM]	dh eh m
-9	[THEMSELVES]	dh eh m s eh l v z
 9	[THEN]	dh eh n
-9	[THERE]	dh eh r
 9	[THERE'S]	dh eh r z
-9	[THEREFORE]	dh eh r f ao r
-9	[THERMOMETER]	th er m aa m ax dx er
-9	[THESE]	dh iy z
-9	[THEY]	dh ey
-9	[THICK]	th ih k
-9	[THIEVES]	th iy v z
 9	[THING]	th ih ng
 9	[THINGS]	th ih ng z
-9	[THINK]	th ih ng k
-9	[THINKING]	th ih ng k ix ng
-9	[THIRD]	th er d
-9	[THIRST]	th er s t
-9	[THIRTEEN]	th er t iy n
-9	[THIRTEENTH]	th er t iy n th
-9	[THIRTIETH]	th er dx iy ax th
-9	[THIRTY]	th er dx iy
-9	[THIS]	dh ih s
-9	[THOMPSON]	t aa m p s ax n
-9	[THOROUGH]	th er ow
-9	[THOROUGHLY]	th er ow l iy
-9	[THORPE]	th ao r p
-9	[THORPE'S]	th ao r p s
-9	[THOSE]	dh ow z
-9	[THOUGH]	dh ow
-9	[THOUGHT]	th ao t
-9	[THOUSAND]	th aw z ax n d
-9	[THOUSAND-YEARS-LONG]	th aw z ax n d y ih r z l ao ng
 9	[THOUSANDS]	th aw z ax n d z
-9	[THREATEN]	th r eh t ax n
 9	[THREE]	th r iy
-9	[THREEFOLD]	th r iy f ow l d
 9	[THREW]	th r uw
 9	[THRIFTY]	th r ih f t iy
-9	[THRILL]	th r ih l
-9	[THRILLED]	th r ih l d
-9	[THRILLING]	th r ih l ix ng
 9	[THROUGH]	th r uw
-9	[THROUGHOUT]	th r uw aw t
-9	[THROW]	th r ow
-9	[THRUST]	th r ah s t
-9	[THURSDAY]	th er z d ey
-9	[THUS]	dh ah s
-9	[TICKET]	t ih k ax t
-9	[TIDE]	t ay d
-9	[TIGHTLY]	t ay t l iy
 9	[TIJUANA]	t ix w aa n ax
 9	[TILL]	t ih l
-9	[TIM]	t ih m
 9	[TIME]	t ay m
-9	[TIMES]	t ay m z
-9	[TIMOTHY]	t ih m ax th iy
 9	[TINA]	t iy n ax
-9	[TINGLING]	t ih ng g ax l ix ng
-9	[TINTED]	t ih n t ix d
 9	[TIPS]	t ih p s
-9	[TIRADE]	t ay r ey d
-9	[TIRE]	t ay er
-9	[TIRED]	t ay er d
 9	[TO]	t uw
-9	[TOBACCO]	t ax b ae k ow
-9	[TODAY]	t ax d ey
-9	[TODAY'S]	t ax d ey z
-9	[TOGETHER]	t ax g eh dh er
-9	[TOKEN]	t ow k ax n
-9	[TOKYO]	t ow k iy ow
-9	[TOLBERT]	t ow l b er t
-9	[TOLD]	t ow l d
 9	[TOLEDO]	t ax l iy dx ow
-9	[TOM]	t aa m
-9	[TOMFOOLERY]	t ow m f uw l er iy
-9	[TOMORROW]	t ax m aa r ow
-9	[TOMPKINS]	t aa m p k ix n z
-9	[TONGUE]	t ah ng
 9	[TONIC]	t aa n ix k
-9	[TOO]	t uw
-9	[TOOK]	t uh k
-9	[TOOTH]	t uw th
-9	[TOOTHBRUSH]	t uw th b r ax sh
-9	[TOPIC]	t aa p ix k
-9	[TORONTO]	t er aa n t ow
 9	[TOUCHY]	t ah ch iy
 9	[TOULOUSE]	t uw l uw z
-9	[TOWARD]	t ax w ao r d
 9	[TOWER]	t aw er
-9	[TOWN]	t aw n
-9	[TOYS]	t oy z
-9	[TRACK]	t r ae k
-9	[TRADITION]	t r ax d ih sh ax n
-9	[TRAGEDY]	t r ae jh ax dx iy
-9	[TRAIL]	t r ey l
-9	[TRANS]	t r ae n z
 9	[TRANSLATION]	t r ae n z l ey sh ax n
-9	[TRAP]	t r ae p
-9	[TRAURING]	t r ao r ix ng
 9	[TRAVEL]	t r ae v ax l
-9	[TRAVELING]	t r ae v ax l ix ng
 9	[TRAVELLING]	t r ae v ax l ix ng
-9	[TRAVELODGE]	t r ae v ax l aa jh
-9	[TRAVERSE]	t r ae v er s
-9	[TREACHEROUS]	t r eh ch er ax s
-9	[TREATMENT]	t r iy t m ax n t
 9	[TREE]	t r iy
-9	[TREES]	t r iy z
-9	[TREMENDOUS]	t r ax m eh n d ax s
-9	[TRENTON]	t r eh n t ax n
-9	[TRICK]	t r ih k
-9	[TRICKLE]	t r ih k ax l
 9	[TRIED]	t r ay d
-9	[TRIP]	t r ih p
-9	[TRIUMPH]	t r ay ax m f
-9	[TRIUMPHANTLY]	t r ay ah m f ax n t l iy
-9	[TROPIC]	t r aa p ix k
-9	[TROUBLE]	t r ah b ax l
 9	[TROUT]	t r aw t
-9	[TRUE]	t r uw
-9	[TRUTH]	t r uw th
-9	[TRY]	t r ay
 9	[TRYING]	t r ay ix ng
-9	[TUCSON]	t uw s aa n
-9	[TUDOR]	t uw dx er
-9	[TUESDAY]	t uw z d iy
-9	[TULSA]	t ah l s ax
-9	[TUMBLING]	t ah m b ax l ix ng
-9	[TUNE]	t uw n
-9	[TUPELO]	t y uw p ax l ow
-9	[TURKEY]	t er k iy
-9	[TURNED]	t er n d
-9	[TURNER]	t er n er
-9	[TURNING]	t er n ix ng
-9	[TURNS]	t er n z
-9	[TUSCON]	t uw s ax n
 9	[TWELFTH]	t w eh l f th
-9	[TWELVE]	t w eh l v
-9	[TWENTIETH]	t w eh n t iy ax th
-9	[TWENTY]	t w eh n t iy
-9	[TWIN]	t w ih n
-9	[TWO]	t uw
-9	[TYLER]	t ay l er
-9	[TYPE]	t ay p
-9	[TYPEWRITTEN]	t ay p r ih t ax n
-9	[TYPHOID]	t ay f oy d
-9	[U]	y uw
-9	[UNBROKEN]	ax n b r ow k ax n
-9	[UNCOMFORTABLE]	ax n k ah m f er dx ax b ax l
-9	[UNCOMPROMISING]	ax n k aa m p r ax m ay z ix ng
-9	[UNCONSCIOUSLY]	ah n k aa n sh ax s l iy
-9	[UNDAUNTED]	ax n d ao n t ix d
-9	[UNDECIDED]	ah n d ix s ay dx ix d
-9	[UNDER]	ah n d er
-9	[UNDERSCORE]	ah n d er s k ao r
-9	[UNDERSTAND]	ah n d er s t ae n d
-9	[UNDERSTANDING]	ah n d er s t ae n d ix ng
-9	[UNDERSTOOD]	ah n d er s t uh d
-9	[UNDUE]	ax n d uw
-9	[UNEXPECTED]	ah n ix k s p eh k t ix d
 9	[UNFAIR]	ax n f eh r
-9	[UNFOLDED]	ax n f ow l d ax d
-9	[UNINTERESTING]	ax n ih n t r ax s t ix ng
 9	[UNITED]	y uw n ay dx ax d
-9	[UNIVERSAL]	y uw n ax v er s ax l
 9	[UNIVERSITY]	y uw n ax v er s ax dx iy
-9	[UNKNOWN]	ax n n ow n
-9	[UNLIKE]	ax n l ay k
-9	[UNOBTRUSIVE]	ah n ax b t r uw s ix v
-9	[UNQUENCHABLE]	ax n k w eh n ch ax b ax l
-9	[UNSAFE]	ax n s ey f
 9	[UNSANITARY]	ax n s ae n ax t eh r iy
-9	[UNTIL]	ax n t ih l
-9	[UNTO]	ah n t uw
 9	[UNTOWARD]	ax n t uw ao r d
-9	[UNUSUAL]	ax n y uw zh ax w ax l
-9	[UNWIN]	ao n w ix n
-9	[UP]	ah p
-9	[UPON]	ax p aa n
-9	[URGED]	er jh d
-9	[US]	ah s
-9	[USE]	y uw s
 9	[USED]	y uw z d
-9	[USER]	y uw z er
-9	[USERS]	y uw z er z
-9	[USING]	y uw z ix ng
 9	[USUAL]	y uw zh ax w ax l
-9	[UTTERED]	ah dx er d
-9	[V]	v iy
-9	[VACATION]	v ey k ey sh ax n
-9	[VAGABOND]	v ae g ax b aa n d
-9	[VAGABONDS]	v ae g ax b aa n d z
-9	[VAGUELY]	v ey g l iy
 9	[VAINLY]	v ey n l iy
-9	[VALENCIA]	v ax l eh n s iy ax
-9	[VALIANTLY]	v ae l y ax n t l iy
-9	[VALID]	v ae l ax d
-9	[VALLEY]	v ae l iy
 9	[VALUE]	v ae l y uw
-9	[VALUES]	v ae l y uw z
-9	[VAMPIRE]	v ae m p ay r
 9	[VANCOUVER]	v ae n k uw v er
-9	[VANGUARD]	v ae n g aa r d
 9	[VARIG]	v eh r ix g
 9	[VARIOUS]	v eh r iy ax s
-9	[VASTLY]	v ae s t l iy
-9	[VAULTING]	v ao l t ix ng
-9	[VEGAS]	v ey g ax s
-9	[VEGETABLES]	v eh jh t ax b ax l z
-9	[VEGETATION]	v eh jh ax t ey sh ax n
 9	[VEINS]	v ey n z
-9	[VELOCITY]	v ax l aa s ax dx iy
-9	[VENICE]	v eh n ax s
-9	[VENOM]	v eh n ax m
-9	[VENUS]	v iy n ax s
-9	[VERDE]	v er dx iy
-9	[VERMONT]	v er m aa n t
-9	[VERY]	v eh r iy
-9	[VESSEL]	v eh s ax l
-9	[VET]	v eh t
-9	[VET'S]	v eh t s
-9	[VETERINARY]	v eh t r ax n eh r iy
-9	[VETS]	v eh t s
-9	[VICTIM]	v ih k t ax m
-9	[VICTOR]	v ih k t er
-9	[VICTORIA]	v ix k t ao r iy ax
-9	[VICTORY]	v ih k t er iy
 9	[VIENNA]	v iy eh n ax
-9	[VIEW]	v y uw
-9	[VILLAGE]	v ih l ax jh
-9	[VILLAGER]	v ih l ix jh er
 9	[VINCI]	v ih n s iy
 9	[VIOLATED]	v ay ax l ey dx ix d
-9	[VIOLATING]	v ay ax l ey dx ix ng
 9	[VIOLATION]	v ay ax l ey sh ax n
-9	[VIOLENCE]	v ay ax l ax n s
-9	[VIOLENT]	v ay ax l ax n t
-9	[VIRGIN]	v er jh ix n
 9	[VIRGINIA]	v er jh ih n y ax
-9	[VIRTUE]	v er ch uw
 9	[VISION]	v ih zh ax n
-9	[VISIONS]	v ih zh ax n z
-9	[VITAL]	v ay dx ax l
 9	[VITALITY]	v ay t ae l ax dx iy
-9	[VIVIAN]	v ih v iy ax n
-9	[VOCABULARY]	v ow k ae b y ax l eh r iy
-9	[VOGEL]	v ow g ax l
-9	[VOICE]	v oy s
-9	[VOLCANO]	v aa l k ey n ow
-9	[VOLUNTEERED]	v aa l ax n t ih r d
-9	[VOYAGE]	v oy ax jh
-9	[W]	d ah b ax l y uw
-9	[WACO]	w ey k ow
-9	[WADA]	w aa dx ax
-9	[WADED]	w ey dx ix d
-9	[WAGER]	w ey jh er
 9	[WAIBEL]	w ey b ax l
 9	[WAIKIKI]	w ay k iy k iy
-9	[WAILING]	w ey l ix ng
-9	[WAISTS]	w ey s t s
-9	[WAIT]	w ey t
-9	[WAITED]	w ey dx ax d
-9	[WAITING]	w ey dx ix ng
-9	[WALK]	w ao k
-9	[WALKED]	w ao k t
 9	[WALL]	w ao l
 9	[WALLA]	w ao l ax
-9	[WALLS]	w ao l z
 9	[WALSH]	w ao l sh
 9	[WALT]	w ao l t
-9	[WANDERER]	w aa n d er er
 9	[WANG]	w ae ng
-9	[WANT]	w aa n t
-9	[WANTED]	w aa n t ax d
-9	[WANTON]	w ao n t ax n
-9	[WAR]	w ao r
-9	[WARD]	w ao r d
-9	[WARDEN]	w ao r d ax n
 9	[WARDS]	w ao r d z
-9	[WARM]	w ao r m
-9	[WARNED]	w ao r n d
-9	[WARSAW]	w ao r s ao
-9	[WAS]	w aa z
-9	[WASH]	w aa sh
-9	[WASHED]	w aa sh t
-9	[WASHINGTON]	w aa sh ix ng t ax n
-9	[WATCH]	w aa ch
-9	[WATCHED]	w aa ch t
-9	[WATER]	w ao dx er
-9	[WATERLOO]	w ao dx er l uw
-9	[WATERS]	w ao dx er z
-9	[WAVE]	w ey v
-9	[WAVING]	w ey v ix ng
-9	[WAY]	w ey
 9	[WAYNE]	w ey n
 9	[WAYS]	w ey z
 9	[WE]	w iy
-9	[WE'LL]	w iy l
 9	[WE'RE]	w iy r
-9	[WEAK]	w iy k
 9	[WEAPONS]	w eh p ax n z
 9	[WEAR]	w eh r
-9	[WEDNESDAY]	w eh n z d iy
-9	[WEEK]	w iy k
-9	[WEEKEND]	w iy k eh n d
-9	[WEEKS]	w iy k s
 9	[WEI]	w ey
-9	[WEIGH]	w ey
-9	[WEIGHT]	w ey t
-9	[WEIGHTED]	w ey dx ix d
 9	[WELCOME]	w eh l k ax m
 9	[WELFARE]	w eh l f eh r
-9	[WELL]	w eh l
-9	[WELLINGTON]	w eh l ix ng t ax n
-9	[WENT]	w eh n t
-9	[WERE]	w er
-9	[WEREN'T]	w er ax n t
-9	[WEST]	w eh s t
-9	[WESTERN]	w eh s t er n
-9	[WESTIN]	w eh s t ix n
-9	[WESTWARD]	w eh s t w er d
-9	[WESTWARD-FARING]	w eh s t w er d f eh r ix ng
-9	[WET]	w eh t
-9	[WHAT]	w ah t
-9	[WHAT'S]	w ah t s
-9	[WHATEVER]	w ah t eh v er
-9	[WHEEL]	w iy l
-9	[WHEN]	w eh n
-9	[WHENEVER]	w eh n eh v er
-9	[WHERE]	w eh r
-9	[WHEREIN]	w eh r ih n
 9	[WHEREVER]	w eh r eh v er
 9	[WHETHER]	w eh dh er
-9	[WHICH]	w ih ch
-9	[WHILE]	w ay l
-9	[WHIP]	w ih p
-9	[WHIPPED]	w ih p t
-9	[WHIPPING]	w ih p ix ng
-9	[WHISPERING]	w ih s p er ix ng
-9	[WHITE]	w ay t
-9	[WHITEFISH]	w ay t f ih sh
-9	[WHITTEMORE]	w ih t m ao r
-9	[WHIZ]	w ih z
 9	[WHO]	hh uw
-9	[WHO'S]	hh uw z
-9	[WHOEVER]	hh uw eh v er
-9	[WHOLE]	hh ow l
-9	[WHOM]	hh uw m
 9	[WHOSE]	hh uw z
-9	[WHY]	w ay
 9	[WICHITA]	w ih ch ax t ao
 9	[WIDE]	w ay d
-9	[WIDTH]	w ih d th
-9	[WIFE]	w ay f
-9	[WILD]	w ay l d
-9	[WILDERNESS]	w ih l d er n ax s
-9	[WILDLY]	w ay l d l iy
-9	[WILL]	w ih l
-9	[WILLIAM]	w ih l y ax m
 9	[WILLING]	w ih l ix ng
-9	[WILLOWY]	w ih l ax w iy
-9	[WILMINGTON]	w ih l m ix ng t ax n
-9	[WIN]	w ih n
-9	[WIND]	w ay n d
 9	[WINDOW]	w ih n d ow
-9	[WINE]	w ay n
-9	[WINNER]	w ih n er
-9	[WINS]	w ih n z
-9	[WINSTON]	w ih n s t ax n
-9	[WIPED]	w ay p t
-9	[WISCONSIN]	w ix s k aa n s ax n
-9	[WISE]	w ay z
-9	[WISH]	w ih sh
-9	[WITCHCRAFT]	w ih ch k r ae f t
-9	[WITH]	w ih dh
 9	[WITHERING]	w ih dh er ix ng
-9	[WITHIN]	w ix dh ih n
-9	[WITHOUT]	w ix th aw t
-9	[WIVES]	w ay v z
-9	[WOLF]	w uh l f
-9	[WOLF-DOG]	w uh l f d ao g
 9	[WOMAN]	w uh m ax n
-9	[WOMBLE]	w aa m b ax l
-9	[WOMEN]	w ih m ax n
-9	[WON]	w ah n
-9	[WON'T]	w ow n t
 9	[WONDER]	w ah n d er
-9	[WONDERED]	w ah n d er d
-9	[WONDERFUL]	w ah n d er f ax l
-9	[WONT]	w ow n t
-9	[WOOD]	w uh d
-9	[WORD]	w er d
 9	[WORDS]	w er d z
-9	[WORE]	w ao r
 9	[WORK]	w er k
-9	[WORKED]	w er k t
-9	[WORKING]	w er k ix ng
-9	[WORKS]	w er k s
-9	[WORLD]	w er l d
-9	[WORLDWIDE]	w er l d w ay d
 9	[WORRIES]	w er iy z
-9	[WORRY]	w er iy
-9	[WORSHIP]	w er sh ax p
-9	[WORSHIPED]	w er sh ix p t
-9	[WORTH]	w er th
-9	[WORTHY]	w er dh iy
-9	[WOULD]	w uh d
-9	[WOULDN'T]	w uh d ax n t
-9	[WOUNDED]	w uw n d ax d
 9	[WRECKED]	r eh k t
-9	[WRITING]	r ay dx ix ng
-9	[WRITTEN]	r ih t ax n
-9	[WRONG]	r ao ng
-9	[WYNDHAM]	w ih n d ax m
-9	[WYOMING]	w ay ow m ix ng
-9	[X]	eh k s
 9	[XIAMEN]	z iy ey m ax n
-9	[XU]	z uw
-9	[Y]	w ay
-9	[YANGTZE]	y ae ng k t s iy
-9	[YANKEE]	y ae ng k iy
 9	[YAP]	y ae p
 9	[YARDS]	y aa r d z
-9	[YEA]	y ey
-9	[YEAR]	y ih r
-9	[YEARNING]	y er n ix ng
-9	[YEARS]	y ih r z
-9	[YEH]	y eh
 9	[YELLED]	y eh l d
-9	[YELLOW]	y eh l ow
 9	[YELLS]	y eh l z
-9	[YES]	y eh s
-9	[YESKE]	y eh s k
-9	[YET]	y eh t
-9	[YI]	y iy
-9	[YIELD]	y iy l d
-9	[YIELDED]	y iy l d ax d
 9	[YODER]	y ow dx er
-9	[YOKE]	y ow k
-9	[YORK]	y ao r k
-9	[YOU]	y uw
-9	[YOU'D]	y uw d
-9	[YOU'LL]	y uw l
-9	[YOU'RE]	y uh r
-9	[YOU'VE]	y uw v
-9	[YOUNG]	y ah ng
-9	[YOUNGER]	y ah ng g er
 9	[YOUNGSTOWN]	y ah ng z t aw n
-9	[YOUR]	y ao r
-9	[YOURSELF]	y er s eh l f
-9	[YOUTH]	y uw th
-9	[YOUTHS]	y uw dh z
-9	[YUKON]	y uw k aa n
-9	[YVONNE]	ix v aa n
-9	[Z]	z iy
-9	[ZEALAND]	z iy l ax n d
-9	[ZERO]	z ih r ow
-9	[ZHANG]	zh ae ng
-9	[ZHOU]	z uw
-9	[ZILLA]	z ih l ax
-9	[ZIP]	z ih p
-9	[ZOO]	z uw
-9	[ZUE]	z uw
 9	[ZURICH]	z uh r ix k
