@@ -38,13 +38,6 @@
 /* 
  * The caps of the sender RTP stream.
  */
-/*
-#define AUDIO_CAPS "application/x-rtp, media=(string)audio," \
-  " clock-rate=(int)90000, encoding-name=(string)MPA"
-*/
-/*
-#define AUDIO_CAPS "application/x-rtp, media=(string)audio, payload=(int)127, clock-rate=(int)44100, encoding-name=(string)AC3"
-*/
 #define AUDIO_CAPS "application/x-rtp,media=(string)audio,clock-rate=" \
 	"(int)8000,encoding-name=(string)PCMA"
 
@@ -52,7 +45,7 @@
  * Elements to use for the receiver pipeline.
  */
 #define AUDIO_DEPAY "rtppcmadepay"
-#define AUDIO_DEC   "decodebin2"
+#define AUDIO_DEC   "alawdec"
 #define AUDIO_SINK  "autoaudiosink"
 
 /*
@@ -63,7 +56,6 @@ static void on_ssrc_active_cb(GstElement *rtpbin, guint sessid, guint ssrc,
 			      GstElement *depay);
 static void pad_added_cb (GstElement *rtpbin, GstPad *new_pad, 
 			  GstElement *depay);
-static void on_pad_added(GstElement *depay, GstPad *pad, gpointer user_data);
 
 /**
  * Main function, derr.
@@ -144,10 +136,8 @@ int main(int argc, char **argv){
 	gst_bin_add_many(GST_BIN(pipeline), audiodepay, audiodec, audioconv,
 			  audiores, audiosink, NULL);
 
-	
-	res = gst_element_link_many(audiodepay, audiodec, NULL);
-	g_assert(res == TRUE);
-	res = gst_element_link_many(audioconv, audiores, audiosink, NULL);
+	res = gst_element_link_many(audiodepay, audiodec, audioconv, audiores,
+				     audiosink, NULL);
 	g_assert(res == TRUE);
 
 	/* the rtpbin element */
@@ -184,12 +174,6 @@ int main(int argc, char **argv){
 	 * depayloader as user_data so that we can link to it. */
 	g_signal_connect(rtpbin, "pad-added", G_CALLBACK(pad_added_cb),
 			 audiodepay);
-
-	/*
-	 * Link the decodebin and the next pad in the chain.
-	 */
-	g_signal_connect(audiodec, "pad-added",
-			 G_CALLBACK(on_pad_added), audioconv);
 
 	/* give some stats when we receive RTCP */
 	g_signal_connect(rtpbin, "on-ssrc-active", 
@@ -234,7 +218,7 @@ static void print_source_stats(GObject *source){
 
 }
 
-/*
+/**
  * Call back signal handler for printing info from received RTCP packets.
  */
 static void on_ssrc_active_cb(GstElement *rtpbin, guint sessid, guint ssrc,
@@ -262,12 +246,9 @@ static void pad_added_cb (GstElement *rtpbin, GstPad *new_pad,
 			  GstElement *depay){
 
 	GstPad *sinkpad;
-	GstCaps *caps;
 	GstPadLinkReturn lres;
 
 	g_print ("new payload on pad: %s\n", GST_PAD_NAME (new_pad));
-	caps = gst_pad_get_caps(new_pad);
-	g_print ("  Caps are: %s\n", gst_caps_to_string(caps));
 
 	sinkpad = gst_element_get_static_pad (depay, "sink");
 	g_assert (sinkpad);
@@ -275,24 +256,5 @@ static void pad_added_cb (GstElement *rtpbin, GstPad *new_pad,
 	lres = gst_pad_link (new_pad, sinkpad);
 	g_assert (lres == GST_PAD_LINK_OK);
 	gst_object_unref (sinkpad);
-
-	printf("Built the RTP decoder.\n");
-
-}
-
-/*
- * Occurs when the decode in needs to be connected to the payloader.
- */
-static void on_pad_added(GstElement *depay, GstPad *pad, gpointer user_data){
-
-	GstPad *sinkpad;
-	GstElement *decoder = (GstElement *)user_data;
-
-	printf("Linking audio decoder to audio-resampler.\n");
-
-	sinkpad = gst_element_get_static_pad(decoder, "sink");
-	gst_pad_link(pad, sinkpad);
-
-	g_object_unref(sinkpad);
 
 }

@@ -20,6 +20,9 @@
 
 #include <inttypes.h>
 
+#include <glib.h>
+#include <gst/gst.h>
+
 #ifndef _MUSIC_H_
 #define _MUSIC_H_
 
@@ -59,11 +62,6 @@ struct music_rtp_pipeline {
 	GstElement	*rtpbin;
 
 	/*
-	 * A main loop for GLib.
-	 */
-	GMainLoop	*mloop;
-
-	/*
 	 * A function call back for when the end of stream has occured. You
 	 * can use this function and pipeline pointer to start playing a new
 	 * song.
@@ -73,11 +71,22 @@ struct music_rtp_pipeline {
 };
 
 /*
+ * A struct for containing a list of pipelines.
+ */
+struct music_rtp_plist {
+
+	struct music_rtp_pipeline **pipes;
+	unsigned int	length;
+	unsigned int	capacity;
+
+};
+
+/*
  * Some API functions.
  */
 int	music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 			    char *id, int rtp, int rtcp, char *dest_host);
-int	music_make_mloop(struct music_rtp_pipeline *pipe);
+int	music_make_mloop();
 int	music_play_song(struct music_rtp_pipeline *pipe, const char *song_path);
 int	music_set_state(struct music_rtp_pipeline *pipe, int state);
 int	music_get_state(struct music_rtp_pipeline *pipe);
@@ -85,6 +94,18 @@ int64_t	music_get_time_pos(struct music_rtp_pipeline *pipe);
 int64_t	music_get_time_len(struct music_rtp_pipeline *pipe);
 int	music_set_volume(struct music_rtp_pipeline *pipe, int volume);
 int	music_get_volume(struct music_rtp_pipeline *pipe);
+
+/* Pipeline list functions. */
+int	music_plist_init(struct music_rtp_plist *plist, int capacity);
+int	music_plist_add(struct music_rtp_plist *plist,
+			struct music_rtp_pipeline *pipe);
+struct music_rtp_pipeline *music_plist_del(struct music_rtp_plist *plist,
+					   int offset);
+struct music_rtp_pipeline *music_plist_next(struct music_rtp_plist *list,
+					    int reset);
+struct music_rtp_pipeline *music_plist_get(struct music_rtp_plist *plist,
+					   int index);
+void	music_plist_print(struct music_rtp_plist *plist, int empty);
 
 /*
  * Macros.
@@ -98,11 +119,19 @@ int	music_get_volume(struct music_rtp_pipeline *pipe);
 		}							\
 	} while ( 0 )
 
+/* State macros. */
 #define MUSIC_IS_PLAYING(state)	(state == MUSIC_STATE_PLAYING)
 #define MUSIC_IS_PUASED(state)	(state == MUSIC_STATE_PAUSED)
 #define MUSIC_IS_READY(state)	(state == MUSIC_STATE_READY)
 #define MUSIC_IS_NOGO(state)						\
 	(state != MUSIC_STATE_READY && state != MUSIC_STATE_PAUSED &&	\
 	 state != MUSIC_STATE_PLAYING)
+
+/* A macro for getting an element from a list of pipelines. */
+#define MUSIC_PLIST_GET(plist_ptr, offset) (plist->pipes[offset])
+
+/* Allocates a rtp pipeline struct. Just a wrapper for malloc(). */
+#define MUSIC_ALLOC_PIPELINE()			\
+	(struct music_rtp_pipeline *)malloc(sizeof(struct music_rtp_pipeline))
 
 #endif

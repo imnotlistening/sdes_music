@@ -28,8 +28,6 @@
 
 #include <music.h>
 
-#define	DEST_HOST "127.0.0.1"
-
 extern GMainLoop *music_mloop;
 
 static void *play_thread(void *arg);
@@ -61,7 +59,7 @@ int main(int argc, char **argv){
 
 	/* Make a pipeline. Requires an IP address to send to :(. */
 	err = music_rtp_make_pipeline(&pipeline, "test-rtp-pipe", 5000, 5001,
-				      DEST_HOST);
+				      "129.21.131.109");
 	if ( err ){
 		fprintf(stderr, "Could not make pipeline. :(\n");
 		return 1;
@@ -143,9 +141,6 @@ int main(int argc, char **argv){
 			g_object_set(G_OBJECT(pipeline.volume), "volume",
 				     vol_normed, NULL);
 
-		case 'd':
-			_music_dump_payloader_caps(&pipeline);
-			break;
 		}
 
 	}

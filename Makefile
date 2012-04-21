@@ -22,7 +22,7 @@ include config.mk
 
 export BUILD := $(PWD)
 
-SUBDIRS	= streaming
+SUBDIRS	= streaming tests
 
 all:
 	@for DIR in $(SUBDIRS); do \

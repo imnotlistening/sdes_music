@@ -40,9 +40,10 @@ MSG	:= @echo
 OPT	:= -O3
 
 # Build options.
-CFLAGS	:= -Wall $(OPT) -ggdb -fPIC
-CPPFLAGS := -I$(BUILD)/include
-LIBS	:= -lm -lc -lpng -lpthread
+CFLAGS		:= -Wall $(OPT) -ggdb -fPIC
+CPPFLAGS 	:= -I$(BUILD)/include
+LIBS		:= -lm -lc -lpng -lpthread
+PROJ_LIBS 	:= -L$(BUILD)/streaming -lmstream
 
 # Comment/uncomment for debugging.
 CPPFLAGS += #-D_DEBUG

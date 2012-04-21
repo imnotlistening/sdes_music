@@ -18,8 +18,8 @@
 # Build the server responsible for sending out RTP streams.
 #
 
-OBJECTS	= gst_rtp.o stream_core.o
-PROGS	= stream_server stream_client
+OBJECTS	= gst_rtp.o stream_core.o plist.o
+PROGS	=
 
 # Build a list of dependency files.
 DEPS    := $(shell find | grep \\.d$)
@@ -30,7 +30,14 @@ PROJ_LIB_FLAGS	= $(shell pkg-config --libs gstreamer-0.10)
 
 include $(BUILD)/config.mk
 
-all: $(OBJECTS) $(PROGS)
+all: $(OBJECTS) $(PROGS) libmstream.so
+	@cp libmstream.so* $(BUILD)/bin
+
+libmstream.so: $(OBJECTS)
+	$(MSG) " [LD]   " $@
+	$(LD) -shared -Wl,-soname=$@ $(OBJECTS) -o $@.$(VERSION) $(LIBS) \
+		$(PROJ_LIB_FLAGS)
+	@ldconfig -n .
 
 .PHONY: clean info
 
@@ -57,3 +64,4 @@ clean:
 	$(MSG) "Cleaning \`streaming'"
 	@rm -f $(OBJECTS) $(PROGS)
 	@rm -f $(DEPS)
+	@rm -f libmstream.so*
