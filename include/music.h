@@ -26,6 +26,10 @@
 #ifndef _MUSIC_H_
 #define _MUSIC_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Translation from Gst types to our own types to avoid requiring the GST
  * includes everywhere. I am not completely sure this is a good idea at the
  * moment so if it needs changing, that can be done.
@@ -94,6 +98,19 @@ int64_t	music_get_time_pos(struct music_rtp_pipeline *pipe);
 int64_t	music_get_time_len(struct music_rtp_pipeline *pipe);
 int	music_set_volume(struct music_rtp_pipeline *pipe, int volume);
 int	music_get_volume(struct music_rtp_pipeline *pipe);
+void	_music_dump_payloader_caps(struct music_rtp_pipeline *pipe);
+
+/* Pipeline list functions. */
+int	music_plist_init(struct music_rtp_plist *plist, int capacity);
+int	music_plist_add(struct music_rtp_plist *plist,
+			struct music_rtp_pipeline *pipe);
+struct music_rtp_pipeline *music_plist_del(struct music_rtp_plist *plist,
+					   int offset);
+struct music_rtp_pipeline *music_plist_next(struct music_rtp_plist *list,
+					    int reset);
+struct music_rtp_pipeline *music_plist_get(struct music_rtp_plist *plist,
+					   int index);
+void	music_plist_print(struct music_rtp_plist *plist, int empty);
 
 /* Pipeline list functions. */
 int	music_plist_init(struct music_rtp_plist *plist, int capacity);
@@ -133,5 +150,9 @@ void	music_plist_print(struct music_rtp_plist *plist, int empty);
 /* Allocates a rtp pipeline struct. Just a wrapper for malloc(). */
 #define MUSIC_ALLOC_PIPELINE()			\
 	(struct music_rtp_pipeline *)malloc(sizeof(struct music_rtp_pipeline))
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif

@@ -29,8 +29,13 @@
 
 #include <music.h>
 
+/*
+#define ENCODER		"wavpackenc"
+#define PAYLOADER	"rtpmpapay"
+*/
 #define ENCODER		"alawenc"
 #define PAYLOADER	"rtppcmapay"
+
 
 static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
 static void     new_pad_added(GstElement *elem, GstPad *pad, gpointer data);
@@ -52,9 +57,10 @@ int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 	GstElement *encoder, *payloader;
 	GstElement *rtp_sender;
 	GstElement *udp_rtp_sink, *udp_rtcp_sink, *udp_rtcp_src;
+	GstPadLinkReturn lres;
 
 	/* Initialize the pipeline. */
-	pipeline      = gst_pipeline_new("Stream server.");
+	pipeline      = gst_pipeline_new("Stream server");
 	source        = gst_element_factory_make("filesrc", "file source");
 	decodebin     = gst_element_factory_make("decodebin2", "decode");
 	convert       = gst_element_factory_make("audioconvert", "converter");
@@ -93,7 +99,8 @@ int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 	/* Add the elements to the pipeline and link what can be linked. */
 	gst_bin_add_many(GST_BIN(pipeline),
 			 source, decodebin, volume, convert, resample, encoder,
-			 payloader, rtp_sender, udp_rtp_sink, NULL);
+			 payloader, rtp_sender, udp_rtp_sink, udp_rtcp_sink,
+			 udp_rtcp_src, NULL);
 	gst_element_link(source, decodebin);
 	gst_element_link_many(convert, volume, resample, encoder,
 			      payloader, NULL);
@@ -106,17 +113,25 @@ int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 
 	/* Link in the RT(C)P stuff here; link the pads directly. */
 	tmp = gst_element_get_static_pad(payloader, "src");
-	gst_pad_link(tmp, rtp_sink);
+	lres = gst_pad_link(tmp, rtp_sink);
 	gst_object_unref(tmp);
+	g_assert(lres == GST_PAD_LINK_OK);
+
 	tmp = gst_element_get_static_pad(udp_rtp_sink, "sink");
-	gst_pad_link(rtp_src, tmp);
+	lres = gst_pad_link(rtp_src, tmp);
 	gst_object_unref(tmp);
+	g_assert(lres == GST_PAD_LINK_OK);
+
 	tmp = gst_element_get_static_pad(udp_rtcp_sink, "sink");
-	gst_pad_link(rtcp_src, tmp);
+	lres = gst_pad_link(rtcp_src, tmp);
+	g_assert(lres == GST_PAD_LINK_OK);
 	gst_object_unref(tmp);
+
 	tmp = gst_element_get_static_pad(udp_rtcp_src, "src");
-	gst_pad_link(tmp, rtcp_sink);
+	lres = gst_pad_link(tmp, rtcp_sink);
+	g_assert(lres == GST_PAD_LINK_OK);
 	gst_object_unref(tmp);
+
 	gst_object_unref(rtp_sink);
 	gst_object_unref(rtp_src);
 

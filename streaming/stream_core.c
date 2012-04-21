@@ -191,3 +191,18 @@ int64_t music_get_time_len(struct music_rtp_pipeline *pipe){
 	return (int64_t)len;
 
 }
+
+void _music_dump_payloader_caps(struct music_rtp_pipeline *pipe){
+
+
+	GstCaps *caps;
+	GstElement *payloader;
+	
+	payloader = gst_bin_get_by_name(GST_BIN(pipe->pipeline), "payloader");
+	caps = gst_pad_get_caps(gst_element_get_static_pad(payloader,
+							      "src"));
+	printf("** Payloader caps: %s\n", gst_caps_to_string(caps));
+
+
+
+}
