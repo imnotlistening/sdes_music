@@ -30,6 +30,11 @@
 #include <music.h>
 
 #define ENCODER		"flacenc"
+#ifdef _MUSIC_USE_TCP
+#  define NET_SINK	"tcpclientsink"
+#else
+#  define NET_SINK	"udpsink"
+#endif
 
 static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
 static void     new_pad_added(GstElement *elem, GstPad *pad, gpointer data);
@@ -45,7 +50,7 @@ int music_make_pipeline(struct music_rtp_pipeline *pipe,
 	GstBus *bus;
 	GstElement *pipeline;
 	GstElement *source, *decodebin;
-	GstElement *volume, *convert, *resample, *encoder, *udpsink;
+	GstElement *volume, *convert, *resample, *encoder, *netsink;
 
 	/* Initialize the pipeline. */
 	pipeline      = gst_pipeline_new("Stream server");
@@ -55,7 +60,7 @@ int music_make_pipeline(struct music_rtp_pipeline *pipe,
 	volume        = gst_element_factory_make("volume", "vol-cntl");
 	resample      = gst_element_factory_make("audioresample", "resampler");
 	encoder       = gst_element_factory_make(ENCODER, "stream encoder");
-	udpsink       = gst_element_factory_make("udpsink", "UDP Sink");
+	netsink       = gst_element_factory_make(NET_SINK, "Net Sink");
 
 	ASSERT_OR_ERROR(pipeline != NULL);
 	ASSERT_OR_ERROR(source != NULL);
@@ -64,21 +69,32 @@ int music_make_pipeline(struct music_rtp_pipeline *pipe,
 	ASSERT_OR_ERROR(volume != NULL);
 	ASSERT_OR_ERROR(resample != NULL);
 	ASSERT_OR_ERROR(encoder != NULL);
-	ASSERT_OR_ERROR(udpsink != NULL);
+	ASSERT_OR_ERROR(netsink != NULL);
 
 	/* Set a sane default volume. */
 	g_object_set(G_OBJECT(volume), "volume", 1.0, NULL);
 	
-	/* Set the UDP port. */
-	g_object_set(G_OBJECT(udpsink), "port", port,
+	/* Set the port. */
+	g_object_set(G_OBJECT(netsink), "port", port,
 		     "host", dest_host, NULL);
+#ifdef _MUSIC_USE_TCP
+	/* 
+	 * Lets use some sort of protocol to help manage the stream. For now
+	 * this has to be commented out since my instalation of gstreamer's
+	 * base plugins is missing the TCP headers. Yay. Thankfully it shouldn't
+	 * be necessary...
+	 */
+	/*
+	g_object_set(G_OBJECT(netsink), "protocol", GST_TCP_PROTOCOL_GDP, NULL);
+	*/
+#endif
 
 	/* Add the elements to the pipeline and link what can be linked. */
 	gst_bin_add_many(GST_BIN(pipeline), source, decodebin, volume, convert,
-			 encoder, resample, udpsink, NULL);
+			 encoder, resample, netsink, NULL);
 	gst_element_link(source, decodebin);
 	gst_element_link_many(convert, volume, resample, 
-			      encoder, udpsink, NULL);
+			      encoder, netsink, NULL);
 
 	/* Dynamic pad creation for decoder. */
 	g_signal_connect(decodebin, "pad-added", G_CALLBACK(new_pad_added),

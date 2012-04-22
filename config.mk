@@ -41,7 +41,7 @@ OPT	:= -O3
 
 # Build options.
 CFLAGS		:= -Wall $(OPT) -ggdb -fPIC
-CPPFLAGS 	:= -I$(BUILD)/include
+CPPFLAGS 	:= -I$(BUILD)/include -D_MUSIC_USE_TCP
 LIBS		:= -lm -lc -lpng -lpthread
 PROJ_LIBS 	:= -L$(BUILD)/streaming -lmstream
 

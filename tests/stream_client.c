@@ -34,6 +34,12 @@
 #define AUDIO_DEC   "flacdec"
 #define AUDIO_SINK  "alsasink"
 
+#ifdef	_MUSIC_USE_TCP
+#  define NET_SRC   "tcpserversrc"
+#else
+#  define NET_SRC   "udpsrc"
+#endif
+
 /*
  * Some functions for later use.
  */
@@ -44,7 +50,7 @@ static void on_pad_added(GstElement *depay, GstPad *pad, gpointer user_data);
  */
 int main(int argc, char **argv){
 
-	GstElement *udpsrc;
+	GstElement *netsrc;
 	GstElement *audiodec, *audioconv, *audiosink;
 	GstElement *pipeline;
 	GMainLoop *loop;
@@ -56,37 +62,38 @@ int main(int argc, char **argv){
 
 	/* Only 1 argument, a source to play. */
 	if ( argc != 2 ){
-		printf("Usage: %s <udp-port>\n", argv[0]);
+		printf("Usage: %s <port>\n", argv[0]);
 		return 1;
 	}
 
 	convs = sscanf(argv[1], "%d", &port);
 	ASSERT_OR_ERROR(convs == 1);
 	ASSERT_OR_ERROR(port > 0 && port < 65536);
-	printf("Receiving UDP stream on port %d\n", port);
+	printf("Receiving " NET_SRC " stream on port %d\n", port);
 	
 	/* The pipeline to hold everything */
 	pipeline = gst_pipeline_new(NULL);
 	g_assert(pipeline);
 
-	udpsrc = gst_element_factory_make("udpsrc", "UDP source");
+	netsrc = gst_element_factory_make(NET_SRC, "UDP source");
 	audiodec = gst_element_factory_make(AUDIO_DEC, "audiodec");
 	audioconv = gst_element_factory_make("audioconvert", "audioconv");
 	audiosink = gst_element_factory_make(AUDIO_SINK, "audiosink");
 
-	g_assert(udpsrc);
+	g_assert(netsrc);
 	g_assert(audiodec);
 	g_assert(audioconv);
 	g_assert(audiosink);
 
-	g_object_set(udpsrc, "port", port, NULL);
-	/*g_object_set(udpsrc, "buffer-size", 100 * 1024 * 1024, NULL);*/
+	g_object_set(netsrc, "port", port, NULL);
+	/*g_object_set(netsrc, "buffer-size", 100 * 1024 * 1024, NULL);*/
 	g_object_set(audiosink, "sync", FALSE, NULL);
 
-	gst_bin_add_many(GST_BIN(pipeline), udpsrc, audiodec, audioconv,
+	gst_bin_add_many(GST_BIN(pipeline), netsrc, audiodec, audioconv,
 		    audiosink, NULL);
 
-	res = gst_element_link_many(udpsrc, audiodec, audioconv, audiosink, NULL);
+	res = gst_element_link_many(netsrc, audiodec, audioconv,
+				    audiosink, NULL);
 	g_assert(res == TRUE);
 
 	/*
