@@ -28,7 +28,7 @@
 
 #include <music.h>
 
-#define	DEST_HOST "127.0.0.1"
+#define	DEST_HOST "australia.student.rit.edu"
 
 extern GMainLoop *music_mloop;
 
@@ -60,7 +60,7 @@ int main(int argc, char **argv){
 	}
 
 	/* Make a pipeline. Requires an IP address to send to :(. */
-	err = music_make_pipeline(&pipeline, "test-rtp-pipe", 5000, DEST_HOST);
+	err = music_make_pipeline(&pipeline, "test-pipe", 5000, DEST_HOST);
 	if ( err ){
 		fprintf(stderr, "Could not make pipeline. :(\n");
 		return 1;

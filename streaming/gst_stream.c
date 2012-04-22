@@ -80,13 +80,13 @@ int music_make_pipeline(struct music_rtp_pipeline *pipe,
 #ifdef _MUSIC_USE_TCP
 	/* 
 	 * Lets use some sort of protocol to help manage the stream. For now
-	 * this has to be commented out since my instalation of gstreamer's
-	 * base plugins is missing the TCP headers. Yay. Thankfully it shouldn't
-	 * be necessary...
+	 * this just passes a 1, since the actual enum holding these values is
+	 * MIA. I am guessing that 1 in the only non-default value based on the
+	 * docs.
 	 */
-	/*
-	g_object_set(G_OBJECT(netsink), "protocol", GST_TCP_PROTOCOL_GDP, NULL);
-	*/
+	g_object_set(G_OBJECT(netsink), "protocol", 1, NULL);
+	g_object_set(G_OBJECT(netsink), "blocksize", 256 * 1024, NULL);
+	g_object_set(G_OBJECT(netsink), "sync", FALSE, NULL);
 #endif
 
 	/* Add the elements to the pipeline and link what can be linked. */
