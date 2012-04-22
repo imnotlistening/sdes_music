@@ -47,6 +47,7 @@ int main(int argc, char **argv){
 
 	char buf[256], cmd[256];
 	int err, bytes, convs, vol;
+	long int offset;
 	pthread_t thread;
 
 	/* Init the GST library. */
@@ -138,6 +139,30 @@ int main(int argc, char **argv){
 
 			music_set_volume(&pipeline, vol);
 			break;
+
+		case 'f': /* Forward 10 seconds. */
+		case 'b': /* Backwards 10 seconds. */
+			printf("Not implemented.\n");
+			break;
+
+		case 'k':
+			convs = sscanf(buf, "%s %ld", cmd, &offset);
+			if ( convs != 2 ){
+				printf("Failed to parse seek time.\n");
+				break;
+			}
+
+			/* Scale this input number by a factor of 1^9 */
+			offset *= 1e9;
+			printf("Seeking to %ld ns\n", offset);
+
+			if (!gst_element_seek (pipeline.pipeline, 1.0,
+					       GST_FORMAT_TIME,
+					       0,
+					       GST_SEEK_TYPE_SET, 
+					       offset, GST_SEEK_TYPE_NONE, 
+					       GST_CLOCK_TIME_NONE))
+				g_print ("Seek failed!\n");
 
 		}
 

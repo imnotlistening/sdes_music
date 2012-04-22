@@ -29,7 +29,12 @@ all:
 		make --no-print-directory -C $$DIR ; \
 	done
 
-clean:
+clean: clean-bin
 	@for DIR in $(SUBDIRS); do \
 		make --no-print-directory -C $$DIR clean; \
 	done
+
+clean-bin:
+	$(MSG) Cleaning \`bin\'
+	@rm -rf bin/libmstream.so* bin/multi_stream_test bin/stream_client \
+		bin/stream_server bin/test_plist
