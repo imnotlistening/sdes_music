@@ -84,9 +84,11 @@ int music_make_pipeline(struct music_rtp_pipeline *pipe,
 	 * MIA. I am guessing that 1 in the only non-default value based on the
 	 * docs.
 	 */
-	g_object_set(G_OBJECT(netsink), "protocol", 1, NULL);
-	g_object_set(G_OBJECT(netsink), "blocksize", 256 * 1024, NULL);
+	//g_object_set(G_OBJECT(netsink), "protocol", 1, NULL);
+	//g_object_set(G_OBJECT(netsink), "blocksize", 16 * 1024, NULL);
 	g_object_set(G_OBJECT(netsink), "sync", FALSE, NULL);
+#else
+	g_object_set(G_OBJECT(netsink), "blocksize", 16 * 1024, NULL);
 #endif
 
 	/* Add the elements to the pipeline and link what can be linked. */
