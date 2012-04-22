@@ -68,8 +68,7 @@ int main(int argc, char **argv){
 	/* Make a couple of pipelines. Requires an IP address to send to :(. */
 	pline = MUSIC_ALLOC_PIPELINE();
 	ASSERT_OR_ERROR(pline != NULL);
-	err = music_rtp_make_pipeline(pline, "test-rtp-pipe1", 5000, 5001,
-				      "127.0.0.1");
+	err = music_make_pipeline(pline, "test-udp-pipe1", 5000, "127.0.0.1");
 	if ( err ){
 		fprintf(stderr, "Could not make pipeline. :(\n");
 		return 1;
@@ -85,8 +84,7 @@ int main(int argc, char **argv){
 	/* And the second. */
 	pline = MUSIC_ALLOC_PIPELINE();
 	ASSERT_OR_ERROR(pline != NULL);
-	err = music_rtp_make_pipeline(pline, "test-rtp-pipe2", 5000, 5001,
-				      "127.0.0.2");
+	err = music_make_pipeline(pline, "test-udp-pipe2", 5000, "127.0.0.2");
 	if ( err ){
 		fprintf(stderr, "Could not make pipeline. :(\n");
 		return 1;

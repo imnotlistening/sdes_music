@@ -29,13 +29,7 @@
 
 #include <music.h>
 
-/*
-#define ENCODER		"wavpackenc"
-#define PAYLOADER	"rtpmpapay"
-*/
-#define ENCODER		"alawenc"
-#define PAYLOADER	"rtppcmapay"
-
+#define ENCODER		"flacenc"
 
 static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
 static void     new_pad_added(GstElement *elem, GstPad *pad, gpointer data);
@@ -45,19 +39,13 @@ GMainLoop	*music_mloop;
 /*
  * Build a GstRtpBin pipeline. This will attempt to stream on the passed ports.
  */
-int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
-			    char *id, int rtp, int rtcp, char *dest_host){
+int music_make_pipeline(struct music_rtp_pipeline *pipe,
+			char *id, int port, char *dest_host){
 
 	GstBus *bus;
-	GstPad *rtp_src, *rtp_sink, *rtcp_src, *rtcp_sink, *tmp;
 	GstElement *pipeline;
-	GstElement *source;
-	GstElement *decodebin;
-	GstElement *volume, *convert, *resample;
-	GstElement *encoder, *payloader;
-	GstElement *rtp_sender;
-	GstElement *udp_rtp_sink, *udp_rtcp_sink, *udp_rtcp_src;
-	GstPadLinkReturn lres;
+	GstElement *source, *decodebin;
+	GstElement *volume, *convert, *resample, *encoder, *udpsink;
 
 	/* Initialize the pipeline. */
 	pipeline      = gst_pipeline_new("Stream server");
@@ -66,12 +54,8 @@ int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 	convert       = gst_element_factory_make("audioconvert", "converter");
 	volume        = gst_element_factory_make("volume", "vol-cntl");
 	resample      = gst_element_factory_make("audioresample", "resampler");
-	encoder       = gst_element_factory_make(ENCODER, "encoder");
-	payloader     = gst_element_factory_make(PAYLOADER, "payloader");
-	rtp_sender    = gst_element_factory_make("gstrtpbin", id);
-	udp_rtp_sink  = gst_element_factory_make("udpsink", "rtp-output");
-	udp_rtcp_sink = gst_element_factory_make("udpsink", "rtcp-output");
-	udp_rtcp_src  = gst_element_factory_make("udpsrc", "rtcp-input");
+	encoder       = gst_element_factory_make(ENCODER, "stream encoder");
+	udpsink       = gst_element_factory_make("udpsink", "UDP Sink");
 
 	ASSERT_OR_ERROR(pipeline != NULL);
 	ASSERT_OR_ERROR(source != NULL);
@@ -80,60 +64,21 @@ int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 	ASSERT_OR_ERROR(volume != NULL);
 	ASSERT_OR_ERROR(resample != NULL);
 	ASSERT_OR_ERROR(encoder != NULL);
-	ASSERT_OR_ERROR(payloader != NULL);
-	ASSERT_OR_ERROR(rtp_sender != NULL);
-	ASSERT_OR_ERROR(udp_rtp_sink != NULL);
-	ASSERT_OR_ERROR(udp_rtcp_sink != NULL);
-	ASSERT_OR_ERROR(udp_rtcp_src != NULL);
+	ASSERT_OR_ERROR(udpsink != NULL);
 
 	/* Set a sane default volume. */
-	g_object_set(G_OBJECT(volume), "volume", .1, NULL);
+	g_object_set(G_OBJECT(volume), "volume", 1.0, NULL);
 	
-	/* Set the RTP UDP port. */
-	g_object_set(G_OBJECT(udp_rtp_sink), "port", rtp,
+	/* Set the UDP port. */
+	g_object_set(G_OBJECT(udpsink), "port", port,
 		     "host", dest_host, NULL);
-	g_object_set(G_OBJECT(udp_rtcp_sink), "port", rtcp,
-		     "host", dest_host, NULL);
-	g_object_set(G_OBJECT(udp_rtcp_src), "port", rtcp + 1, NULL);
 
 	/* Add the elements to the pipeline and link what can be linked. */
-	gst_bin_add_many(GST_BIN(pipeline),
-			 source, decodebin, volume, convert, resample, encoder,
-			 payloader, rtp_sender, udp_rtp_sink, udp_rtcp_sink,
-			 udp_rtcp_src, NULL);
+	gst_bin_add_many(GST_BIN(pipeline), source, decodebin, volume, convert,
+			 encoder, resample, udpsink, NULL);
 	gst_element_link(source, decodebin);
-	gst_element_link_many(convert, volume, resample, encoder,
-			      payloader, NULL);
-
-	/* Make required requests for pads in the rtpbin. */
-	rtp_sink  = gst_element_get_request_pad(rtp_sender, "send_rtp_sink_0");
-	rtp_src   = gst_element_get_static_pad(rtp_sender, "send_rtp_src_0");
-	rtcp_sink = gst_element_get_request_pad(rtp_sender, "recv_rtcp_sink_0");
-	rtcp_src  = gst_element_get_request_pad(rtp_sender, "send_rtcp_src_0");
-
-	/* Link in the RT(C)P stuff here; link the pads directly. */
-	tmp = gst_element_get_static_pad(payloader, "src");
-	lres = gst_pad_link(tmp, rtp_sink);
-	gst_object_unref(tmp);
-	g_assert(lres == GST_PAD_LINK_OK);
-
-	tmp = gst_element_get_static_pad(udp_rtp_sink, "sink");
-	lres = gst_pad_link(rtp_src, tmp);
-	gst_object_unref(tmp);
-	g_assert(lres == GST_PAD_LINK_OK);
-
-	tmp = gst_element_get_static_pad(udp_rtcp_sink, "sink");
-	lres = gst_pad_link(rtcp_src, tmp);
-	g_assert(lres == GST_PAD_LINK_OK);
-	gst_object_unref(tmp);
-
-	tmp = gst_element_get_static_pad(udp_rtcp_src, "src");
-	lres = gst_pad_link(tmp, rtcp_sink);
-	g_assert(lres == GST_PAD_LINK_OK);
-	gst_object_unref(tmp);
-
-	gst_object_unref(rtp_sink);
-	gst_object_unref(rtp_src);
+	gst_element_link_many(convert, volume, resample, 
+			      encoder, udpsink, NULL);
 
 	/* Dynamic pad creation for decoder. */
 	g_signal_connect(decodebin, "pad-added", G_CALLBACK(new_pad_added),
@@ -142,7 +87,6 @@ int music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
 	pipe->pipeline = pipeline;
 	pipe->filesrc = source;
 	pipe->volume = volume;
-	pipe->rtpbin = rtp_sender;
 
 	/* Add the bus handler here so that each pipeline created will have
 	 * a handler. */

@@ -47,7 +47,6 @@ int main(int argc, char **argv){
 
 	char buf[256], cmd[256];
 	int err, bytes, convs, vol;
-	double vol_normed;
 	pthread_t thread;
 
 	/* Init the GST library. */
@@ -60,8 +59,7 @@ int main(int argc, char **argv){
 	}
 
 	/* Make a pipeline. Requires an IP address to send to :(. */
-	err = music_rtp_make_pipeline(&pipeline, "test-rtp-pipe", 5000, 5001,
-				      DEST_HOST);
+	err = music_make_pipeline(&pipeline, "test-rtp-pipe", 5000, DEST_HOST);
 	if ( err ){
 		fprintf(stderr, "Could not make pipeline. :(\n");
 		return 1;
@@ -138,14 +136,9 @@ int main(int argc, char **argv){
 				break;
 			}
 
-			vol_normed = (double)vol / 100.0;
-
-			g_object_set(G_OBJECT(pipeline.volume), "volume",
-				     vol_normed, NULL);
-
-		case 'd':
-			_music_dump_payloader_caps(&pipeline);
+			music_set_volume(&pipeline, vol);
 			break;
+
 		}
 
 	}

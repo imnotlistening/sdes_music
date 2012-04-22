@@ -110,6 +110,7 @@ int music_get_state(struct music_rtp_pipeline *pipe){
  */
 int __music_set_volume(struct music_rtp_pipeline *pipe, double volume){
 
+	printf("Setting volume: %lf\n", volume);
 	g_object_set(G_OBJECT(pipe->volume), "volume", volume, NULL);
 
 	return 0;
@@ -124,7 +125,7 @@ int __music_set_volume(struct music_rtp_pipeline *pipe, double volume){
 int music_set_volume(struct music_rtp_pipeline *pipe, int volume){
 
 	ASSERT_OR_ERROR(volume >= 0 && volume <= 100);
-	__music_set_volume(pipe, (double)volume / 100.0);
+	__music_set_volume(pipe, ((double)volume) / 100.0);
 
 	return 0;
 
@@ -189,20 +190,5 @@ int64_t music_get_time_len(struct music_rtp_pipeline *pipe){
 
 	/* Convert out of the gtype stuff. */
 	return (int64_t)len;
-
-}
-
-void _music_dump_payloader_caps(struct music_rtp_pipeline *pipe){
-
-
-	GstCaps *caps;
-	GstElement *payloader;
-	
-	payloader = gst_bin_get_by_name(GST_BIN(pipe->pipeline), "payloader");
-	caps = gst_pad_get_caps(gst_element_get_static_pad(payloader,
-							      "src"));
-	printf("** Payloader caps: %s\n", gst_caps_to_string(caps));
-
-
 
 }

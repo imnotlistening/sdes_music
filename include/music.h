@@ -61,11 +61,6 @@ struct music_rtp_pipeline {
 	GstElement	*volume;
 
 	/*
-	 * The RTP bin.
-	 */
-	GstElement	*rtpbin;
-
-	/*
 	 * A function call back for when the end of stream has occured. You
 	 * can use this function and pipeline pointer to start playing a new
 	 * song.
@@ -88,8 +83,8 @@ struct music_rtp_plist {
 /*
  * Some API functions.
  */
-int	music_rtp_make_pipeline(struct music_rtp_pipeline *pipe,
-			    char *id, int rtp, int rtcp, char *dest_host);
+int	music_make_pipeline(struct music_rtp_pipeline *pipe,
+			    char *id, int port, char *dest_host);
 int	music_make_mloop();
 int	music_play_song(struct music_rtp_pipeline *pipe, const char *song_path);
 int	music_set_state(struct music_rtp_pipeline *pipe, int state);
@@ -98,7 +93,6 @@ int64_t	music_get_time_pos(struct music_rtp_pipeline *pipe);
 int64_t	music_get_time_len(struct music_rtp_pipeline *pipe);
 int	music_set_volume(struct music_rtp_pipeline *pipe, int volume);
 int	music_get_volume(struct music_rtp_pipeline *pipe);
-void	_music_dump_payloader_caps(struct music_rtp_pipeline *pipe);
 
 /* Pipeline list functions. */
 int	music_plist_init(struct music_rtp_plist *plist, int capacity);
