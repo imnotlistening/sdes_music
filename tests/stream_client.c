@@ -87,6 +87,11 @@ int main(int argc, char **argv){
 
 	g_object_set(netsrc, "port", port, NULL);
 	/*g_object_set(netsrc, "buffer-size", 100 * 1024 * 1024, NULL);*/
+
+#ifdef _MUSIC_USE_TCP
+	g_object_set(netsrc, "host", "129.21.131.148", NULL);
+#endif
+
 	g_object_set(audiosink, "sync", FALSE, NULL);
 
 	gst_bin_add_many(GST_BIN(pipeline), netsrc, audiodec, audioconv,
