@@ -89,7 +89,7 @@ int main(int argc, char **argv){
 
 #ifdef _MUSIC_USE_TCP
 	g_object_set(netsrc, "host", "129.21.131.148", NULL);
-	//g_object_set(netsrc, "protocol", 1, NULL);
+	g_object_set(netsrc, "protocol", 1, NULL);
 #endif
 
 	g_object_set(audiosink, "sync", FALSE, NULL);
