@@ -53,12 +53,17 @@ struct music_rtp_pipeline {
 	/*
 	 * The file source.
 	 */
-	GstElement	*filesrc;
+	GstElement	*source;
 
 	/*
 	 * Volume controller.
 	 */
 	GstElement	*volume;
+
+	/*
+	 * Access to the main loop.
+	 */
+	GMainLoop	*mloop;
 
 	/*
 	 * A function call back for when the end of stream has occured. You
@@ -70,21 +75,9 @@ struct music_rtp_pipeline {
 };
 
 /*
- * A struct for containing a list of pipelines.
- */
-struct music_rtp_plist {
-
-	struct music_rtp_pipeline **pipes;
-	unsigned int	length;
-	unsigned int	capacity;
-
-};
-
-/*
  * Some API functions.
  */
-int	music_make_pipeline(struct music_rtp_pipeline *pipe,
-			    char *id, int port, char *dest_host);
+int	music_make_pipeline(struct music_rtp_pipeline *pipe, char *id);
 int	music_make_mloop();
 int	music_play_song(struct music_rtp_pipeline *pipe, const char *song_path);
 int	music_set_state(struct music_rtp_pipeline *pipe, int state);
@@ -93,30 +86,6 @@ int64_t	music_get_time_pos(struct music_rtp_pipeline *pipe);
 int64_t	music_get_time_len(struct music_rtp_pipeline *pipe);
 int	music_set_volume(struct music_rtp_pipeline *pipe, int volume);
 int	music_get_volume(struct music_rtp_pipeline *pipe);
-
-/* Pipeline list functions. */
-int	music_plist_init(struct music_rtp_plist *plist, int capacity);
-int	music_plist_add(struct music_rtp_plist *plist,
-			struct music_rtp_pipeline *pipe);
-struct music_rtp_pipeline *music_plist_del(struct music_rtp_plist *plist,
-					   int offset);
-struct music_rtp_pipeline *music_plist_next(struct music_rtp_plist *list,
-					    int reset);
-struct music_rtp_pipeline *music_plist_get(struct music_rtp_plist *plist,
-					   int index);
-void	music_plist_print(struct music_rtp_plist *plist, int empty);
-
-/* Pipeline list functions. */
-int	music_plist_init(struct music_rtp_plist *plist, int capacity);
-int	music_plist_add(struct music_rtp_plist *plist,
-			struct music_rtp_pipeline *pipe);
-struct music_rtp_pipeline *music_plist_del(struct music_rtp_plist *plist,
-					   int offset);
-struct music_rtp_pipeline *music_plist_next(struct music_rtp_plist *list,
-					    int reset);
-struct music_rtp_pipeline *music_plist_get(struct music_rtp_plist *plist,
-					   int index);
-void	music_plist_print(struct music_rtp_plist *plist, int empty);
 
 /*
  * Macros.

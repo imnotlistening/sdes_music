@@ -61,7 +61,9 @@ int music_play_song(struct music_rtp_pipeline *pipe, const char *song_path){
 
 	/* And load the new file. */
 	ASSERT_OR_ERROR(song_path != NULL);
-	g_object_set(G_OBJECT(pipe->filesrc), "location", song_path, NULL);
+	g_object_set(G_OBJECT(pipe->source), "uri", song_path, NULL);
+
+	printf("Set URI: %s\n", song_path);
 
 	return 0;
 

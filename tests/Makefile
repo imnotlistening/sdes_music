@@ -19,7 +19,7 @@
 #
 
 OBJECTS	=
-PROGS	= stream_server stream_client test_plist multi_stream_test
+PROGS	= stream_client
 
 # Build a list of dependency files.
 DEPS    := $(shell find | grep \\.d$)

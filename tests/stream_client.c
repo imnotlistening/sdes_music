@@ -25,164 +25,183 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <pthread.h>
 
 #include <glib.h>
 #include <gst/gst.h>
 
 #include <music.h>
 
-#define AUDIO_DEC   "flacdec"
-#define AUDIO_SINK  "alsasink"
+static void *play_thread(void *arg);
+static void stream_end(struct music_rtp_pipeline *pipe);
 
-#ifdef	_MUSIC_USE_TCP
-#  define NET_SRC   "tcpserversrc"
-#else
-#  define NET_SRC   "udpsrc"
-#endif
+/* non-zero = playing, 0 = paused. */
+int state = 1;
 
 /*
- * Some functions for later use.
- */
-static void on_pad_added(GstElement *depay, GstPad *pad, gpointer user_data);
-static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
-
-/**
  * Main function, derr.
  */
 int main(int argc, char **argv){
 
-	GstBus *bus;
-	GstElement *netsrc;
-	GstElement *audiodec, *audioconv, *audiosink;
-	GstElement *pipeline;
-	GMainLoop *loop;
-	gboolean res;
-	int port, convs;
-
+	long int offset;
+	int err, bytes, convs, vol;
+	char buf[256], cmd[256], *uri;
+	pthread_t thread;
+	struct music_rtp_pipeline pipeline;
+	
 	/* Init the GST library. */
 	gst_init(&argc, &argv);
 
 	/* Only 1 argument, a source to play. */
 	if ( argc != 2 ){
-		printf("Usage: %s <port>\n", argv[0]);
+		printf("Usage: %s <URI>\n", argv[0]);
 		return 1;
 	}
 
-	convs = sscanf(argv[1], "%d", &port);
-	ASSERT_OR_ERROR(convs == 1);
-	ASSERT_OR_ERROR(port > 0 && port < 65536);
-	printf("Receiving " NET_SRC " stream on port %d\n", port);
+	printf("Receiving URI: %s\n", argv[1]);
 	
+	/* Init the main loop for the pipeline. This does not start the
+	 * main loop, thats done later. */
+	music_make_mloop();
+
 	/* The pipeline to hold everything */
-	pipeline = gst_pipeline_new(NULL);
-	g_assert(pipeline);
+	err = music_make_pipeline(&pipeline, "test-pipe");
+	if ( err ){
+		fprintf(stderr, "Could not make pipeline. :(\n");
+		return 1;
+	}
+	pipeline.end_of_stream = stream_end;
 
-	netsrc = gst_element_factory_make(NET_SRC, "UDP source");
-	audiodec = gst_element_factory_make(AUDIO_DEC, "audiodec");
-	audioconv = gst_element_factory_make("audioconvert", "audioconv");
-	audiosink = gst_element_factory_make(AUDIO_SINK, "audiosink");
+	/* Now play a song. */
+	err = music_play_song(&pipeline, argv[1]);
+	if ( err ){
+		fprintf(stderr, "Failed to load song: %s\n", argv[1]);
+		return 1;
+	}
+	
+	/* And now set the pipeline's state to playing. Still not gonna start
+	 * making music quite yet, only when we start the mainloop will that
+	 * happen. */
+	music_set_state(&pipeline, GST_STATE_PLAYING);
 
-	g_assert(netsrc);
-	g_assert(audiodec);
-	g_assert(audioconv);
-	g_assert(audiosink);
+	/* Run the main loop in a different thread. */
+	err = pthread_create(&thread, NULL, play_thread, pipeline.mloop);
+	if ( err ){
+		printf("Failed to start play back thread.\n");
+		return 1;
+	}
 
-	g_object_set(netsrc, "port", port, NULL);
+	/* Loop forver waiting for input from the terminal. */
+	memset(buf, 0, 256);
+	while ( 1 ){
 
-#ifdef _MUSIC_USE_TCP
-	g_object_set(netsrc, "host", "129.21.131.148", NULL);
-	g_object_set(netsrc, "protocol", 1, NULL);
-#endif
+		printf("> ");
+		fflush(stdout);
+		bytes = read(0, buf, 256);
+		if ( bytes == 0 )
+			break;
 
-	g_object_set(audiosink, "sync", FALSE, NULL);
+		buf[strlen(buf) - 1] = 0;
 
-	gst_bin_add_many(GST_BIN(pipeline), netsrc, audiodec,
-			 audioconv, audiosink, NULL);
+		switch ( buf[0] ){
 
-	res = gst_element_link_many(netsrc, audiodec, audioconv,
-				    audiosink, NULL);
-	g_assert(res == TRUE);
+		case 'p':
+			if ( state ){
+				printf("Pausing.\n");
+				gst_element_set_state(pipeline.pipeline,
+						      GST_STATE_PAUSED);
+			} else {
+				printf("Starting.\n");
+				gst_element_set_state(pipeline.pipeline,
+						      GST_STATE_PLAYING);
+			}
+			state = !state;
+			break;
 
-	/*
-	 * Link the decodebin and the next pad in the chain.
-	 */
-	g_signal_connect(audiodec, "pad-added",
-			 G_CALLBACK(on_pad_added), audioconv);
+		case 's':
+			printf("Stopping; goodbye.\n");
+			exit(0);
+			break;
 
-	/*
-	 * Bus call back for stuff.
-	 */
-	bus = gst_pipeline_get_bus(GST_PIPELINE(pipeline));
-	gst_bus_add_watch(bus, bus_callb, pipeline);
-	g_object_unref(bus);
+		case 'v':
+			convs = sscanf(buf, "%s %d", cmd, &vol);
+			if ( convs != 2 ){
+				printf("Failed to parse volume control.\n");
+				break;
+			}
 
-	/* set the pipeline to playing */
-	g_print("Starting receiver pipeline\n");
-	gst_element_set_state(pipeline, GST_STATE_PLAYING);
+			printf("Setting volume: %d\n", vol);
+			if ( vol < 0 || vol > 100 ){
+				printf("Volume out of bounds, accepted values"
+				       " [0, 100]\n");
+				break;
+			}
 
-	/* we need to run a GLib main loop to get the messages */
-	loop = g_main_loop_new(NULL, FALSE);
-	g_main_loop_run(loop);
+			music_set_volume(&pipeline, vol);
+			break;
 
-	g_print("Stopping receiver pipeline\n");
-	gst_element_set_state(pipeline, GST_STATE_NULL);
+		case 'f': /* Forward 10 seconds. */
+		case 'b': /* Backwards 10 seconds. */
+			printf("Not implemented.\n");
+			break;
 
-	gst_object_unref(pipeline);
+		case 'k':
+			convs = sscanf(buf, "%s %ld", cmd, &offset);
+			if ( convs != 2 ){
+				printf("Failed to parse seek time.\n");
+				break;
+			}
+
+			/* Scale this input number by a factor of 1^9 */
+			offset *= 1e9;
+			printf("Seeking to %ld ns\n", offset);
+
+			if (!gst_element_seek_simple(pipeline.pipeline,
+						     GST_FORMAT_TIME,
+						     GST_SEEK_FLAG_FLUSH |
+						     GST_SEEK_FLAG_KEY_UNIT,
+						     offset))
+				g_print ("Seek failed!\n");
+			break;
+
+		case 'n':
+			uri = strstr(buf, " ");
+			uri++;
+
+			printf("Playing new URL: %s\n", uri);
+			music_play_song(&pipeline, uri);
+			music_set_state(&pipeline, GST_STATE_PLAYING);
+
+		}
+
+	}
+
+	pthread_join(thread, NULL);
+
+	/* And some basic cleanup for when the media is over. */
+	music_set_state(&pipeline, GST_STATE_NULL);
+	gst_object_unref(GST_OBJECT(pipeline.pipeline));
 
 	return 0;
 
 }
 
+static void *play_thread(void *arg){
 
-/*
- * Bus call back.
- */
-static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data){
+	GMainLoop *loop = arg;
 
-	gchar *debug;
-	GError *error;
-	//GstElement *pipeline = (GstElement *)data;
+	/* And start the media player (lol) up. */
+	g_main_loop_run(loop);
 
-	switch (GST_MESSAGE_TYPE(msg)){
+	/* Just exit; screw cleaning up data structures. */
+	exit(0);
 
-	/*
-	 * End of stream.
-	 */
-	case GST_MESSAGE_EOS:
-		g_print("End of stream detected\n");
-		break;
-
-	/*
-	 * Handle an error on the stream.
-	 */
-	case GST_MESSAGE_ERROR:
-		gst_message_parse_error(msg, &error, &debug);
-		g_free(debug);
-		g_printerr("Error detected: %s\n", error->message);
-		break;
-
-	default:
-		break;
-
-	}
-
-	return TRUE;
+	return NULL;
 
 }
 
-/*
- * Occurs when the decode in needs to be connected to the payloader.
- */
-static void on_pad_added(GstElement *depay, GstPad *pad, gpointer user_data){
+static void stream_end(struct music_rtp_pipeline *pipe){
 
-	GstPad *sinkpad;
-	GstElement *decoder = (GstElement *)user_data;
-
-	printf("Linking audio decoder to audio-resampler.\n");
-
-	sinkpad = gst_element_get_static_pad(decoder, "sink");
-	gst_pad_link(pad, sinkpad);
-
-	g_object_unref(sinkpad);
+	printf("Stream is done. Yay. What should we do now?\n");
 
 }

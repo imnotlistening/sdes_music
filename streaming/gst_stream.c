@@ -15,8 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with MUSIC.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Build an RTP stream from a URL (local, youtube vid, etc) and allow incoming
- * clients to react to the stream.
+ * Build a pipeline capable of streaming music of a web server.
  */
 
 #include <stdio.h>
@@ -29,11 +28,8 @@
 
 #include <music.h>
 
-#define ENCODER		"flacenc"
-#ifdef _MUSIC_USE_TCP
-#  define NET_SINK	"tcpclientsink"
-#else
-#  define NET_SINK	"udpsink"
+#ifndef _AUDIO_SINK
+#  define _AUDIO_SINK  "autoaudiosink"
 #endif
 
 static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
@@ -44,67 +40,43 @@ GMainLoop	*music_mloop;
 /*
  * Build a GstRtpBin pipeline. This will attempt to stream on the passed ports.
  */
-int music_make_pipeline(struct music_rtp_pipeline *pipe,
-			char *id, int port, char *dest_host){
+int music_make_pipeline(struct music_rtp_pipeline *pipe, char *id){
 
 	GstBus *bus;
 	GstElement *pipeline;
-	GstElement *source, *decodebin;
-	GstElement *volume, *convert, *resample, *encoder, *netsink;
+	GstElement *uridecoder, *audioconv, *volume, *audiosink;
 
 	/* Initialize the pipeline. */
-	pipeline      = gst_pipeline_new("Stream server");
-	source        = gst_element_factory_make("filesrc", "file source");
-	decodebin     = gst_element_factory_make("decodebin2", "decode");
-	convert       = gst_element_factory_make("audioconvert", "converter");
-	volume        = gst_element_factory_make("volume", "vol-cntl");
-	resample      = gst_element_factory_make("audioresample", "resampler");
-	encoder       = gst_element_factory_make(ENCODER, "stream encoder");
-	netsink       = gst_element_factory_make(NET_SINK, "Net Sink");
+	pipeline      = gst_pipeline_new(id);
+	uridecoder    = gst_element_factory_make("uridecodebin", "Decoder");
+	audioconv     = gst_element_factory_make("audioconvert", "Converter");
+	volume        = gst_element_factory_make("volume", "Volume Control");
+	audiosink     = gst_element_factory_make(_AUDIO_SINK, "Audio Sink");
 
 	ASSERT_OR_ERROR(pipeline != NULL);
-	ASSERT_OR_ERROR(source != NULL);
-	ASSERT_OR_ERROR(decodebin != NULL);
-	ASSERT_OR_ERROR(convert != NULL);
+	ASSERT_OR_ERROR(uridecoder != NULL);
+	ASSERT_OR_ERROR(audioconv != NULL);
 	ASSERT_OR_ERROR(volume != NULL);
-	ASSERT_OR_ERROR(resample != NULL);
-	ASSERT_OR_ERROR(encoder != NULL);
-	ASSERT_OR_ERROR(netsink != NULL);
+	ASSERT_OR_ERROR(audiosink != NULL);
 
 	/* Set a sane default volume. */
 	g_object_set(G_OBJECT(volume), "volume", .2, NULL);
 	
-	/* Set the port. */
-	g_object_set(G_OBJECT(netsink), "port", port,
-		     "host", dest_host, NULL);
-#ifdef _MUSIC_USE_TCP
-	/* 
-	 * Lets use some sort of protocol to help manage the stream. For now
-	 * this just passes a 1, since the actual enum holding these values is
-	 * MIA. I am guessing that 1 is the only non-default value based on the
-	 * docs.
-	 */
-	g_object_set(G_OBJECT(netsink), "protocol", 1, NULL);
-	g_object_set(G_OBJECT(netsink), "blocksize", 512, NULL);
-	g_object_set(G_OBJECT(netsink), "sync", FALSE, NULL);
-#else
-	g_object_set(G_OBJECT(netsink), "blocksize", 1 * 1024, NULL);
-#endif
-
 	/* Add the elements to the pipeline and link what can be linked. */
-	gst_bin_add_many(GST_BIN(pipeline), source, decodebin, volume, convert,
-			 encoder, resample, netsink, NULL);
-	gst_element_link(source, decodebin);
-	gst_element_link_many(convert, volume, resample, 
-			      encoder, netsink, NULL);
+	gst_bin_add(GST_BIN(pipeline), uridecoder);
+	gst_bin_add(GST_BIN(pipeline), audioconv);
+	gst_bin_add(GST_BIN(pipeline), volume);
+	gst_bin_add(GST_BIN(pipeline), audiosink);
+	gst_element_link_many(audioconv, volume, audiosink, NULL);
 
 	/* Dynamic pad creation for decoder. */
-	g_signal_connect(decodebin, "pad-added", G_CALLBACK(new_pad_added),
-			 convert);
+	g_signal_connect(uridecoder, "pad-added", G_CALLBACK(new_pad_added),
+			 audioconv);
 
 	pipe->pipeline = pipeline;
-	pipe->filesrc = source;
+	pipe->source = uridecoder;
 	pipe->volume = volume;
+	pipe->mloop = music_mloop;
 
 	/* Add the bus handler here so that each pipeline created will have
 	 * a handler. */
@@ -142,7 +114,6 @@ static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data){
 	 * End of stream.
 	 */
 	case GST_MESSAGE_EOS:
-		g_print("End of stream detected\n");
 		if ( pipe->end_of_stream )
 			pipe->end_of_stream(pipe);
 		break;
