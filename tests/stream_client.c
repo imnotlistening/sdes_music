@@ -44,12 +44,14 @@
  * Some functions for later use.
  */
 static void on_pad_added(GstElement *depay, GstPad *pad, gpointer user_data);
+static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data);
 
 /**
  * Main function, derr.
  */
 int main(int argc, char **argv){
 
+	GstBus *bus;
 	GstElement *netsrc;
 	GstElement *audiodec, *audioconv, *audiosink;
 	GstElement *pipeline;
@@ -94,8 +96,8 @@ int main(int argc, char **argv){
 
 	g_object_set(audiosink, "sync", FALSE, NULL);
 
-	gst_bin_add_many(GST_BIN(pipeline), netsrc, audiodec, audioconv,
-		    audiosink, NULL);
+	gst_bin_add_many(GST_BIN(pipeline), netsrc, audiodec,
+			 audioconv, audiosink, NULL);
 
 	res = gst_element_link_many(netsrc, audiodec, audioconv,
 				    audiosink, NULL);
@@ -106,6 +108,13 @@ int main(int argc, char **argv){
 	 */
 	g_signal_connect(audiodec, "pad-added",
 			 G_CALLBACK(on_pad_added), audioconv);
+
+	/*
+	 * Bus call back for stuff.
+	 */
+	bus = gst_pipeline_get_bus(GST_PIPELINE(pipeline));
+	gst_bus_add_watch(bus, bus_callb, pipeline);
+	g_object_unref(bus);
 
 	/* set the pipeline to playing */
 	g_print("Starting receiver pipeline\n");
@@ -121,6 +130,43 @@ int main(int argc, char **argv){
 	gst_object_unref(pipeline);
 
 	return 0;
+
+}
+
+
+/*
+ * Bus call back.
+ */
+static gboolean bus_callb(GstBus *bus, GstMessage *msg, gpointer data){
+
+	gchar *debug;
+	GError *error;
+	//GstElement *pipeline = (GstElement *)data;
+
+	switch (GST_MESSAGE_TYPE(msg)){
+
+	/*
+	 * End of stream.
+	 */
+	case GST_MESSAGE_EOS:
+		g_print("End of stream detected\n");
+		break;
+
+	/*
+	 * Handle an error on the stream.
+	 */
+	case GST_MESSAGE_ERROR:
+		gst_message_parse_error(msg, &error, &debug);
+		g_free(debug);
+		g_printerr("Error detected: %s\n", error->message);
+		break;
+
+	default:
+		break;
+
+	}
+
+	return TRUE;
 
 }
 

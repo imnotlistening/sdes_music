@@ -72,7 +72,7 @@ int music_make_pipeline(struct music_rtp_pipeline *pipe,
 	ASSERT_OR_ERROR(netsink != NULL);
 
 	/* Set a sane default volume. */
-	g_object_set(G_OBJECT(volume), "volume", 1.0, NULL);
+	g_object_set(G_OBJECT(volume), "volume", .2, NULL);
 	
 	/* Set the port. */
 	g_object_set(G_OBJECT(netsink), "port", port,
@@ -85,7 +85,7 @@ int music_make_pipeline(struct music_rtp_pipeline *pipe,
 	 * docs.
 	 */
 	g_object_set(G_OBJECT(netsink), "protocol", 1, NULL);
-	g_object_set(G_OBJECT(netsink), "blocksize", 1024, NULL);
+	g_object_set(G_OBJECT(netsink), "blocksize", 512, NULL);
 	g_object_set(G_OBJECT(netsink), "sync", FALSE, NULL);
 #else
 	g_object_set(G_OBJECT(netsink), "blocksize", 1 * 1024, NULL);
